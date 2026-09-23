@@ -8,6 +8,12 @@
 <meta property="og:title" content="Godswill Digital Support">
 <meta property="og:description" content="Your email list is the only audience you actually own. I run that channel end to end, from the strategy to the copy to the records that decide whether any of it lands.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://godswill-digital-support.pages.dev/">
+<meta property="og:image" content="https://godswill-digital-support.pages.dev/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://godswill-digital-support.pages.dev/assets/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -207,6 +213,34 @@ li:before{content:"";position:absolute;left:2px;top:8px;width:10px;height:6px;
 .va p b{color:var(--paper);font-weight:600}
 .va a{color:var(--rust);font-weight:600;font-size:.94rem;white-space:nowrap}
 
+
+.reviews{background:var(--paper)}
+.tgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:42px}
+.tcard{grid-column:span 2;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 26px 22px;display:flex;flex-direction:column;margin:0}
+.tcard.big{grid-column:span 3;background:linear-gradient(140deg,#fff,#F7F2EA);border-color:var(--line-2)}
+.tcard blockquote{font-family:'Fraunces',Georgia,serif;font-size:1.04rem;line-height:1.5;letter-spacing:-.01em;color:var(--ink);position:relative;padding-top:26px}
+.tcard.big blockquote{font-size:1.2rem;line-height:1.45}
+.tcard blockquote:before{content:"\201C";position:absolute;top:-14px;left:-2px;font-size:3.4rem;line-height:1;color:var(--rust);opacity:.55}
+.who{display:flex;gap:13px;align-items:center;margin-top:auto;padding-top:20px}
+.tcard blockquote{margin-bottom:20px}
+.init{flex:none;width:42px;height:42px;border-radius:50%;background:var(--rust-soft);border:1px solid #F0D9CF;color:var(--rust);display:grid;place-items:center;font-weight:700;font-size:.8rem;letter-spacing:.04em}
+.who b{display:block;font-size:.93rem;color:var(--ink)}
+.who span span{display:block;font-size:.8rem;color:var(--ink-3);line-height:1.4}
+.who .rel{font-size:.6rem!important;color:var(--rust)!important;margin-top:4px}
+.tnote{margin-top:22px;font-size:.86rem;color:var(--ink-3)}
+.tnote a{color:var(--rust);font-weight:600}
+@media(max-width:900px){.tgrid{grid-template-columns:1fr}.tcard,.tcard.big{grid-column:auto}}
+.shot.web{position:relative;flex-direction:column;gap:4px;padding-top:28px}
+.shot.web:before{content:"";position:absolute;top:0;left:0;right:0;height:18px;background:rgba(0,0,0,.07)}
+.shot.web:after{content:"";position:absolute;top:6px;left:9px;width:6px;height:6px;border-radius:50%;background:#E0DACD;box-shadow:10px 0 0 #E0DACD,20px 0 0 #E0DACD}
+.shot.web small{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.06em;opacity:.75}
+.shot.w1{background:#FBFAF7;color:#B0472A}
+.shot.w2{background:#0B0E13;color:#5EC8D8}
+.shot.w2:before{background:rgba(255,255,255,.06)}
+.shot.w3{background:#134E4A;color:#EAF2F1}
+.shot.w3:before{background:rgba(255,255,255,.08)}
+.here{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--rust);padding:2px 7px;border-radius:5px;margin-left:6px;vertical-align:2px}
+
 footer{background:var(--ink);color:#6B7280;border-top:1px solid #2A2E35}
 footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem}
 </style>
@@ -220,6 +254,7 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
       <a href="#services">Services</a>
       <a href="samples/index.html">Samples</a>
       <a href="#work">Work</a>
+      <a href="#reviews">Reviews</a>
       <a href="resume.html">Résumé</a>
       <a href="#contact" class="btn">Start a project</a>
     </div>
@@ -349,7 +384,7 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
       <div class="card">
         <h3>Technical setup and builds</h3>
         <div class="tag">Making the plan survive contact with reality</div>
-        <p>Websites, DNS records, CRM configuration, integrations, and professional email routed into Gmail so you never have to open a clunky webmail inbox again. When the tool I need does not exist, I build it.</p>
+        <p>Websites (this one included), DNS records, CRM configuration, integrations, and professional email routed into Gmail so you never have to open a clunky webmail inbox again. When the tool I need does not exist, I build it.</p>
       </div>
       <div class="card">
         <h3>Sales funnels</h3>
@@ -441,6 +476,29 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
 
       <div class="built">
         <div class="bhead">
+          <div><h3>Websites I designed, wrote and built</h3><div class="role">Copy, design, code and hosting, start to finish</div></div>
+          <span class="badge"><span class="pulse"></span> Live, click through</span>
+        </div>
+        <p>That includes the site you are reading now. I wrote every word on it, designed the layout and the illustrations, coded each page by hand and set up the hosting it runs on. <b>If you want to know what I would build for you, you are already looking at a sample.</b></p>
+        <p>The same is true of my virtual support site, which has a completely different look for a completely different buyer, and of MailPerch, where I built both the marketing site and the email platform behind it.</p>
+        <div class="sites">
+          <a class="stile" href="#top">
+            <div class="shot txt web w1">Godswill Digital Support<small>godswill-digital-support.pages.dev</small></div>
+            <div class="m"><b>Godswill Digital Support <span class="here">You are here</span></b><span>Marketing portfolio, light editorial design</span></div>
+          </a>
+          <a class="stile" href="https://godswill-virtual-support.pages.dev/" target="_blank" rel="noopener">
+            <div class="shot txt web w2">Godswill Virtual Support<small>godswill-virtual-support.pages.dev</small></div>
+            <div class="m"><b>Godswill Virtual Support</b><span>VA and customer support portfolio, dark design</span></div>
+          </a>
+          <a class="stile" href="https://getmailperch.com" target="_blank" rel="noopener">
+            <div class="shot txt web w3">MailPerch<small>getmailperch.com</small></div>
+            <div class="m"><b>MailPerch</b><span>Marketing site and the software behind it</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="built">
+        <div class="bhead">
           <div><h3>Growth Partner Finder</h3><div class="role">Designer and builder, agency operating system</div></div>
           <span class="badge off">Private, demo on request</span>
         </div>
@@ -513,6 +571,37 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
     <div class="cta" style="justify-content:flex-start">
       <a href="copy-portfolio.pdf" class="btn btn-rust" target="_blank">Read the full copy portfolio</a>
     </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews sec-line">
+  <div class="wrap">
+    <div class="eyebrow mono">Recommendations</div>
+    <h2>Anyone can describe their own work well. It carries more weight coming from the people who have seen it.</h2>
+    <p class="sub">These are a few of the recommendations that copywriters, marketers and clients I have worked with left on my LinkedIn profile. They cover the writing, the thinking behind it and what I am like to work with.</p>
+    <div class="tgrid">
+      <figure class="tcard big">
+        <blockquote>If you are looking for a copywriter with deep knowledge of the craft, someone who can convey your message clearly and hold your audience's attention, Godswill is the person to turn to.</blockquote>
+        <figcaption class="who"><span class="init">MC</span><span><b>Mark John Cabante</b><span>Copywriter, content writer and video storyteller</span><span class="rel mono">Worked on the same team</span></span></figcaption>
+      </figure>
+      <figure class="tcard big">
+        <blockquote>Godswill has a natural talent for leadership, and he is always there to help. His extensive knowledge has got me unstuck more times than I can count. Working with him was a great experience.</blockquote>
+        <figcaption class="who"><span class="init">AH</span><span><b>Ayanda Hlophe</b><span>Offer publisher and fractional CMO</span><span class="rel mono">Worked on the same team</span></span></figcaption>
+      </figure>
+      <figure class="tcard">
+        <blockquote>I highly recommend working with Godswill. He is incredibly intelligent and creative, always full of ideas, and he has a powerful work ethic. I enjoy learning from him.</blockquote>
+        <figcaption class="who"><span class="init">AE</span><span><b>Dr Alaa Eldirdiri</b><span>MBBS, healthtech and AI, product management</span><span class="rel mono">Worked on the same team</span></span></figcaption>
+      </figure>
+      <figure class="tcard">
+        <blockquote>Godswill is an email copywriter and marketer who is deeply committed to his work and excellent at what he does. He delivers beyond expectations.</blockquote>
+        <figcaption class="who"><span class="init">EA</span><span><b>Evelyn Ayosam</b><span>Email copywriter and content writer</span><span class="rel mono">Worked alongside Godswill as a junior colleague</span></span></figcaption>
+      </figure>
+      <figure class="tcard">
+        <blockquote>Godswill is a good teacher and a very good copywriter.</blockquote>
+        <figcaption class="who"><span class="init">AM</span><span><b>Amy McDaniel</b><span>Administrative assistant</span><span class="rel mono">Client</span></span></figcaption>
+      </figure>
+    </div>
+    <p class="tnote">Wording lightly tidied for grammar, with nothing added. <a href="https://www.linkedin.com/in/godswill-ifeanyichukwu/details/recommendations/" target="_blank" rel="noopener">Read the originals on LinkedIn &rarr;</a></p>
   </div>
 </section>
 
@@ -638,7 +727,7 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
 <footer>
   <div class="wrap">
     <div>© <span id="yr">2026</span> Godswill Digital Support, Godswill Ifeanyichukwu</div>
-    <div>Email marketing, strategy, funnels and copy</div>
+    <div>Designed, written and built by Godswill Ifeanyichukwu</div>
   </div>
 </footer>
 
