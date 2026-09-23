@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturne, deep sleep support for metabolism after 40</title>
+<meta name="description" content="Your metabolism did not break. Deep sleep declines with age, and that is when the body does its overnight repair work. Eight ingredients, full doses, made in a GMP certified US facility.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --cream:#FDFBF6; --cream-2:#F5EFE3; --sand:#E9DFC9;
+  --ink:#1A1D1A; --ink-2:#414A42; --ink-3:#6E7870;
+  --moss:#2C4A38; --moss-2:#1E3628; --gold:#B8862F; --gold-soft:#FBF3E2;
+  --red:#9B3220;
+  --max:760px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+  font-size:18px;line-height:1.68;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+.wide{max-width:1000px;margin:0 auto;padding:0 26px}
+.serif{font-family:'Fraunces',Georgia,serif}
+
+.topbar{background:var(--moss-2);color:#E8F0E9;text-align:center;padding:9px 18px;font-size:.84rem}
+.topbar b{color:#F0D79A}
+
+header{padding:50px 0 38px;text-align:center}
+.brand{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.25rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--moss)}
+.brand span{color:var(--gold)}
+.kicker{margin-top:28px;display:inline-block;background:var(--gold-soft);border:1px solid #EBD9AF;color:#8A6318;
+  font-size:.78rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:7px 15px;border-radius:99px}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(2rem,5.1vw,3rem);
+  line-height:1.11;letter-spacing:-.028em;margin-top:22px}
+h1 em{font-style:italic;color:var(--moss)}
+.sub{font-size:1.12rem;color:var(--ink-2);max-width:60ch;margin:20px auto 0}
+
+section{padding:42px 0}
+h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(1.55rem,3.3vw,2.1rem);
+  line-height:1.18;letter-spacing:-.024em;margin-bottom:17px}
+h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.28rem;margin-bottom:10px}
+p{margin-bottom:17px}
+p:last-child{margin-bottom:0}
+strong{font-weight:600}
+.rule{height:1px;background:var(--sand);max-width:var(--max);margin:0 auto}
+
+.pull{background:var(--moss);color:#EAF2EB;padding:36px 0;margin:38px 0}
+.pull .wrap{text-align:center}
+.pull p{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.28rem,2.9vw,1.7rem);line-height:1.38;
+  letter-spacing:-.018em;margin:0}
+.pull p em{font-style:italic;color:#F0D79A}
+
+.mech{background:var(--cream-2);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:24px}
+.step{background:var(--cream);border:1px solid var(--sand);border-radius:13px;padding:22px}
+.step .n{font-family:'Fraunces',Georgia,serif;font-size:1.6rem;color:var(--gold);line-height:1;margin-bottom:9px}
+.step h4{font-size:.99rem;font-weight:600;margin-bottom:6px}
+.step p{font-size:.92rem;color:var(--ink-2);margin:0}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+
+.diagram{background:var(--cream);border:1px solid var(--sand);border-radius:16px;padding:26px 22px;margin-top:26px}
+.diagram .cap{font-size:.85rem;color:var(--ink-3);text-align:center;margin-top:14px}
+
+.ing{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:24px}
+.card{background:var(--cream);border:1px solid var(--sand);border-radius:13px;padding:22px}
+.card h4{font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:600;margin-bottom:3px}
+.card .dose{font-size:.79rem;color:var(--gold);font-weight:600;letter-spacing:.04em;margin-bottom:9px}
+.card p{font-size:.91rem;color:var(--ink-2);margin:0}
+.card .alone{display:block;margin-top:9px;padding-top:9px;border-top:1px dashed var(--sand);
+  font-size:.86rem;color:var(--ink-3)}
+.card .alone b{color:var(--moss);font-weight:600}
+@media(max-width:760px){.ing{grid-template-columns:1fr}}
+
+.math{background:var(--moss-2);color:#E8F0E9;border-radius:16px;padding:30px 28px;margin-top:28px}
+.math h3{color:#fff}
+.math p{color:#C3D4C7;font-size:.97rem}
+.mrow{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #35523F;font-size:.93rem}
+.mrow:last-of-type{border-bottom:none}
+.mrow span:first-child{color:#C3D4C7}
+.mrow span:last-child{color:#fff;font-variant-numeric:tabular-nums}
+.mtotal{display:flex;justify-content:space-between;gap:14px;margin-top:14px;padding-top:14px;border-top:2px solid #F0D79A;
+  font-family:'Fraunces',Georgia,serif;font-size:1.2rem;color:#fff}
+.mtotal span:last-child{color:#F0D79A}
+
+.trust{border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);background:var(--cream-2)}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.badge{background:var(--cream);border:1px solid var(--sand);border-radius:12px;padding:18px 14px;text-align:center}
+.badge svg{width:30px;height:30px;margin:0 auto 9px;stroke:var(--moss);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.badge b{display:block;font-size:.88rem;font-weight:600;margin-bottom:3px}
+.badge span{font-size:.79rem;color:var(--ink-3);line-height:1.4;display:block}
+@media(max-width:860px){.badges{grid-template-columns:repeat(2,1fr)}}
+
+.cost{background:#FBF0ED;border:1px solid #EACFC7;border-radius:15px;padding:28px 30px;margin-top:28px}
+.cost h3{color:var(--red)}
+.cost p{font-size:.97rem;color:var(--ink-2)}
+.cost p:last-child{margin-bottom:0}
+
+.offer{background:var(--moss-2);color:#E8F0E9;padding:50px 0}
+.offerbox{max-width:620px;margin:0 auto;background:#24402F;border:1px solid #38553F;border-radius:20px;padding:38px 32px;text-align:center}
+.offerbox .lab{font-size:.77rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#F0D79A}
+.offerbox h2{color:#fff;margin:12px 0 14px}
+.offerbox p{color:#C3D4C7;font-size:1rem}
+.price{display:flex;align-items:baseline;justify-content:center;gap:13px;margin:22px 0 6px}
+.price .big{font-family:'Fraunces',Georgia,serif;font-size:2.9rem;font-weight:600;color:#fff;line-height:1}
+.price .was{font-size:1.08rem;color:#8FA896;text-decoration:line-through}
+.price-note{font-size:.87rem;color:#A8BFAE}
+.cta{display:inline-block;background:var(--gold);color:#2A1D05;font-weight:700;font-size:1.01rem;
+  padding:17px 36px;border-radius:11px;margin-top:22px;
+  box-shadow:0 8px 22px -10px rgba(184,134,47,.7);transition:transform .15s,background .2s}
+.cta:hover{background:#D3A044;transform:translateY(-2px)}
+.tiny{font-size:.83rem;color:#8FA896;margin-top:15px}
+
+.guarantee{display:flex;gap:22px;align-items:flex-start;background:var(--gold-soft);border:1px solid #EBD9AF;
+  border-radius:15px;padding:26px 28px;margin-top:30px}
+.seal{width:64px;height:64px;border-radius:50%;background:var(--moss);color:#F0D79A;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;font-family:'Fraunces',Georgia,serif;
+  font-size:.8rem;font-weight:700;text-align:center;line-height:1.15}
+.guarantee p{font-size:.94rem;color:var(--ink-2);margin:0}
+
+.faq{border-top:1px solid var(--sand)}
+.q{border-bottom:1px solid var(--sand);padding:19px 0}
+.q h4{font-size:1.02rem;font-weight:600;margin-bottom:6px}
+.q p{font-size:.95rem;color:var(--ink-2);margin:0}
+
+.final{text-align:center;padding:52px 0}
+.final h2{max-width:22ch;margin-left:auto;margin-right:auto}
+
+footer{background:var(--cream-2);border-top:1px solid var(--sand);padding:28px 0 38px;font-size:.81rem;color:var(--ink-3)}
+footer p{margin-bottom:9px}
+.spec{background:var(--ink);color:#D8DCD8;border-radius:10px;padding:16px 18px;margin-bottom:18px;font-size:.84rem}
+.spec b{color:#fff}
+</style>
+</head>
+<body>
+
+<div class="topbar">Starter bottles held for <b>24 hours</b>. Shipping only, no subscription.</div>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Noct<span>u</span>rne</div>
+    <div class="kicker">For men and women over 40</div>
+    <h1>You are not lazy, and you are not eating too much. <em>Your body simply stopped repairing itself properly at night.</em></h1>
+    <p class="sub">Almost all of the work that keeps your metabolism running happens during deep sleep. That stage shrinks every decade after thirty, and almost nobody is told about it.</p>
+  </div>
+</header>
+
+<div class="rule"></div>
+
+<section>
+  <div class="wrap">
+    <p>If you are over forty and heavier than you want to be, you have already tried the obvious things. You ate less. You moved more. You cut the bread, then the sugar, then the wine on weeknights.</p>
+    <p>Some of it worked for a few weeks. Most of it stopped working, and the weight came back with a little extra on top.</p>
+    <p>So you did what most people do. You decided the problem was you. Not enough discipline, not enough consistency, not enough willpower left at nine in the evening when the kitchen is quiet and the day has taken everything you had.</p>
+    <p>I want to take that off you, because it is not true.</p>
+  </div>
+</section>
+
+<div class="pull">
+  <div class="wrap">
+    <p>You cannot out-diet a night your body never finished. <em>Fix the night first.</em></p>
+  </div>
+</div>
+
+<section class="mech">
+  <div class="wrap">
+    <h2>The mechanism nobody explains: what actually goes wrong after forty</h2>
+    <p>Your body does its metabolic housekeeping while you are asleep, and specifically during the deepest stage of sleep. That is when growth hormone is released, when tissue gets repaired, and when the systems that decide whether you burn fuel or store it are reset for the next day.</p>
+    <p><strong>Deep sleep declines steadily from your thirties onward.</strong> By your fifties many people get less than half of what they had at twenty five. You can lie in bed for eight full hours and barely touch it.</p>
+    <p>Three things drive that decline, and they feed each other.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="n serif">1</div>
+        <h4>Melatonin production falls</h4>
+        <p>The signal that tells your body it is night gets quieter every decade. You take longer to drop off and spend more of the night in the light stages where no repair work happens.</p>
+      </div>
+      <div class="step">
+        <div class="n serif">2</div>
+        <h4>Cortisol refuses to come down</h4>
+        <p>Stress hormone that should fall away in the evening stays elevated. Your body stays on alert when it should be shutting down. This is why you wake at three and cannot get back under.</p>
+      </div>
+      <div class="step">
+        <div class="n serif">3</div>
+        <h4>Repair work gets cut short</h4>
+        <p>Less deep sleep means less growth hormone, less tissue repair, and a metabolism that starts each day having never finished the last one. The effects show up in the mirror months later.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:24px">None of this is fringe science. It is documented sleep physiology that any endocrinologist will confirm. What is strange is how rarely anyone connects it to the reason the same diet that worked at thirty does nothing at fifty.</p>
+    <p><strong>Which means the fix is not another diet.</strong> It is giving your body back the conditions it needs to reach deep sleep on its own.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Eight ingredients, working on three different parts of the same problem</h2>
+    <p>Each one below does something useful on its own. That is why you can buy every single one of them separately, and plenty of people do.</p>
+    <p>But sleep does not fail for one reason, so fixing it with one ingredient rarely works. You need the signal restored, the body cooled, and the stress hormone brought down, all on the same night, in the same window. That is the part people cannot assemble on their own, and it is the reason we built Nocturne as one formula instead of eight bottles.</p>
+
+    <div class="diagram">
+      <svg viewBox="0 0 700 340" role="img" aria-label="Diagram showing eight ingredients grouped into three functions that combine into one nightly dose">
+        <defs>
+          <style>
+            .grp{fill:#F5EFE3;stroke:#E9DFC9;stroke-width:1.5}
+            .ttl{font:600 13px Inter,sans-serif;fill:#2C4A38}
+            .itm{font:400 11.5px Inter,sans-serif;fill:#414A42}
+            .cen{font:600 14px Inter,sans-serif;fill:#fff}
+            .cen2{font:400 11px Inter,sans-serif;fill:#C3D4C7}
+            .lbl{font:600 10px Inter,sans-serif;fill:#B8862F;letter-spacing:.08em}
+            .ln{stroke:#CFC0A0;stroke-width:1.5;fill:none}
+          </style>
+        </defs>
+
+        <!-- group 1 -->
+        <rect class="grp" x="8" y="18" width="196" height="120" rx="12"/>
+        <text class="lbl" x="24" y="42">STEP ONE</text>
+        <text class="ttl" x="24" y="62">Quieten the signal</text>
+        <text class="itm" x="24" y="84">Magnesium glycinate 200mg</text>
+        <text class="itm" x="24" y="102">L-theanine 200mg</text>
+        <text class="itm" x="24" y="120">Apigenin 50mg</text>
+
+        <!-- group 2 -->
+        <rect class="grp" x="8" y="152" width="196" height="102" rx="12"/>
+        <text class="lbl" x="24" y="176">STEP TWO</text>
+        <text class="ttl" x="24" y="196">Cool the body</text>
+        <text class="itm" x="24" y="218">Glycine 3g</text>
+        <text class="itm" x="24" y="236">Melatonin 0.5mg</text>
+
+        <!-- group 3 -->
+        <rect class="grp" x="8" y="268" width="196" height="62" rx="12"/>
+        <text class="lbl" x="24" y="292">STEP THREE</text>
+        <text class="ttl" x="24" y="312">Lower the cortisol</text>
+
+        <!-- group 3 items to the right of title to save height -->
+        <text class="itm" x="218" y="292">Ashwagandha KSM-66 300mg</text>
+        <text class="itm" x="218" y="312">Zinc 15mg, Vitamin B6 10mg</text>
+
+        <!-- connectors -->
+        <path class="ln" d="M204 78 C 270 78, 280 150, 340 165"/>
+        <path class="ln" d="M204 203 C 270 203, 285 175, 340 172"/>
+        <path class="ln" d="M204 300 C 260 300, 290 200, 340 180"/>
+
+        <!-- centre -->
+        <circle cx="440" cy="172" r="92" fill="#2C4A38"/>
+        <circle cx="440" cy="172" r="92" fill="none" stroke="#B8862F" stroke-width="2"/>
+        <text class="cen" x="440" y="158" text-anchor="middle">One capsule</text>
+        <text class="cen" x="440" y="178" text-anchor="middle">taken nightly</text>
+        <text class="cen2" x="440" y="200" text-anchor="middle">All three, same window</text>
+
+        <!-- outcome -->
+        <path class="ln" d="M532 172 L 576 172" marker-end=""/>
+        <path d="M570 166 L 582 172 L 570 178 Z" fill="#CFC0A0"/>
+        <text class="lbl" x="596" y="160">RESULT</text>
+        <text class="ttl" x="596" y="180">Deeper</text>
+        <text class="ttl" x="596" y="198">sleep</text>
+      </svg>
+      <p class="cap">Three jobs, one dose. Taking these separately means eight bottles, eight timings, and eight chances to get the dose wrong.</p>
+    </div>
+
+    <div class="ing">
+      <div class="card">
+        <h4>Magnesium glycinate</h4>
+        <div class="dose">200 mg</div>
+        <p>The form that actually crosses into the nervous system instead of sitting in your gut and causing the problem cheaper magnesium is famous for. It supports the receptors that quieten brain activity at night.</p>
+        <span class="alone"><b>On its own:</b> helps you fall asleep faster. <b>In the blend:</b> it makes the theanine and apigenin work on a nervous system that is already settling.</span>
+      </div>
+      <div class="card">
+        <h4>L-theanine</h4>
+        <div class="dose">200 mg</div>
+        <p>An amino acid found in tea leaves. It takes the edge off mental chatter without sedating you, which matters, because sedation and deep sleep are not the same thing.</p>
+        <span class="alone"><b>On its own:</b> calms a racing mind. <b>In the blend:</b> it keeps the calm going once magnesium has opened the door.</span>
+      </div>
+      <div class="card">
+        <h4>Glycine</h4>
+        <div class="dose">3 g</div>
+        <p>Lowers core body temperature slightly before sleep. That small drop is one of the physical signals your body uses to move into its deeper stages.</p>
+        <span class="alone"><b>On its own:</b> improves how rested you feel on waking. <b>In the blend:</b> it supplies the temperature cue that the calming ingredients cannot provide.</span>
+      </div>
+      <div class="card">
+        <h4>Ashwagandha, KSM-66</h4>
+        <div class="dose">300 mg</div>
+        <p>A standardised root extract, not the cheap whole-plant powder. KSM-66 is the version used in most of the published work on evening cortisol.</p>
+        <span class="alone"><b>On its own:</b> takes the edge off stress. <b>In the blend:</b> this is the ingredient aimed squarely at the three in the morning wake-up, which nothing else here addresses.</span>
+      </div>
+      <div class="card">
+        <h4>Zinc</h4>
+        <div class="dose">15 mg</div>
+        <p>Works alongside magnesium in the overnight hormone cycle. Commonly low in people who train hard, sweat a lot, or eat little red meat.</p>
+        <span class="alone"><b>On its own:</b> supports normal hormone production. <b>In the blend:</b> it is half of the magnesium and zinc pairing that most sleep formulas split up and sell twice.</span>
+      </div>
+      <div class="card">
+        <h4>Melatonin</h4>
+        <div class="dose">0.5 mg</div>
+        <p>Deliberately low. Most products use five to ten milligrams, which is far beyond anything the body produces and is the reason so many people wake up groggy and give up.</p>
+        <span class="alone"><b>On its own:</b> shifts your body clock. <b>In the blend:</b> a physiological dose nudges the signal rather than overriding it, which is what lets the other seven do their work.</span>
+      </div>
+      <div class="card">
+        <h4>Apigenin</h4>
+        <div class="dose">50 mg</div>
+        <p>The compound in chamomile responsible for its calming reputation, at a dose you would need roughly twenty cups of tea to reach.</p>
+        <span class="alone"><b>On its own:</b> mild relaxation. <b>In the blend:</b> it extends the calming window through the first sleep cycle rather than just the first hour.</span>
+      </div>
+      <div class="card">
+        <h4>Vitamin B6</h4>
+        <div class="dose">10 mg</div>
+        <p>Needed to convert the amino acids above into the neurotransmitters that do the actual work.</p>
+        <span class="alone"><b>On its own:</b> not much. <b>In the blend:</b> without it, a meaningful share of the glycine and theanine you swallow never becomes anything useful. This is the ingredient most formulas leave out.</span>
+      </div>
+    </div>
+
+    <div class="math">
+      <h3>What these cost if you buy them separately</h3>
+      <p>We priced every ingredient at the dose we use, from reputable brands, for thirty nights.</p>
+      <div class="mrow"><span>Magnesium glycinate, 200mg</span><span>$14.90</span></div>
+      <div class="mrow"><span>L-theanine, 200mg</span><span>$12.40</span></div>
+      <div class="mrow"><span>Glycine, 3g</span><span>$11.80</span></div>
+      <div class="mrow"><span>KSM-66 ashwagandha, 300mg</span><span>$21.50</span></div>
+      <div class="mrow"><span>Zinc, 15mg</span><span>$8.20</span></div>
+      <div class="mrow"><span>Melatonin, 0.5mg</span><span>$7.60</span></div>
+      <div class="mrow"><span>Apigenin, 50mg</span><span>$26.90</span></div>
+      <div class="mrow"><span>Vitamin B6, 10mg</span><span>$6.40</span></div>
+      <div class="mtotal"><span>Thirty nights, eight bottles</span><span>$109.70</span></div>
+      <p style="margin-top:16px">That is before you work out which to take together, how far apart, and what happens when one runs out three weeks before the others. Nocturne is one capsule, one timing, and the doses are already matched to each other.</p>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <h2>Where it is made, and how you can check</h2>
+    <p>You are putting this in your body every night, so you are entitled to know exactly what it is and who handled it. Every claim below is printed on the bottle and verifiable from the batch number on the base.</p>
+
+    <div class="badges">
+      <div class="badge">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        <b>GMP certified</b>
+        <span>Manufactured under Good Manufacturing Practice standards</span>
+      </div>
+      <div class="badge">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        <b>FDA registered facility</b>
+        <span>Blended and bottled in the United States</span>
+      </div>
+      <div class="badge">
+        <svg viewBox="0 0 24 24"><path d="M10 2v6l-6 10a2 2 0 002 3h12a2 2 0 002-3l-6-10V2"/><path d="M8.5 2h7"/></svg>
+        <b>Third party tested</b>
+        <span>Every batch checked for potency, heavy metals and microbes by an independent lab</span>
+      </div>
+      <div class="badge">
+        <svg viewBox="0 0 24 24"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1zM10 12h4"/></svg>
+        <b>Amber glass, not plastic</b>
+        <span>Light degrades melatonin and apigenin. Amber glass and a desiccant keep the dose intact to the last capsule</span>
+      </div>
+    </div>
+
+    <p style="margin-top:22px">No proprietary blend. Every dose on this page is the dose printed on the label, because a blend is usually how a manufacturer hides that the expensive ingredient is present in trace amounts.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What another year of broken sleep actually costs</h2>
+    <p>Picture where you are twelve months from now if nothing changes. Not a dramatic version. The realistic one.</p>
+    <p>You are a year older, and deep sleep drops a little further each year on its own. The weight that took eighteen months to arrive has had another twelve to settle. You have tried two more diets, and both worked for a fortnight.</p>
+    <p>The part that bothers people most is rarely the weight. It is the flatness. Being awake but not quite present. Reading the same paragraph twice. Snapping at someone who did not deserve it, then lying there at eleven wondering when exactly you became this tired.</p>
+
+    <div class="cost">
+      <h3>Sleep debt does not stay still</h3>
+      <p>Every year you wait, the deep sleep stage shrinks a little further, cortisol sits a little higher, and the gap you are trying to close gets wider. The people who find this difficult to fix are almost always the ones who waited a decade. The people who find it straightforward started when it was still annoying rather than serious.</p>
+      <p>Thirty nights from now you will either know whether this works for you, or you will be thirty nights further into the same pattern.</p>
+    </div>
+  </div>
+</section>
+
+<div class="offer">
+  <div class="wide">
+    <div class="offerbox">
+      <div class="lab">Starter bottle</div>
+      <h2>Take the first bottle. Pay the postage.</h2>
+      <p>Thirty nights of Nocturne, sent to your door. We cover the bottle, you cover shipping and handling. There is no subscription attached and nothing bills you later.</p>
+      <div class="price">
+        <span class="big">$6.95</span>
+        <span class="was">$49.00</span>
+      </div>
+      <div class="price-note">Shipping and handling only. One bottle per household.</div>
+      <a href="#" class="cta">Send me the starter bottle</a>
+      <p class="tiny">Ships in two to four working days. No card details stored after checkout.</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>What to expect, honestly</h2>
+    <p>Nobody should promise you a number on a scale from a bottle of capsules, and we are not going to.</p>
+    <p>What we will tell you is what most people notice first, and it is not weight. It is waking up a few minutes before the alarm instead of being dragged out of sleep by it. <strong>Sleep quality changes before anything else does</strong>, usually somewhere in the first two weeks.</p>
+    <p>The rest depends on what you do with the energy that comes back. Nocturne does not replace eating reasonably and moving regularly. It removes the thing that was quietly undermining both.</p>
+
+    <div class="guarantee">
+      <div class="seal serif">90<br>NIGHTS</div>
+      <div>
+        <h3>Ninety nights, or your postage back</h3>
+        <p>Take it for three months. If your sleep has not changed, write to us any time inside ninety nights and we will refund what you paid, including the shipping. You do not need to return the bottle and you do not need to give a reason.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Questions people ask before ordering</h2>
+    <div class="q">
+      <h4>Will this knock me out?</h4>
+      <p>No, and that is deliberate. Sedatives push you into sleep but tend to suppress the deeper stages, which is the opposite of what we are trying to do. Nocturne works on the signals that let your body get there by itself.</p>
+    </div>
+    <div class="q">
+      <h4>Is there really no subscription?</h4>
+      <p>None. You pay shipping once, the bottle arrives, and that is the end of it unless you choose to order again.</p>
+    </div>
+    <div class="q">
+      <h4>Can I take it with other medication?</h4>
+      <p>Ask your doctor first, particularly if you take blood pressure medication, sedatives, thyroid medication, or anything for anxiety. Bring the ingredient list on this page with you so they can see the exact doses.</p>
+    </div>
+    <div class="q">
+      <h4>How long before I notice anything?</h4>
+      <p>Most people notice a difference in how they feel on waking within the first two weeks. Some feel it in the first few nights. If nothing has changed by night ninety, ask for your money back.</p>
+    </div>
+    <div class="q">
+      <h4>Why give the first bottle away?</h4>
+      <p>Because explaining the deep sleep connection to a stranger on a web page is hard, and letting them feel it for the price of postage is easy. People who feel the difference order again. That is the entire business model.</p>
+    </div>
+  </div>
+</section>
+
+<div class="final">
+  <div class="wrap">
+    <h2>Thirty nights is enough to know.</h2>
+    <p style="max-width:52ch;margin:0 auto 6px">You have already tried eating less and moving more. This is the part nobody told you to fix.</p>
+    <a href="#" class="cta">Send me the starter bottle</a>
+    <p class="tiny" style="color:var(--ink-3)">$6.95 shipping and handling. Ninety night refund. No subscription.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="spec">
+      <b>Portfolio sample.</b> Nocturne is a concept brand created by Godswill Ifeanyichukwu to demonstrate funnel structure, offer design and direct response copywriting. It is not a real product, the certifications described are illustrative, and nothing on this page is for sale.
+    </div>
+    <p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Consult your doctor before starting any supplement, particularly if you take prescription medication.</p>
+    <p>Copy, design and build by Godswill Ifeanyichukwu.</p>
+  </div>
+</footer>
+
+</body>
+</html>
