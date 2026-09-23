@@ -46,19 +46,22 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .btn-rust:hover{background:var(--rust-2);border-color:var(--rust-2)}
 @media(max-width:940px){.navlinks a:not(.btn){display:none}}
 
-header{padding:78px 0 58px;position:relative;overflow:hidden;text-align:center}
-header:after{content:"";position:absolute;top:-260px;left:50%;transform:translateX(-50%);width:760px;height:620px;border-radius:50%;
+header{padding:64px 0 54px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;top:-300px;right:-220px;width:760px;height:660px;border-radius:50%;
   background:radial-gradient(circle,rgba(176,71,42,.1),transparent 68%);pointer-events:none}
-.avail{display:inline-flex;align-items:center;gap:9px;color:var(--rust);margin-bottom:22px;position:relative;
+.hgrid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center;position:relative}
+@media(max-width:940px){.hgrid{grid-template-columns:1fr;gap:34px}.hero-art{order:-1;max-width:420px}}
+.avail{display:inline-flex;align-items:center;gap:9px;color:var(--rust);margin-bottom:20px;position:relative;
   background:var(--rust-soft);border:1px solid #F0D9CF;padding:7px 15px;border-radius:99px}
 .pulse{width:7px;height:7px;border-radius:50%;background:#1E9E62;box-shadow:0 0 0 4px rgba(30,158,98,.16)}
-h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(2.25rem,5vw,3.55rem);
-  line-height:1.07;letter-spacing:-.033em;max-width:22ch;margin:0 auto;position:relative}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(2.1rem,4.2vw,3.15rem);
+  line-height:1.09;letter-spacing:-.033em;position:relative}
 h1 em{font-style:italic;font-weight:500;color:var(--rust)}
-.lede{font-size:1.1rem;color:var(--ink-2);max-width:64ch;margin:20px auto 0;position:relative}
+.lede{font-size:1.06rem;color:var(--ink-2);max-width:56ch;margin:19px 0 0;position:relative}
 .lede b{color:var(--ink);font-weight:600}
-.cta{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px;justify-content:center;position:relative}
-.reassure{margin-top:18px;color:var(--ink-3);font-size:.88rem;position:relative}
+.cta{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px;position:relative}
+.reassure{margin-top:17px;color:var(--ink-3);font-size:.88rem;position:relative}
+.hero-art{width:100%}
 
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
 .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
@@ -215,7 +218,7 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
     <a href="#top" class="brand">Godswill Digital Support<i>.</i></a>
     <div class="navlinks">
       <a href="#services">Services</a>
-      <a href="samples/">Samples</a>
+      <a href="samples/index.html">Samples</a>
       <a href="#work">Work</a>
       <a href="resume.html">Résumé</a>
       <a href="#contact" class="btn">Start a project</a>
@@ -225,14 +228,68 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
 
 <header id="top">
   <div class="wrap">
-    <div class="avail mono"><span class="pulse"></span> Full-Stack Email Marketer</div>
-    <h1>Your email list is the only audience you actually own. <em>Everything else is rented, and the rent keeps going up.</em></h1>
-    <p class="lede">That is why I start with email and go further into it than most marketers do. I plan the campaigns, write them, build the funnels that feed the list, and set up the sending records so the messages land in an inbox instead of a spam folder. I have been doing this for over five years, inside agency teams and directly with clients.</p>
-    <div class="cta">
-      <a href="#services" class="btn btn-rust">See how I work</a>
-      <a href="samples/" class="btn btn-line">See the samples</a>
+    <div class="hgrid">
+      <div>
+        <div class="avail mono"><span class="pulse"></span> Full-Stack Email Marketer</div>
+        <h1>Your email list is the only audience you actually own. <em>Everything else is rented, and the rent keeps going up.</em></h1>
+        <p class="lede">That is why I start with email and go further into it than most marketers do. I plan the campaigns, write them, build the funnels that feed the list, and set up the sending records so the messages land in an inbox instead of a spam folder. I have been doing this for over five years, inside agency teams and directly with clients.</p>
+        <div class="cta">
+          <a href="#services" class="btn btn-rust">See how I work</a>
+          <a href="samples/index.html" class="btn btn-line">See the samples</a>
+        </div>
+        <p class="reassure">Strategy, copywriting, funnels, offer launches and the technical build underneath.</p>
+      </div>
+
+      <svg class="hero-art" viewBox="0 0 460 400" role="img" aria-label="An email list feeding a funnel that produces recurring revenue">
+        <defs>
+          <linearGradient id="gEnv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F2E9"/>
+          </linearGradient>
+          <linearGradient id="gRev" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#B0472A"/><stop offset="1" stop-color="#D98246"/>
+          </linearGradient>
+          <style>
+            .cd{fill:url(#gEnv);stroke:#E0DACD;stroke-width:1.6}
+            .ln{stroke:#D8D0C0;stroke-width:1.5;fill:none}
+            .tx{font:600 11.5px Inter,sans-serif;fill:#3A3F47}
+            .tx2{font:400 10px Inter,sans-serif;fill:#8A8579}
+            .lab{font:600 9px 'JetBrains Mono',monospace;fill:#B0472A;letter-spacing:.12em}
+            .big{font:600 18px Fraunces,Georgia,serif;fill:#14161A}
+          </style>
+        </defs>
+
+        <rect class="cd" x="56" y="16" width="348" height="48" rx="11" opacity=".4"/>
+        <rect class="cd" x="44" y="30" width="372" height="52" rx="12" opacity=".68"/>
+        <rect class="cd" x="32" y="46" width="396" height="60" rx="13"/>
+        <circle cx="62" cy="76" r="13" fill="#FBEDE7" stroke="#F0D9CF" stroke-width="1.4"/>
+        <path d="M55 72h14v9H55z" fill="none" stroke="#B0472A" stroke-width="1.5"/>
+        <path d="M55 72l7 5 7-5" fill="none" stroke="#B0472A" stroke-width="1.5" stroke-linejoin="round"/>
+        <text class="tx" x="86" y="72">Your list, cleaned and segmented</text>
+        <text class="tx2" x="86" y="89">Verified, authenticated, actually delivered</text>
+        <circle cx="404" cy="76" r="4.5" fill="#1E9E62"/>
+
+        <path class="ln" d="M140 112 L140 140" stroke-dasharray="4 5"/>
+        <path class="ln" d="M230 112 L230 140" stroke-dasharray="4 5"/>
+        <path class="ln" d="M320 112 L320 140" stroke-dasharray="4 5"/>
+
+        <path d="M50 146 L410 146 L296 246 L296 292 L164 292 L164 246 Z"
+              fill="#F5F0E5" stroke="#CFC7B6" stroke-width="1.8" stroke-linejoin="round"/>
+        <line x1="92" y1="183" x2="368" y2="183" stroke="#E2DACA" stroke-width="1.4"/>
+        <line x1="128" y1="216" x2="332" y2="216" stroke="#E2DACA" stroke-width="1.4"/>
+        <text class="lab" x="230" y="170" text-anchor="middle">WELCOME</text>
+        <text class="lab" x="230" y="205" text-anchor="middle">NURTURE</text>
+        <text class="lab" x="230" y="238" text-anchor="middle">OFFER</text>
+
+        <rect x="186" y="344" width="32" height="24" rx="5" fill="url(#gRev)" opacity=".34"/>
+        <rect x="228" y="330" width="32" height="38" rx="5" fill="url(#gRev)" opacity=".56"/>
+        <rect x="270" y="312" width="32" height="56" rx="5" fill="url(#gRev)" opacity=".78"/>
+        <rect x="312" y="288" width="32" height="80" rx="5" fill="url(#gRev)"/>
+        <line x1="176" y1="370" x2="356" y2="370" stroke="#CFC7B6" stroke-width="1.6"/>
+        <text class="big" x="34" y="338">Revenue</text>
+        <text class="tx2" x="34" y="356">from the list</text>
+        <text class="tx2" x="34" y="370">you already had</text>
+      </svg>
     </div>
-    <p class="reassure">Strategy, copywriting, funnels, offer launches and the technical build underneath.</p>
   </div>
 </header>
 
@@ -402,15 +459,15 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
         </div>
         <p>Working sites built for real businesses that had a Google listing and nothing else. Researched from their public profile, written to convert a phone call, built and shipped. <b>Open them, they work on your phone.</b></p>
         <div class="sites">
-          <a class="stile" href="work/mobile-mechanic/" target="_blank">
+          <a class="stile" href="work/mobile-mechanic.html" target="_blank">
             <div class="shot txt">24/7 Mobile<br>Mechanic</div>
             <div class="m"><b>Mobile Mechanic R&amp;R</b><span>Emergency auto repair, Miami-Dade</span></div>
           </a>
-          <a class="stile" href="work/jc-car-care/" target="_blank">
+          <a class="stile" href="work/jc-car-care.html" target="_blank">
             <div class="shot"><img src="assets/jc-car-care.jpg" alt="J C Car Care Center website" loading="lazy"></div>
             <div class="m"><b>J C Car Care Center</b><span>Auto service, Miami</span></div>
           </a>
-          <a class="stile" href="work/multiser-versailles/" target="_blank">
+          <a class="stile" href="work/multiser-versailles.html" target="_blank">
             <div class="shot"><img src="assets/multiser.jpg" alt="Multiser Versailles website" loading="lazy"></div>
             <div class="m"><b>Multiser Versailles</b><span>Multi-service business, Miami</span></div>
           </a>
@@ -419,7 +476,7 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
     </div>
 
     <div class="cta" style="justify-content:flex-start;margin-top:30px">
-      <a href="samples/" class="btn btn-rust">See the funnel and sales page samples</a>
+      <a href="samples/index.html" class="btn btn-rust">See the funnel and sales page samples</a>
     </div>
   </div>
 </section>
