@@ -87,14 +87,15 @@ window.SAMPLES = [
   {
     "title": "The Best-Kept Secret in TEFL",
     "industry": "Education",
-    "type": "Long-form sales page",
-    "blurb": "Client work for English for Positive Change. Sells a forty hour teacher training programme to certified teachers who are burnt out and quietly wondering whether they are any good at it.",
+    "type": "Long-form sales letter",
+    "blurb": "Client work for English for Positive Change, rebuilt here as long-form. Sells a forty hour training programme to certified teachers who are burnt out and quietly wondering whether they are any good at it. The argument is that they did not lose their passion, they lost their Sundays.",
     "demonstrates": [
-      "Opening on questions the reader answers yes to",
-      "Named testimonials with real attribution",
-      "Authority established through specifics rather than adjectives"
+      "Opening on four questions the reader answers yes to",
+      "Separating the real problem from the one the reader blames themselves for",
+      "Price walked down from $997 to $89 with a reason that is not a discount",
+      "Cost of waiting measured in hours rather than money"
     ],
-    "url": "https://englishforpositivechange.com/best-kept-secret/",
+    "url": "tefl.html",
     "status": "client"
   }
 ];

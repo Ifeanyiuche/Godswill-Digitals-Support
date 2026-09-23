@@ -17,7 +17,24 @@
   --brand:#16304D; --brand-2:#0E2038; --accent:#A8792C; --accent-soft:#F7F0E1;
   --warn:#8E2F1E; --warn-soft:#FAEFEC; --warn-line:#E7CCC4;
 }
-.brand{letter-spacing:.2em}
+/* Legal keeps its own identity: left aligned, document-like, hard edges, no rounded cards */
+body{font-size:17.5px}
+header{text-align:left;padding:46px 0 34px;border-bottom:4px double var(--line)}
+header .kicker{border-radius:0;border-left:3px solid var(--accent);background:transparent;
+  padding:4px 0 4px 12px;letter-spacing:.14em}
+h1{max-width:19ch;margin-top:18px}
+.sub{margin-left:0;max-width:58ch}
+.brand{letter-spacing:.2em;text-align:left}
+h2{max-width:24ch}
+.card,.step,.who,.stack,.cost,.offerbox{border-radius:3px}
+.offerbox{text-align:left}
+.offerbox h2{max-width:26ch}
+.pull .wrap{text-align:left}
+.pull p{margin:0;max-width:30ch}
+.final{text-align:left}
+.final h2{margin-left:0}
+.final p{margin-left:0}
+.hero-art{margin-top:30px;border:1px solid var(--line);background:#fff;padding:18px}
 .timeline{margin-top:22px;border-left:2px solid var(--line);padding-left:24px;display:flex;flex-direction:column;gap:20px}
 .tl{position:relative}
 .tl:before{content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;
@@ -39,6 +56,40 @@
     <div class="kicker">Road accident claims, Florida</div>
     <h1>The insurance company called you within two days. <em>They are not usually that quick about anything.</em></h1>
     <p class="sub">There is a reason an adjuster reaches out early, sounds sympathetic, and asks you to give a recorded statement while you are still sore and still shaken.</p>
+
+    <svg class="hero-art" viewBox="0 0 700 210" role="img" aria-label="Two timelines side by side, the insurer's offer arriving long before the medical picture is complete">
+      <defs>
+        <style>
+          .axis{stroke:#C9CFD6;stroke-width:1.6}
+          .lbl{font:600 11px Inter,sans-serif;fill:#3E464F}
+          .sm{font:400 10px Inter,sans-serif;fill:#6B7480}
+          .cap{font:600 9.5px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+        </style>
+      </defs>
+
+      <text class="cap" x="16" y="20" fill="#8E2F1E">THEIR TIMELINE</text>
+      <line class="axis" x1="16" y1="58" x2="684" y2="58"/>
+      <circle cx="70" cy="58" r="7" fill="#8E2F1E"/>
+      <circle cx="190" cy="58" r="7" fill="#8E2F1E"/>
+      <text class="lbl" x="52" y="44">Day 2</text><text class="sm" x="30" y="80">Friendly call,</text><text class="sm" x="30" y="94">recorded statement</text>
+      <text class="lbl" x="166" y="44">Week 2</text><text class="sm" x="152" y="80">Offer arrives</text>
+      <path d="M198 58 L672 58" stroke="#E3E7EB" stroke-width="1.6" stroke-dasharray="5 5"/>
+      <text class="sm" x="560" y="48" fill="#A8AEB6">nothing further needed</text>
+
+      <text class="cap" x="16" y="138" fill="#16304D">YOUR TIMELINE</text>
+      <line class="axis" x1="16" y1="176" x2="684" y2="176"/>
+      <circle cx="70" cy="176" r="7" fill="#16304D"/>
+      <circle cx="300" cy="176" r="7" fill="#16304D"/>
+      <circle cx="470" cy="176" r="7" fill="#16304D"/>
+      <circle cx="628" cy="176" r="7" fill="#A8792C"/>
+      <text class="lbl" x="52" y="162">Day 2</text><text class="sm" x="34" y="198">Still in shock</text>
+      <text class="lbl" x="276" y="162">Week 6</text><text class="sm" x="256" y="198">Pain persists</text>
+      <text class="lbl" x="444" y="162">Week 10</text><text class="sm" x="424" y="198">MRI, physio</text>
+      <text class="lbl" x="596" y="162">Month 6</text><text class="sm" x="566" y="198">True cost known</text>
+
+      <path d="M190 68 L190 118 L628 118 L628 166" fill="none" stroke="#A8792C" stroke-width="1.6" stroke-dasharray="4 4"/>
+      <text class="sm" x="330" y="112" fill="#8A6318">the gap they are betting on</text>
+    </svg>
   </div>
 </header>
 

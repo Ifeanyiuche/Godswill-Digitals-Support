@@ -17,8 +17,23 @@
   --brand:#3A5340; --brand-2:#26382B; --accent:#B4762A; --accent-soft:#FAF0DF;
   --warn:#96382A; --warn-soft:#FBF0ED; --warn-line:#E8CFC8;
 }
+/* The Quiet Lead: soft, rounded, generous, warm. Centred hero, friendly rather than clinical */
+body{font-size:18.5px}
+header{text-align:center;padding:52px 0 26px}
 .brand{letter-spacing:.17em}
-.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.kicker{border-radius:99px;background:#fff;border-color:var(--line)}
+h1{max-width:17ch;margin-left:auto;margin-right:auto;font-size:clamp(2rem,5.2vw,3.05rem)}
+.sub{font-size:1.13rem}
+.card,.step,.vsbox,.stack,.cost,.offerbox,.guarantee{border-radius:22px}
+.step{padding:26px 24px}
+.offerbox{border-radius:26px}
+.cta{border-radius:99px;padding:18px 42px}
+.pull{border-radius:0;padding:40px 0}
+.seal{border-radius:50%}
+.hero-art{margin:30px auto 0;max-width:560px}
+h2{margin-left:auto;margin-right:auto}
+.band .wrap > h2, .band .wrap > p{text-align:center;margin-left:auto;margin-right:auto}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;text-align:left}
 .vsbox{border-radius:14px;padding:22px 24px;border:1px solid var(--line)}
 .vsbox.no{background:var(--warn-soft);border-color:var(--warn-line)}
 .vsbox.yes{background:var(--surface)}
@@ -42,6 +57,48 @@
     <div class="kicker">For dogs who pull, lunge or walk you rather than with you</div>
     <h1>Your dog is not being stubborn. <em>He genuinely does not know what you are asking him to do.</em></h1>
     <p class="sub">Pulling is not defiance and it is not dominance. It is the most reliable thing that has ever worked for him, repeated a few thousand times.</p>
+
+    <svg class="hero-art" viewBox="0 0 560 220" role="img" aria-label="A tight lead pulling ahead compared with a relaxed lead walking alongside">
+      <defs>
+        <style>
+          .grd{stroke:#E5DBC9;stroke-width:1.6}
+          .ttl{font:600 12px Inter,sans-serif}
+          .sm{font:400 10.5px Inter,sans-serif;fill:#776E61}
+        </style>
+      </defs>
+
+      <!-- left: tight lead -->
+      <rect x="0" y="0" width="272" height="220" rx="20" fill="#FBF0ED"/>
+      <text class="ttl" x="22" y="30" fill="#96382A">Before</text>
+      <line class="grd" x1="22" y1="176" x2="250" y2="176" stroke="#E8CFC8"/>
+      <!-- person -->
+      <circle cx="58" cy="96" r="12" fill="#96382A" opacity=".85"/>
+      <path d="M58 110 L58 148 M58 148 L46 176 M58 148 L70 176 M58 120 L82 112" stroke="#96382A" stroke-width="4.5" stroke-linecap="round" fill="none" opacity=".85"/>
+      <!-- taut lead -->
+      <line x1="82" y1="112" x2="176" y2="132" stroke="#96382A" stroke-width="3"/>
+      <!-- dog pulling forward, leaning -->
+      <ellipse cx="206" cy="146" rx="34" ry="18" fill="#B98A5E"/>
+      <circle cx="238" cy="130" r="14" fill="#B98A5E"/>
+      <path d="M246 120 l10 -12 l2 14 z" fill="#A2764C"/>
+      <path d="M176 152 l-16 10" stroke="#B98A5E" stroke-width="5" stroke-linecap="round"/>
+      <path d="M186 160 l-4 16 M218 160 l-2 16 M232 158 l4 18" stroke="#B98A5E" stroke-width="5" stroke-linecap="round"/>
+      <text class="sm" x="22" y="200">Lead tight. He gets there first, every time.</text>
+
+      <!-- right: loose lead -->
+      <rect x="288" y="0" width="272" height="220" rx="20" fill="#EDF3EF"/>
+      <text class="ttl" x="310" y="30" fill="#3A5340">After</text>
+      <line class="grd" x1="310" y1="176" x2="538" y2="176" stroke="#CFE0D4"/>
+      <circle cx="356" cy="96" r="12" fill="#3A5340" opacity=".85"/>
+      <path d="M356 110 L356 148 M356 148 L344 176 M356 148 L368 176 M356 120 L378 126" stroke="#3A5340" stroke-width="4.5" stroke-linecap="round" fill="none" opacity=".85"/>
+      <!-- slack lead, gentle curve -->
+      <path d="M378 126 Q404 158 436 134" stroke="#3A5340" stroke-width="3" fill="none"/>
+      <ellipse cx="462" cy="148" rx="32" ry="17" fill="#B98A5E"/>
+      <circle cx="436" cy="134" r="13" fill="#B98A5E"/>
+      <path d="M428 124 l-9 -11 l-2 13 z" fill="#A2764C"/>
+      <path d="M492 146 l16 -6" stroke="#B98A5E" stroke-width="5" stroke-linecap="round"/>
+      <path d="M444 162 l-2 15 M470 162 l2 15 M486 158 l6 17" stroke="#B98A5E" stroke-width="5" stroke-linecap="round"/>
+      <text class="sm" x="310" y="200">Lead slack. Same walk, same dog, no fight.</text>
+    </svg>
   </div>
 </header>
 

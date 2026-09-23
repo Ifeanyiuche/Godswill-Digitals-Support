@@ -17,7 +17,28 @@
   --brand:#232323; --brand-2:#141414; --accent:#C2521F; --accent-soft:#FBEEE7;
   --warn:#8E2F1E; --warn-soft:#FAEFEC; --warn-line:#E7CCC4;
 }
-.brand{letter-spacing:.2em}
+/* Ship One Thing: loud, left aligned, heavy display type, flat blocks, zero softness */
+body{font-size:18.5px}
+header{text-align:left;padding:56px 0 40px}
+.brand{letter-spacing:.24em;text-align:left;font-size:1rem}
+.kicker{border-radius:0;background:var(--ink);color:var(--bg);border-color:var(--ink);letter-spacing:.14em}
+h1{font-size:clamp(2.3rem,7vw,4.1rem);line-height:1.01;letter-spacing:-.04em;max-width:15ch;margin-top:24px;font-weight:700}
+h1 em{color:var(--accent);font-style:normal;display:block}
+.sub{margin-left:0;max-width:54ch;font-size:1.12rem}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.032em;max-width:20ch;font-weight:700}
+.pull{background:var(--accent);margin:44px 0}
+.pull .wrap{text-align:left}
+.pull p{margin:0;max-width:26ch;color:#fff;font-weight:600}
+.pull p em{color:#2A1206}
+.card,.step,.wk,.folder,.stack,.cost,.offerbox{border-radius:0}
+.offerbox{text-align:left;border-left:6px solid var(--accent)}
+.offerbox h2{max-width:22ch}
+.price{justify-content:flex-start}
+.final{text-align:left}
+.final h2{margin-left:0;max-width:18ch}
+.final p{margin-left:0}
+.dfinal{font-size:clamp(2.6rem,7vw,4rem)}
+.hero-art{margin-top:34px;border-top:4px solid var(--ink);border-bottom:4px solid var(--ink);padding:24px 0}
 .weeks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
 .wk{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
 .wk .n{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
@@ -39,6 +60,48 @@
     <div class="kicker">For people who have been meaning to do this for a while</div>
     <h1>You do not have an information problem. <em>You have a finishing problem.</em></h1>
     <p class="sub">You already know more than enough to build something worth paying for. What you have never had is a deadline, an order to work in, and somebody telling you when a thing is good enough to sell.</p>
+
+    <svg class="hero-art" viewBox="0 0 700 170" role="img" aria-label="A downloads folder of unfinished courses against one finished product">
+      <defs>
+        <style>
+          .fil{fill:#fff;stroke:#DEDCD6;stroke-width:1.6}
+          .bar{fill:#E4E2DD}
+          .pc{font:600 10px Inter,sans-serif;fill:#8B8B87}
+          .nm{font:500 11px Inter,sans-serif;fill:#6E6E6E}
+          .hd{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+        </style>
+      </defs>
+
+      <text class="hd" x="4" y="16" fill="#8B8B87">WHAT IS IN THERE NOW</text>
+      <g>
+        <rect class="fil" x="4" y="30" width="176" height="30"/><rect class="bar" x="14" y="50" width="120" height="4" rx="2"/>
+        <rect x="14" y="50" width="22" height="4" rx="2" fill="#C2521F" opacity=".55"/>
+        <text class="nm" x="14" y="45">Course, 2 of 40 watched</text><text class="pc" x="150" y="54">5%</text>
+      </g>
+      <g>
+        <rect class="fil" x="4" y="66" width="176" height="30"/><rect class="bar" x="14" y="86" width="120" height="4" rx="2"/>
+        <rect x="14" y="86" width="8" height="4" rx="2" fill="#C2521F" opacity=".55"/>
+        <text class="nm" x="14" y="81">Template pack, opened once</text><text class="pc" x="150" y="90">2%</text>
+      </g>
+      <g>
+        <rect class="fil" x="4" y="102" width="176" height="30"/><rect class="bar" x="14" y="122" width="120" height="4" rx="2"/>
+        <text class="nm" x="14" y="117">Notion dashboard, imported</text><text class="pc" x="150" y="126">0%</text>
+      </g>
+      <g>
+        <rect class="fil" x="4" y="138" width="176" height="28" opacity=".55"/>
+        <text class="nm" x="14" y="156" opacity=".7">and eleven more</text>
+      </g>
+
+      <path d="M206 88 L262 88" stroke="#C2521F" stroke-width="2.4"/>
+      <path d="M254 80 L266 88 L254 96 Z" fill="#C2521F"/>
+      <text class="hd" x="206" y="70" fill="#C2521F">SIX WEEKS</text>
+
+      <rect x="292" y="30" width="404" height="136" fill="#131313"/>
+      <rect x="292" y="30" width="404" height="6" fill="#C2521F"/>
+      <text x="316" y="76" font-family="Fraunces,Georgia,serif" font-size="30" font-weight="600" fill="#fff">One thing.</text>
+      <text x="316" y="112" font-family="Fraunces,Georgia,serif" font-size="30" font-weight="600" fill="#C2521F">Finished.</text>
+      <text x="316" y="140" font-family="Inter,sans-serif" font-size="12" fill="#9A9A97">Priced, listed, and taking payment.</text>
+    </svg>
   </div>
 </header>
 
