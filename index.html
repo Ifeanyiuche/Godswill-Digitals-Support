@@ -258,6 +258,12 @@ li:before{content:"";position:absolute;left:2px;top:8px;width:10px;height:6px;
 .sites.two{grid-template-columns:repeat(2,1fr)}
 @media(max-width:860px){.sites.two{grid-template-columns:1fr}}
 
+.tcard.wide{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;column-gap:40px;align-items:center}
+.tcard.wide .on,.tcard.wide .pull,.tcard.wide blockquote{grid-column:1}
+.tcard.wide blockquote{margin-bottom:0}
+.tcard.wide .who{grid-column:2;grid-row:1/4;margin:0;padding:0 0 0 34px;border-top:0;border-left:1px solid var(--line);min-width:250px}
+@media(max-width:900px){.tcard.wide{display:flex}.tcard.wide .who{border-left:0;padding:18px 0 0;min-width:0}}
+
 footer{background:var(--ink);color:#6B7280;border-top:1px solid #2A2E35}
 footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem}
 </style>
@@ -617,6 +623,12 @@ footer .wrap{padding-top:24px;padding-bottom:32px;display:flex;justify-content:s
         <p class="pull">&ldquo;He delivers beyond expectations.&rdquo;</p>
         <blockquote>Godswill is an email copywriter and marketer who is deeply committed to his work and excellent at what he does. He delivers beyond expectations.</blockquote>
         <figcaption class="who"><span class="init">EA</span><span><b>Evelyn Ayosam</b><span>Email copywriter and content writer</span><span class="rel mono">Junior colleague</span></span></figcaption>
+      </figure>
+      <figure class="tcard wide">
+        <div class="on mono">From a client</div>
+        <p class="pull">&ldquo;A very good copywriter.&rdquo;</p>
+        <blockquote>Godswill is a good teacher and a very good copywriter.</blockquote>
+        <figcaption class="who"><span class="init">AM</span><span><b>Amy McDaniel</b><span>Administrative assistant</span><span class="rel mono">Client</span></span></figcaption>
       </figure>
     </div>
     <p class="tnote">Wording lightly tidied for grammar, with nothing added. <a href="https://www.linkedin.com/in/godswill-ifeanyichukwu/details/recommendations/" target="_blank" rel="noopener">Read the originals on LinkedIn &rarr;</a></p>
