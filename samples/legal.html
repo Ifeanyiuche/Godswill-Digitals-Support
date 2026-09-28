@@ -46,11 +46,21 @@ h2{max-width:24ch}
 .who h3{margin-bottom:12px}
 </style>
 <style id="dr-format">
-/* Direct response layout: one sentence per paragraph, 16px body, one-line spacing */
-body{font-size:16px}
+/* Direct response layout: one sentence per paragraph, 18px body, centered headlines and subheadings, left-aligned body */
+body{font-size:18px}
 p{margin-bottom:1em}
-.obj p,.kids p,.q p,.faq p,.cost p,.who p,.guar p,.guarantee p,.descent p,.folder p,.ps p,.offerbox p{font-size:16px}
+.obj p,.kids p,.q p,.faq p,.cost p,.who p,.guar p,.guarantee p,.descent p,.folder p,.ps p,.offerbox p,.math p{font-size:18px}
 .obj p+p,.q p+p,.faq p+p,.card p+p,.step p+p,.tl p+p,.wk p+p,.mod p+p,.guar p+p,.guarantee p+p,.who p+p{margin-top:.6em}
+header{text-align:center!important}
+h1,h2,h3,.sub,.deck{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+h1{font-size:clamp(2.3rem,5.8vw,3.4rem)!important}
+h2{font-size:clamp(1.8rem,3.9vw,2.4rem)!important}
+h3{font-size:1.5rem!important}
+.deck{border-left:none!important;padding-left:0!important}
+.band .wrap > p,.sheet > p,.wrap > p{text-align:left}
+.final .wrap > p{text-align:center}
+.offerbox p:not(.tiny):not(.price-note){text-align:left}
+
 </style>
 </head>
 <body>
@@ -198,8 +208,8 @@ p{margin-bottom:1em}
       <p>Florida gives you a limited window to file.</p>
 <p>Evidence gets worse the whole time it is running.</p>
 <p>Dashcam footage is overwritten, witnesses move, and the link between the crash and your symptoms gets harder to prove the longer you wait to be examined.</p>
-      <p style="margin-bottom:0">The cost of a phone call today is twenty minutes.</p>
-<p>The cost of the call you did not make is whatever your injury turns out to need, paid by you.</p>
+      <p>The cost of a phone call today is twenty minutes.</p>
+<p style="margin-bottom:0">The cost of the call you did not make is whatever your injury turns out to need, paid by you.</p>
     </div>
   </div>
 </section>
@@ -248,7 +258,7 @@ p{margin-bottom:1em}
   <div class="wrap">
     <h2>Find out what your claim is worth before you agree to what it is not.</h2>
     <p style="max-width:50ch;margin:0 auto 6px">Twenty minutes on the phone.</p>
-<p>No cost, and no pressure to hire anybody.</p>
+<p style="max-width:50ch;margin:0 auto 6px">No cost, and no pressure to hire anybody.</p>
     <a href="#" class="cta">Request my free case review</a>
   </div>
 </div>
