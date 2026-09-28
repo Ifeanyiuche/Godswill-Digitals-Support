@@ -2,6 +2,20 @@
 // status: "live" shows a Concept piece badge. "client" shows Client work.
 window.SAMPLES = [
   {
+    "title": "Bellbird",
+    "industry": "Sleep and bedding (Australia)",
+    "type": "Long-form sales page",
+    "blurb": "A natural latex mattress sold to Australians in humid coastal cities, built on allergy research from ASCIA, the NEJM and the University of Texas. Every common complaint about latex, from the weight to the smell, is answered and turned into a reason to buy.",
+    "demonstrates": [
+      "Mechanism of the problem: why a warm, damp mattress suits dust mites",
+      "Weaknesses of the product turned into proof points, one by one",
+      "Claims sourced to named health organisations, with a public source list",
+      "Compliance awareness: latex allergy, infant safe sleep and Australian Consumer Law"
+    ],
+    "url": "latex-mattress.html",
+    "status": "live"
+  },
+  {
     "title": "Nocturne",
     "industry": "Supplements",
     "type": "Free plus shipping funnel",
