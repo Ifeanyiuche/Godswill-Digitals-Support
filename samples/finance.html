@@ -1,350 +1,314 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Payoff Order, get out of debt years earlier without earning more</title>
-<meta name="description" content="Your minimum payment shrinks every time your balance does, and the shrinking keeps you in debt for decades. A payoff system that holds your payment steady and shows you the order to clear your debts in.">
+<meta name="description" content="Paying every bill on time and the total has barely moved? The reason is printed on your statement. Here is what it means and what to do about it.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="sample.css">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#FBFAF7; --bg-2:#F0F2EE; --line:#E1E4DD;
-  --ink:#161A17; --ink-2:#414841; --ink-3:#6C746C;
-  --brand:#1F4032; --brand-2:#132A20; --accent:#C08A1E; --accent-soft:#FAF2DF;
-  --warn:#94331F; --warn-soft:#FBF0EC; --warn-line:#E8CEC5;
-}
-/* The Payoff Order: statement-like. Left aligned, tabular figures, ledger rules, restrained */
-body{font-size:17.5px}
-header{text-align:left;padding:48px 0 32px}
-.brand{letter-spacing:.18em;text-align:left}
-.kicker{border-radius:4px;letter-spacing:.13em}
-h1{max-width:20ch;margin-top:18px}
-.sub{margin-left:0;max-width:58ch}
-h2{max-width:24ch}
-.card,.step,.stack,.cost,.offerbox,.chart{border-radius:6px}
-.offerbox{text-align:left}
-.offerbox h2{max-width:24ch}
-.price{justify-content:flex-start}
-.pull .wrap{text-align:left}
-.pull p{margin:0;max-width:30ch}
-.final{text-align:left}
-.final h2,.final p{margin-left:0}
-.srow span:last-child,.stotal span:last-child,.dfinal,.price .big{
-  font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
-.srow{border-bottom:1px solid var(--line)}
-.hero-art{margin-top:28px;border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:20px}
-.chart{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px 22px;margin-top:22px}
-.chart .cap{font-size:.85rem;color:var(--ink-3);text-align:center;margin-top:12px}
-.bars{display:flex;flex-direction:column;gap:14px;margin-top:6px}
-.bar{display:grid;grid-template-columns:118px 1fr;gap:14px;align-items:center}
-.bar .lbl{font-size:.86rem;color:var(--ink-2);text-align:right}
-.bar .track{background:var(--bg-2);border-radius:7px;height:34px;position:relative;overflow:hidden}
-.bar .fill{height:100%;border-radius:7px;display:flex;align-items:center;padding:0 12px;
-  font-size:.85rem;font-weight:600;color:#fff;white-space:nowrap}
-.f-bad{background:var(--warn)}
-.f-ok{background:#7E8A64}
-.f-good{background:var(--brand)}
-</style>
-<style id="dr-format">
-/* Direct response layout: one sentence per paragraph, 18px body, centered headlines and subheadings, left-aligned body */
-body{font-size:18px}
-p{margin-bottom:1em}
-.obj p,.kids p,.q p,.faq p,.cost p,.who p,.guar p,.guarantee p,.descent p,.folder p,.ps p,.offerbox p,.math p{font-size:18px}
-.obj p+p,.q p+p,.faq p+p,.card p+p,.step p+p,.tl p+p,.wk p+p,.mod p+p,.guar p+p,.guarantee p+p,.who p+p{margin-top:.6em}
-header{text-align:center!important}
-h1,h2,h3,.sub,.deck{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
-h1{font-size:clamp(2.3rem,5.8vw,3.4rem)!important}
-h2{font-size:clamp(1.8rem,3.9vw,2.4rem)!important}
-h3{font-size:1.5rem!important}
-.deck{border-left:none!important;padding-left:0!important}
-.band .wrap > p,.sheet > p,.wrap > p{text-align:left}
-.final .wrap > p{text-align:center}
-.offerbox p:not(.tiny):not(.price-note){text-align:left}
-h1{max-width:24ch!important}
+/* The Payoff Order: a statement and a ledger. Account numbers, a warning box, graph paper, an invoice and a refund cheque. */
+:root{--bg:#F5F6F2;--paper:#FFFFFF;--ink:#13233B;--ink-2:#44526A;--ink-3:#7D8799;--green:#1F7A52;--green-2:#E7F3EC;--red:#B3261E;--red-2:#FBECEA;--grid:#DCE7DF;--line:#D9DEE6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Work Sans',system-ui,sans-serif;font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.mono{font-family:'DM Mono',monospace}
+a{color:var(--green)}
+p{margin:0 0 1em}
+h1,h2,h3{font-weight:800;text-align:center;letter-spacing:-.025em;color:var(--ink)}
+h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.1;max-width:22ch;margin:0 auto}
+h1 em{font-style:normal;color:var(--red)}
+h2{font-size:clamp(1.7rem,3.8vw,2.4rem);line-height:1.15;max-width:24ch;margin:0 auto 24px}
+h3{font-size:1.35rem;line-height:1.25;margin-bottom:10px}
+.col{max-width:680px;margin:0 auto;padding:0 24px}
+.wide{max-width:1000px;margin:0 auto;padding:0 24px}
+.cap{font-size:.78rem;color:var(--ink-3);text-align:center}
+.tag{font-family:'DM Mono',monospace;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);text-align:center;margin-bottom:12px}
+/* statement header */
+.acct{background:var(--ink);color:#C8D2E3;font-family:'DM Mono',monospace;font-size:.76rem;letter-spacing:.06em}
+.acct .wide{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}
+.acct b{color:#fff;font-weight:500}
+.brandrow{display:flex;justify-content:space-between;align-items:center;padding-top:22px;padding-bottom:22px}
+.logo{font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+.logo span{display:inline-block;background:var(--green);color:#fff;border-radius:4px;padding:0 6px;margin-right:6px;font-family:'DM Mono',monospace;font-weight:500}
+.brandrow .r{font-size:.8rem;color:var(--ink-3)}
+.hero{padding:40px 0 30px}
+.hero .sub{text-align:center;color:var(--ink-2);font-size:1.12rem;max-width:52ch;margin:24px auto 0}
+/* the warning box */
+.stmt{max-width:760px;margin:40px auto 0;background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 50px #13233B14;padding:22px 24px 18px}
+.stmt .top{display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:.76rem;color:var(--ink-3);border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px;gap:14px;flex-wrap:wrap}
+.stmt .top b{color:var(--ink);font-weight:500}
+.warn{border:2px solid var(--ink)}
+.warn .wh{background:var(--ink);color:#fff;font-weight:700;font-size:.9rem;padding:6px 12px;letter-spacing:.02em}
+.warn p.w1{font-size:.92rem;padding:10px 12px 0;margin:0}
+.warn table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
+.warn th{text-align:left;font-weight:600;background:#EEF1F5;padding:8px 12px;border-top:1px solid var(--ink);font-size:.82rem}
+.warn td{padding:10px 12px;border-top:1px solid var(--line);font-family:'DM Mono',monospace}
+.warn tr.bad td{background:var(--red-2)}
+.warn tr.good td{background:var(--green-2)}
+.stmt .cap{margin-top:10px}
+/* lead */
+.lead{padding:60px 0 10px}
+.lead .big{font-size:1.5rem;font-weight:700;line-height:1.35;letter-spacing:-.01em}
+/* graph paper section */
+.graph{background-color:#FBFDFB;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;border-top:1px solid var(--grid);border-bottom:1px solid var(--grid);padding:64px 0}
+.graph .col{background:#FBFDFBE6;padding-top:10px;padding-bottom:10px}
+.pull{padding:50px 24px;text-align:center}
+.pull p{font-weight:800;font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.25;letter-spacing:-.02em;max-width:26ch;margin:0 auto}
+.pull p span{color:var(--green)}
+/* timeline bars */
+.years{max-width:860px;margin:30px auto;padding:0 24px}
+.yr{display:grid;grid-template-columns:210px 1fr;gap:16px;align-items:center;margin-bottom:16px}
+.yr .l{font-size:.92rem;font-weight:600;text-align:right}
+.yr .track{height:40px;background:#fff;border:1px solid var(--line);position:relative}
+.yr .fill{position:absolute;left:0;top:0;bottom:0;display:flex;align-items:center;padding:0 12px;font-family:'DM Mono',monospace;font-size:.8rem;color:#fff;white-space:nowrap}
+.yr .v{position:absolute;top:50%;transform:translateY(-50%);font-family:'DM Mono',monospace;font-size:.8rem;color:var(--ink);white-space:nowrap}
+.f-bad{background:var(--red)}.f-ok{background:#C98A2B}.f-good{background:var(--green)}
+.axis{display:grid;grid-template-columns:210px 1fr;gap:16px;font-family:'DM Mono',monospace;font-size:.72rem;color:var(--ink-3)}
+.axis div:last-child{display:flex;justify-content:space-between}
+@media(max-width:640px){.yr,.axis{grid-template-columns:1fr}.yr .l{text-align:left}.axis div:first-child{display:none}}
+section{padding:64px 0}
+/* tools as files */
+.files{max-width:900px;margin:30px auto 0;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.file{background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--green);padding:22px 22px 14px;position:relative}
+.file .ext{display:block;text-align:center;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.1em;color:var(--ink-3);margin-bottom:6px}
+.file h3{font-size:1.2rem}
+.file p{font-size:1rem;color:var(--ink-2)}
+.file .why{border-top:1px dashed var(--line);padding-top:10px;font-size:.95rem;color:var(--ink)}
+.file .why b{color:var(--green)}
+@media(max-width:760px){.files{grid-template-columns:1fr}}
+/* invoice */
+.invoice{max-width:560px;margin:34px auto 0;background:var(--paper);border:1px solid var(--line);padding:28px 28px 22px;font-family:'DM Mono',monospace;font-size:.92rem;box-shadow:0 18px 40px #13233B12}
+.invoice .ih{display:flex;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:10px;font-size:.78rem;letter-spacing:.1em}
+.li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dotted var(--line)}
+.li s{color:var(--ink-3)}
+.li.sub{font-weight:500}
+.li.due{border-bottom:none;border-top:2px solid var(--ink);margin-top:8px;padding-top:12px;font-size:1.25rem;color:var(--green)}
+.drop{text-align:center;margin:24px 0 6px;font-family:'DM Mono',monospace;color:var(--ink-3)}
+.drop s{margin:0 10px}
+/* offer */
+.offer{background:var(--green-2);border-top:1px solid #CFE6D8;border-bottom:1px solid #CFE6D8}
+.buy{display:flex;gap:26px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:18px}
+.price{font-size:3rem;font-weight:800;letter-spacing:-.03em;color:var(--green);line-height:1}
+.price s{font-size:1.1rem;color:var(--ink-3);font-weight:500;margin-left:10px}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:16px 30px;border-radius:6px;font-size:1rem}
+.btn:hover{background:#0A1628}
+.fine{font-size:.82rem;color:var(--ink-3);text-align:center;margin-top:10px}
+/* cheque */
+.cheque{max-width:720px;margin:30px auto 0;background:linear-gradient(135deg,#F1F7F2,#E3EFE7);border:1px solid #B9D3C2;border-radius:6px;padding:24px 28px;font-family:'DM Mono',monospace;font-size:.86rem;position:relative}
+.cheque .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.cheque .pay{border-bottom:1px solid #8FB39C;padding:14px 0 4px;margin-top:10px;font-family:'Work Sans',sans-serif;font-size:1.05rem}
+.cheque .amt{border:1px solid #8FB39C;background:#fff;padding:4px 12px;font-size:1rem}
+.cheque .memo{margin-top:16px;color:var(--ink-2)}
+.cheque .micr{margin-top:14px;letter-spacing:.2em;color:var(--ink-3);font-size:.78rem}
+/* faq */
+.faq div{border-top:1px solid var(--line);padding:18px 0}
+.faq div:last-child{border-bottom:1px solid var(--line)}
+.faq h3{font-size:1.15rem}
+.faq p{color:var(--ink-2);font-size:1rem}
+.final{padding:80px 0;text-align:center;background:var(--ink);color:#C8D2E3}
+.final h2{color:#fff}
+.final p{text-align:center}
+.final .btn{background:var(--green)}
+footer{padding:34px 0 50px;font-size:.84rem;color:var(--ink-3)}
+footer p{margin-bottom:10px}
+footer ol{margin:6px 0 0 18px}
+@media(max-width:600px){.brandrow .r{display:none}}
+/* body copy at 18px everywhere */
+.file p,.faq p,.file .why{font-size:1.125rem}
 </style>
 </head>
 <body>
 
-<div class="topbar">Instant access. <b>Works with any income.</b> No refinancing, no consolidation loan.</div>
+<div class="acct"><div class="wide"><span>ACCOUNT: <b>ANY INCOME</b></span><span>INSTANT ACCESS</span><span>NO REFINANCING · NO CONSOLIDATION LOAN</span></div></div>
+<div class="wide brandrow"><span class="logo"><span>$</span>The Payoff Order</span><span class="r">For people carrying more than one balance</span></div>
 
-<header>
-  <div class="wrap">
-    <div class="brand">The Payoff <span>Order</span></div>
-    <div class="kicker">For people carrying more than one balance</div>
+<header class="hero">
+  <div class="col">
+    <div class="tag">Your monthly statement, translated</div>
     <h1>You pay every bill on time, every month, and the total has barely moved in two years. <em>The reason is printed on your statement, in a small box most people never read.</em></h1>
     <p class="sub">That box is a legally required warning that your minimum payment shrinks every time your balance does. Here is what it is trying to tell you, and what to do about it.</p>
-
-    <svg class="hero-art" viewBox="0 0 700 176" role="img" aria-label="Where a minimum payment goes on a $17,000 balance at 22 percent, shrinking over six years">
-      <defs>
-        <style>
-          .hd{font:600 10px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;fill:#6C746C}
-          .vl{font:600 12px Inter,sans-serif;fill:#fff}
-          .sm{font:400 10.5px Inter,sans-serif;fill:#6C746C}
-          .yr{font:600 11px Inter,sans-serif;fill:#414841}
-        </style>
-      </defs>
-
-      <text class="hd" x="4" y="14">WHERE A MINIMUM PAYMENT GOES ON $17,000 AT 22%</text>
-
-      <text class="yr" x="4" y="48">Month 1</text>
-      <rect x="66" y="34" width="378" height="22" rx="3" fill="#94331F"/>
-      <text class="vl" x="78" y="49">Interest  $312</text>
-      <rect x="448" y="34" width="206" height="22" rx="3" fill="#1F4032"/>
-      <text class="vl" x="460" y="49">Balance $170</text>
-
-      <text class="yr" x="4" y="86">Year 3</text>
-      <rect x="66" y="72" width="265" height="22" rx="3" fill="#94331F" opacity=".88"/>
-      <text class="vl" x="78" y="87">Interest  $219</text>
-      <rect x="335" y="72" width="145" height="22" rx="3" fill="#1F4032"/>
-      <text class="vl" x="347" y="87">Bal. $120</text>
-
-      <text class="yr" x="4" y="124">Year 6</text>
-      <rect x="66" y="110" width="185" height="22" rx="3" fill="#94331F" opacity=".76"/>
-      <text class="vl" x="78" y="125">Interest  $153</text>
-      <rect x="255" y="110" width="101" height="22" rx="3" fill="#1F4032"/>
-      <text class="vl" x="262" y="125">$83</text>
-
-      <line x1="66" y1="144" x2="650" y2="144" stroke="#E1E4DD" stroke-width="1.4"/>
-      <text class="sm" x="66" y="164">Six years in, the payment has halved, you still owe $8,245, and two thirds of each payment is interest.</text>
-    </svg>
+  </div>
+  <div class="stmt">
+    <div class="top"><span>CARD A · <b>$9,000.00</b> balance</span><span>APR <b>24.99%</b></span><span>Minimum due <b>$277.43</b></span></div>
+    <div class="warn">
+      <div class="wh">Minimum Payment Warning</div>
+      <p class="w1">If you make only the minimum payment each period, you will pay more in interest and it will take you longer to pay off your balance.</p>
+      <table>
+        <tr><th>If you make no additional charges and each month you pay</th><th>You will pay off the balance shown in about</th><th>And you will end up paying an estimated total of</th></tr>
+        <tr class="bad"><td>Only the minimum</td><td>25 years</td><td>$26,608</td></tr>
+        <tr class="good"><td>$358</td><td>3 years</td><td>$12,880 (a saving of $13,727)</td></tr>
+      </table>
+    </div>
+    <p class="cap">Illustration in the format the CARD Act requires, based on the first card in our worked example. Minimum modeled at 1% of the balance plus interest.</p>
   </div>
 </header>
 
-<div class="rule"></div>
-
-<section>
-  <div class="wrap">
-    <p>Minimum payments are designed to be affordable.</p>
-<p>That is exactly what makes them so expensive.</p>
-<p>The number on your statement was calculated to be comfortable enough that you keep paying it for a very long time.</p>
-<p>Nobody is hiding this.</p>
-<p>It is just never explained to you.</p>
+<article class="lead">
+  <div class="col">
+    <p class="big">Minimum payments are designed to be affordable, and that is exactly what makes them so expensive.</p>
+    <p>The number on your statement was calculated to be comfortable enough that you keep paying it for a very long time.</p>
+    <p>Nobody is hiding it.</p>
+    <p>The warning is right there in the box above.</p>
+    <p>It is just never explained to you.</p>
     <p>You are not bad with money.</p>
     <p>You pay what is due, every month, on time.</p>
-<p>You have not missed anything.</p>
-<p>You do the sensible thing and put a little extra toward whichever balance is bothering you most that week.</p>
+    <p>You have not missed anything.</p>
+    <p>You even do the sensible thing and put a little extra toward whichever balance is bothering you most that week.</p>
     <p>And the total has barely moved in two years.</p>
     <p>None of that points to a discipline problem.</p>
-<p>The cause is arithmetic, and it comes down to something most people were never taught.</p>
-<p><strong>Your minimum is recalculated every month from your balance, so each time the balance drops, the payment drops with it, and the finish line slides further away.</strong></p>
-<p>How much you pay each month, and the order you pay it in, change what your debt costs you, in the example below by more than the price of a decent used car.</p>
-<p>Your income stays the same, and the monthly payment stays within $61 of what your first statement already asks for.</p>
-<p>Years come off the end anyway.</p>
+    <p>The cause is arithmetic, and it comes down to something most people were never taught.</p>
+    <p>Your minimum is recalculated every month from your balance, so each time the balance drops, the payment drops with it, and the finish line slides further away.</p>
+    <p>How much you pay each month, and the order you pay it in, change what your debt costs you, in the example below by more than the price of a decent used car.</p>
+    <p>Your income stays the same, and the monthly payment stays within $61 of what your first statement already asks for.</p>
+    <p>Years come off the end anyway.</p>
   </div>
-</section>
+</article>
 
-<div class="pull">
-  <div class="wrap">
-    <p>Hold the payment steady, point it in the right order, <em>and twenty years come off the end.</em></p>
-  </div>
-</div>
+<div class="pull"><p>Hold the payment steady, point it in the right order, <span>and twenty years come off the end.</span></p></div>
 
-<section class="band">
-  <div class="wrap">
+<section class="graph">
+  <div class="col">
+    <div class="tag">The math nobody walks you through</div>
     <h2>Why the total refuses to move</h2>
-    <p>Interest is charged on the balance you carry, so the first portion of every payment goes to the lender before a penny touches what you owe.</p>
-<p>The Federal Reserve puts the average rate on cards that charge interest at about twenty two percent, and at that rate a large share of every minimum payment is rent on money you already spent.</p>
+    <p>Interest is charged on the balance you carry, so the first slice of every payment goes to the lender before a penny touches what you owe.</p>
+    <p>The Federal Reserve puts the average rate on cards that charge interest at about twenty two percent.</p>
+    <p>At that rate, a large share of every minimum payment is rent on money you already spent.</p>
     <p>Now watch what the minimum does as you pay it.</p>
-<p>Most issuers set it at around one percent of the balance plus that month's interest, so as the balance falls, the minimum falls too.</p>
-<p>It feels like progress.</p>
-<p>In practice the payment shrinks almost as fast as the debt, and the last few thousand dollars take years.</p>
-<p>Spread any extra money across four balances, and something else goes wrong.</p>
-<p>You pay a little extra into all of them, which feels responsible and productive, and it means no single balance clears quickly.</p>
-<p>Nothing gets closed early, so no payment gets freed up to attack the next one.</p>
-<p>You stay busy and you stay still.</p>
-
-    <div class="chart">
-      <div class="bars">
-        <div class="bar">
-          <div class="lbl">Minimums only</div>
-          <div class="track"><div class="fill f-bad" style="width:100%">About 25 years, $40,800 interest</div></div>
-        </div>
-        <div class="bar">
-          <div class="lbl">$750 fixed, spread evenly</div>
-          <div class="track"><div class="fill f-ok" style="width:30%">About 4 years, $13,200</div></div>
-        </div>
-        <div class="bar">
-          <div class="lbl">$750 fixed, in order</div>
-          <div class="track"><div class="fill f-good" style="width:28%">About 4 years, $12,100</div></div>
-        </div>
-      </div>
-      <p class="cap">Worked example: $24,000 across three cards at 22% to 27.5% and a personal loan at 11.9%. Minimums modeled at 1% of the balance plus interest. The lower two bars pay a fixed $750 a month, which is $61 more than the first month's minimums.</p>
-    </div>
-
-    <p style="margin-top:20px">Look at the gap between the first bar and the other two.</p>
-<p>The only change is refusing to let the payment shrink, at a cost of $61 a month more than the first statement asked for.</p>
-<p>The order then decides the last stretch.</p>
-<p>The money going out of the account is identical in the lower two bars.</p>
-<p>The only thing that changed between them is which balance receives the extra, and in what sequence.</p>
-<p>Paying the highest rate first saves the most money, and research from Northwestern's Kellogg School of Management found that people who clear their smallest balances first are more likely to finish.</p>
-<p>The calculator shows you both routes.</p>
+    <p>Most issuers set it at around one percent of the balance plus that month's interest, so as the balance falls, the minimum falls too.</p>
+    <p>It feels like progress.</p>
+    <p>In practice, the payment shrinks almost as fast as the debt, and the last few thousand dollars take years.</p>
+    <p>Spread any extra money across four balances, and a second problem appears.</p>
+    <p>You pay a little extra into all of them, which feels responsible and productive, and it means no single balance clears quickly.</p>
+    <p>Nothing gets closed early, so no payment gets freed up to attack the next one.</p>
+    <p>You stay busy and you stay still.</p>
+  </div>
+  <div class="years">
+    <div class="yr"><div class="l">Minimums only</div><div class="track"><div class="fill f-bad" style="width:100%">About 25 years · $40,800 interest</div></div></div>
+    <div class="yr"><div class="l">$750 fixed, spread evenly</div><div class="track"><div class="fill f-ok" style="width:17%"></div><span class="v" style="left:calc(17% + 10px)">About 4 years · $13,200</span></div></div>
+    <div class="yr"><div class="l">$750 fixed, in order</div><div class="track"><div class="fill f-good" style="width:16.5%"></div><span class="v" style="left:calc(16.5% + 10px)">About 4 years · $12,100</span></div></div>
+    <div class="axis"><div></div><div><span>0</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25 years</span></div></div>
+    <p class="cap" style="margin-top:14px">Worked example: $24,000 across three cards at 22% to 27.5% and a personal loan at 11.9%. Minimums modeled at 1% of the balance plus interest. The lower two bars pay a fixed $750 a month, which is $61 more than the first month's minimums.</p>
+  </div>
+  <div class="col">
+    <p>Look at the gap between the top bar and the other two.</p>
+    <p>The only change is refusing to let the payment shrink, at a cost of $61 a month more than the first statement asked for.</p>
+    <p>The order then decides the last stretch.</p>
+    <p>The money going out of the account is identical in the lower two bars.</p>
+    <p>The only thing that changed between them is which balance receives the extra, and in what sequence.</p>
+    <p>Paying the highest rate first saves the most money, and research from Northwestern's Kellogg School of Management found that people who clear their smallest balances first are more likely to finish.</p>
+    <p>So which route should you take?</p>
+    <p>The calculator shows you both, with the difference in months and dollars, and lets you pick.</p>
   </div>
 </section>
 
 <section>
-  <div class="wrap">
-    <h2>What you get</h2>
+  <div class="col">
+    <div class="tag">Four files</div>
+    <h2>What arrives in your inbox</h2>
     <p>You will not find a course about budgeting here, or a section telling you to give up coffee.</p>
-<p>It is a system for working out your own payoff order, then holding to it.</p>
-
-    <div class="two">
-      <div class="card">
-        <h4>The Payoff Calculator</h4>
-        <div class="meta">Spreadsheet, works in Excel or Google Sheets</div>
-        <p>Enter your balances, rates and minimums.</p>
-<p>It returns the exact order to clear them in, your debt free date, and what the order saves you against what you are doing now.</p>
-        <span class="alone"><b>Why it matters:</b> most people are shocked by the date. Seeing it move when you change one input is what makes the plan stick.</span>
-      </div>
-      <div class="card">
-        <h4>The Snowball Schedule</h4>
-        <div class="meta">Printable, one page</div>
-        <p>A month by month plan showing exactly what to pay where.</p>
-<p>When one balance clears, its payment rolls into the next one automatically, so the plan accelerates on its own.</p>
-        <span class="alone"><b>Why it matters:</b> it removes the monthly decision. You are not choosing where the extra goes ever again.</span>
-      </div>
-      <div class="card">
-        <h4>The Rate Reduction Scripts</h4>
-        <div class="meta">Word for word, four scripts</div>
-        <p>What to say when you phone a card issuer to ask for a lower rate, including what to do when the first person says no.</p>
-<p>In a 2025 LendingTree survey, 84 percent of cardholders who asked for a lower rate got one, and the average cut was 6.3 percentage points.</p>
-        <span class="alone"><b>Why it matters:</b> one successful call can take a year off the plan, and it costs you fifteen minutes.</span>
-      </div>
-      <div class="card">
-        <h4>The Order of Operations Guide</h4>
-        <div class="meta">Short read, forty pages</div>
-        <p>Where an emergency fund fits, when to pause retirement contributions and when not to, how to handle a car loan against a card, and which debts to leave alone entirely.</p>
-        <span class="alone"><b>Why it matters:</b> the common mistakes here cost more than the interest does. Clearing a low rate car loan before a high rate card is the usual one.</span>
-      </div>
-    </div>
+    <p>You get a system for working out your own payoff order, then sticking to it.</p>
+  </div>
+  <div class="files">
+    <div class="file"><span class="ext">.XLSX</span><h3>The Payoff Calculator</h3><p>It works in Excel or Google Sheets.</p><p>Enter your balances, rates and minimums, and it returns the exact order to clear them in, your debt-free date, and what that order saves you against what you are doing now.</p><p class="why"><b>Why it matters:</b> most people are shocked by the date, and watching it move when you change one number is what makes the plan stick.</p></div>
+    <div class="file"><span class="ext">.PDF · 1 PAGE</span><h3>The Snowball Schedule</h3><p>A printable month-by-month plan showing exactly what to pay where.</p><p>When one balance clears, its payment rolls into the next one, so the plan speeds up on its own.</p><p class="why"><b>Why it matters:</b> it removes the monthly decision, so you never have to choose where the extra goes again.</p></div>
+    <div class="file"><span class="ext">.PDF · 4 SCRIPTS</span><h3>The Rate Reduction Scripts</h3><p>Word-for-word scripts for calling a card issuer to ask for a lower rate, including what to do when the first person says no.</p><p>In a 2025 LendingTree survey, 84 percent of cardholders who asked for a lower rate got one, and the average cut was 6.3 percentage points.</p><p class="why"><b>Why it matters:</b> one successful call can take a year off the plan, and it costs you fifteen minutes.</p></div>
+    <div class="file"><span class="ext">.PDF · 40 PAGES</span><h3>The Order of Operations Guide</h3><p>It covers where an emergency fund fits, when to pause retirement contributions and when not to, how to handle a car loan against a card, and which debts to leave alone entirely.</p><p class="why"><b>Why it matters:</b> the common mistakes here cost more than the interest does, and clearing a low-rate car loan before a high-rate card is the usual one.</p></div>
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap">
+<section style="padding-top:10px">
+  <div class="col">
+    <div class="tag">The invoice</div>
     <h2>What it costs, and what it is worth</h2>
     <p>A financial planner will build you a debt payoff plan.</p>
-<p>The going rate for that in the United States is somewhere between eight hundred and two thousand dollars, and most of them will hand you roughly what is inside this system.</p>
-
-    <div class="stack">
-      <div class="srow"><span>The Payoff Calculator</span><span>$297</span></div>
-      <div class="srow"><span>The Snowball Schedule</span><span>$197</span></div>
-      <div class="srow"><span>The Rate Reduction Scripts</span><span>$297</span></div>
-      <div class="srow"><span>The Order of Operations Guide</span><span>$206</span></div>
-      <div class="stotal"><span>Total value</span><span>$997</span></div>
-    </div>
-
-    <div class="descent">
-      <p>You are not paying $997 today.</p>
-      <p>You are not paying $499 either, which is roughly what a single planning session costs.</p>
-      <div class="dline">$150</div>
-      <div class="dline">$50</div>
-      <p style="margin-top:14px">The price is <strong>$39</strong>, and there is a straightforward reason for it rather than a sale.</p>
-      <p>The Payoff Order is a digital product with no delivery cost, no support staff and no appointments to schedule.</p>
-<p>Once it was built, the cost of one more person using it is nothing.</p>
-<p>At about twenty two percent, $24,000 of card debt charges roughly $14 in interest every single day.</p>
-<p>So $39 is less than three days of the interest you are already paying, and you only pay it once.</p>
-<p>We priced it where somebody carrying debt can actually pay it without adding to the problem, because a debt payoff plan that puts you further into debt is a ridiculous thing to sell.</p>
-      <div class="dfinal">$39 once</div>
-      <p style="margin-top:12px">Set against the roughly $28,700 in interest the worked example above avoided, you can do the arithmetic faster than I can write it.</p>
-<p>For every dollar you spend on the plan, the worked example keeps more than seven hundred dollars of interest in your pocket.</p>
-    </div>
-
-    <div class="cost">
-      <h3>What waiting another year costs</h3>
-      <p>Interest does not pause while you think about it.</p>
-<p>In the worked example, a year of minimum payments costs $7,800 and reduces the balance by only $2,700.</p>
-<p>Starting the fixed plan a year from now instead of today adds about $1,600 in interest and three more months before the last balance clears.</p>
-      <p>The plan gets more expensive the longer it goes unmade.</p>
-<p style="margin-bottom:0">So the plan deserves a Tuesday evening this week rather than a Sunday next year.</p>
-    </div>
+    <p>The going rate for that in the United States is somewhere between eight hundred and two thousand dollars, and most planners will hand you roughly what is inside this system.</p>
+  </div>
+  <div class="invoice">
+    <div class="ih"><span>INVOICE #0039</span><span>THE PAYOFF ORDER</span></div>
+    <div class="li"><span>The Payoff Calculator</span><s>$297</s></div>
+    <div class="li"><span>The Snowball Schedule</span><s>$197</s></div>
+    <div class="li"><span>The Rate Reduction Scripts</span><s>$297</s></div>
+    <div class="li"><span>The Order of Operations Guide</span><s>$206</s></div>
+    <div class="li sub"><span>Total value</span><s>$997</s></div>
+    <div class="drop"><s>$997</s><s>$499</s><s>$150</s><s>$50</s></div>
+    <div class="li due"><span>Amount due today</span><span>$39</span></div>
+  </div>
+  <div class="col" style="margin-top:34px">
+    <p>You are not paying $997 today.</p>
+    <p>You are not paying $499 either, which is roughly what a single planning session costs.</p>
+    <p>The price is $39, and there is a plain reason for it that has nothing to do with a sale.</p>
+    <p>The Payoff Order is a digital product with no delivery cost, no support staff and no appointments to schedule.</p>
+    <p>Once it was built, the cost of one more person using it is nothing.</p>
+    <p>At about twenty two percent, $24,000 of card debt charges roughly $14 in interest every single day.</p>
+    <p>So $39 is less than three days of the interest you are already paying, and you only pay it once.</p>
+    <p>We priced it where somebody carrying debt can actually pay it without adding to the problem, because a debt payoff plan that puts you further into debt would be a ridiculous thing to sell.</p>
+    <p>Set it against the roughly $28,700 in interest the worked example avoided, and you can do the arithmetic faster than I can write it.</p>
+    <p>For every dollar you spend on the plan, the worked example keeps more than seven hundred dollars of interest in your pocket.</p>
+    <h3 style="margin-top:36px">What waiting another year costs</h3>
+    <p>Interest does not pause while you think about it.</p>
+    <p>In the worked example, a year of minimum payments costs $7,800 and reduces the balance by only $2,700.</p>
+    <p>Starting the fixed plan a year from now instead of today adds about $1,600 in interest and three more months before the last balance clears.</p>
+    <p>The plan gets more expensive the longer it goes unmade.</p>
+    <p>That is why it deserves a Tuesday evening this week rather than a Sunday next year.</p>
   </div>
 </section>
 
-<div class="offer">
-  <div class="wide">
-    <div class="offerbox">
-      <div class="lab">Instant access</div>
-      <h2>Find your debt free date tonight.</h2>
-      <p>Everything above, delivered the moment you order.</p>
-<p>The calculator gives you your order and your debt free date the first time you enter your numbers.</p>
-<p>Most people can have their payoff order worked out within half an hour of opening the calculator.</p>
-<p>You get four tools valued at $997 for less than three days of card interest.</p>
-      <div class="price">
-        <span class="big">$39</span>
-        <span class="was">$997</span>
-      </div>
-      <div class="price-note">One payment. No subscription, no upsell sequence.</div>
-      <a href="#" class="cta">Get The Payoff Order</a>
-      <p class="tiny">Instant download. Sixty day refund, no questions asked.</p>
-    </div>
+<section class="offer" id="buy">
+  <div class="col">
+    <div class="tag">Instant access</div>
+    <h2>Find your debt-free date tonight.</h2>
+    <p>Everything above is delivered the moment you order.</p>
+    <p>The calculator gives you your order and your debt-free date the first time you enter your numbers.</p>
+    <p>Most people can have their payoff order worked out within half an hour of opening it.</p>
+    <p>You get four tools valued at $997 for less than three days of card interest.</p>
+    <div class="buy"><div class="price">$39<s>$997</s></div><a href="#" class="btn">Get The Payoff Order</a></div>
+    <p class="fine">One payment. No subscription and no upsell sequence. Instant download.</p>
   </div>
-</div>
+  <div class="cheque" aria-label="Refund guarantee">
+    <div class="row"><span>THE PAYOFF ORDER · REFUND ACCOUNT</span><span>VALID FOR 60 DAYS</span></div>
+    <div class="row pay"><span>Pay to the order of: <b>You</b></span><span class="amt">$39.00</span></div>
+    <div class="memo">Memo: if the calculator does not show you a faster route, your $39 comes straight back.</div>
+    <div class="micr">0000039 · 0060 · 000001</div>
+  </div>
+  <div class="col" style="margin-top:28px">
+    <h3>Run the numbers, then decide</h3>
+    <p>Open the calculator, put your real balances in, and look at the date it gives you.</p>
+    <p>If it does not show you a faster route than the one you are on, ask for your money back inside sixty days, and you will get it.</p>
+    <p>You keep the files either way, because chasing people for spreadsheets is not a business worth running.</p>
+  </div>
+</section>
 
 <section>
-  <div class="wrap">
-    <div class="guarantee">
-      <div class="seal">60<br>DAYS</div>
-      <div>
-        <h3>Run the numbers, then decide</h3>
-        <p>Open the calculator, put your real balances in, and look at the date it gives you.</p>
-<p>If it does not show you a faster route than the one you are on, ask for your money back inside sixty days and you will get it.</p>
-<p>You keep the files either way, because chasing people for spreadsheets is not a business worth running.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="faq">
-  <div class="wrap">
-    <h2>Fair questions</h2>
-    <div class="q">
-      <h4>Is this a consolidation loan or a credit repair service?</h4>
-      <p>Neither.</p>
-<p>Nobody looks at your credit, nothing is refinanced, and no third party is involved.</p>
-<p>It is a method and a set of tools you use yourself.</p>
-    </div>
-    <div class="q">
-      <h4>Does it work if my income is tight?</h4>
-      <p>Yes, and that is rather the point.</p>
-<p>The method holds your payment at roughly what you already pay today instead of letting it shrink, then sends it in the right order.</p>
-<p>In other words, it changes the order and the shape of payments you already make.</p>
-<p>Extra money speeds it up, but it is not a requirement.</p>
-    </div>
-    <div class="q">
-      <h4>I have student loans. Does that change things?</h4>
-      <p>The guide covers them, including when to leave a federal loan on its existing plan rather than pulling it into the snowball.</p>
-<p>That decision alone is worth more than the price.</p>
-    </div>
-    <div class="q">
-      <h4>Is it just the avalanche method?</h4>
-      <p>It starts there and then adapts, because the mathematically optimal order is not always the one people can stick to.</p>
-<p>The calculator shows both routes and the difference in months and dollars, so you can choose with your eyes open.</p>
-    </div>
+  <div class="col faq">
+    <div class="tag">Fair questions</div>
+    <h2>What people ask before they buy</h2>
+    <div><h3>Is this a consolidation loan or a credit repair service?</h3><p>It is neither.</p><p>Nobody looks at your credit, nothing is refinanced, and no third party is involved.</p><p>It is a method and a set of tools you use yourself.</p></div>
+    <div><h3>Does it work if my income is tight?</h3><p>Yes, and that is rather the point.</p><p>The method holds your payment at roughly what you already pay today instead of letting it shrink, then sends it in the right order.</p><p>In other words, it changes the order and the shape of payments you already make.</p><p>Extra money speeds it up, but you do not need any.</p></div>
+    <div><h3>I have student loans. Does that change things?</h3><p>The guide covers them, including when to leave a federal loan on its existing plan rather than pulling it into the snowball.</p><p>That decision alone is worth more than the price.</p></div>
+    <div><h3>Is it just the avalanche method?</h3><p>It starts there and then adapts, because the mathematically cheapest order is not always the one people can stick to.</p><p>The calculator shows both routes and the difference in months and dollars, so you can choose with your eyes open.</p></div>
   </div>
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="col">
     <h2>The payments are already leaving your account. Point them somewhere better.</h2>
-    <p style="max-width:52ch;margin:0 auto 6px">One steady payment, pointed in the right order, and a finish date you can circle on the calendar.</p>
-    <p style="max-width:52ch;margin:0 auto 6px">You keep the same income and a steady monthly total, and you get a better order and a far earlier finish.</p>
-    <a href="#" class="cta">Get The Payoff Order for $39</a>
+    <p>One steady payment, pointed in the right order, gives you a finish date you can circle on the calendar.</p>
+    <p>You keep the same income and a steady monthly total, and you get a better order and a far earlier finish.</p>
+    <a href="#buy" class="btn">Get The Payoff Order for $39</a>
   </div>
 </div>
 
 <footer>
-  <div class="wrap">
-    <div class="spec">
-      <b>Portfolio sample.</b> The Payoff Order is a concept product created by Godswill Ifeanyichukwu to demonstrate offer construction, value stacking and price justification. It is not for sale and the figures shown are illustrative. <a href="index.html">Back to the sample library</a>
-    </div>
+  <div class="wide">
+    <p><b>Portfolio sample.</b> The Payoff Order is a concept product created by Godswill Ifeanyichukwu to demonstrate offer construction, value stacking and price justification. It is not for sale, and the figures shown are illustrative. See the <a href="emails/payoff-order-flow.html">email sequence</a> and the <a href="emails/google-ads.html#payoff-order">Google search ads</a> that lead here.</p>
     <p>Nothing here is financial advice. Debt decisions depend on your own circumstances and are worth discussing with a qualified adviser.</p>
-    <p>Copy, design and build by Godswill Ifeanyichukwu.</p>
+    <p>Sources: Federal Reserve G.19 Consumer Credit release (average rate on accounts assessed interest); CARD Act minimum payment disclosure requirements (Regulation Z); LendingTree 2025 credit card rate negotiation survey; Gal and McShane, Kellogg School of Management, on paying off small balances first. Payoff figures are our own calculations from the worked example.</p>
+    <p>Copy, design and build by Godswill Ifeanyichukwu. <a href="index.html">Back to the sample library</a></p>
   </div>
 </footer>
-
 </body>
 </html>

@@ -1,277 +1,272 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hale &amp; Roark, free case review after a road accident</title>
-<meta name="description" content="The insurance company called you within two days. There is a reason they moved that fast. Free case review, no fee unless we win.">
+<meta name="description" content="Hurt in a crash, and the insurer called fast? Find out what your claim is worth before you give a recorded statement.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="sample.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#FAFAF8; --bg-2:#EFF1F3; --line:#DDE1E6;
-  --ink:#14181D; --ink-2:#3E464F; --ink-3:#6B7480;
-  --brand:#16304D; --brand-2:#0E2038; --accent:#A8792C; --accent-soft:#F7F0E1;
-  --warn:#8E2F1E; --warn-soft:#FAEFEC; --warn-line:#E7CCC4;
-}
-/* Legal keeps its own identity: left aligned, document-like, hard edges, no rounded cards */
-body{font-size:17.5px}
-header{text-align:left;padding:46px 0 34px;border-bottom:4px double var(--line)}
-header .kicker{border-radius:0;border-left:3px solid var(--accent);background:transparent;
-  padding:4px 0 4px 12px;letter-spacing:.14em}
-h1{max-width:19ch;margin-top:18px}
-.sub{margin-left:0;max-width:58ch}
-.brand{letter-spacing:.2em;text-align:left}
-h2{max-width:24ch}
-.card,.step,.who,.stack,.cost,.offerbox{border-radius:3px}
-.offerbox{text-align:left}
-.offerbox h2{max-width:26ch}
-.pull .wrap{text-align:left}
-.pull p{margin:0;max-width:30ch}
-.final{text-align:left}
-.final h2{margin-left:0}
-.final p{margin-left:0}
-.hero-art{margin-top:30px;border:1px solid var(--line);background:#fff;padding:18px}
-.timeline{margin-top:22px;border-left:2px solid var(--line);padding-left:24px;display:flex;flex-direction:column;gap:20px}
-.tl{position:relative}
-.tl:before{content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;
-  background:var(--accent);border:3px solid var(--bg)}
-.tl .when{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
-.tl h4{font-size:1.02rem;font-weight:600;margin-bottom:5px}
-.tl p{font-size:.94rem;color:var(--ink-2);margin:0}
-.who{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-top:24px}
-.who h3{margin-bottom:12px}
-</style>
-<style id="dr-format">
-/* Direct response layout: one sentence per paragraph, 18px body, centered headlines and subheadings, left-aligned body */
-body{font-size:18px}
-p{margin-bottom:1em}
-.obj p,.kids p,.q p,.faq p,.cost p,.who p,.guar p,.guarantee p,.descent p,.folder p,.ps p,.offerbox p,.math p{font-size:18px}
-.obj p+p,.q p+p,.faq p+p,.card p+p,.step p+p,.tl p+p,.wk p+p,.mod p+p,.guar p+p,.guarantee p+p,.who p+p{margin-top:.6em}
-header{text-align:center!important}
-h1,h2,h3,.sub,.deck{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
-h1{font-size:clamp(2.3rem,5.8vw,3.4rem)!important}
-h2{font-size:clamp(1.8rem,3.9vw,2.4rem)!important}
-h3{font-size:1.5rem!important}
-.deck{border-left:none!important;padding-left:0!important}
-.band .wrap > p,.sheet > p,.wrap > p{text-align:left}
-.final .wrap > p{text-align:center}
-.offerbox p:not(.tiny):not(.price-note){text-align:left}
-h1{max-width:26ch!important}
+/* Hale & Roark: a case file. White paper, ruled margins, section marks, a rubber stamp and a real intake form. */
+:root{--paper:#FCFCF9;--ink:#141B2D;--ink-2:#3E4658;--ink-3:#7A8091;--navy:#1B2A4A;--ox:#8E2A22;--rule:#D8DBE3;--hl:#FFF3B0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#E9EAEE;color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.mono{font-family:'IBM Plex Mono',monospace}
+a{color:var(--navy)}
+p{margin:0 0 1em}
+h1,h2,h3{font-family:'Libre Baskerville',Georgia,serif;font-weight:700;text-align:center;color:var(--ink);letter-spacing:-.01em}
+h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.2;max-width:24ch;margin:0 auto}
+h1 em{font-weight:400;color:var(--ox)}
+h2{font-size:clamp(1.6rem,3.4vw,2.15rem);line-height:1.25;max-width:26ch;margin:0 auto 24px}
+h3{font-size:1.3rem;line-height:1.3;margin-bottom:10px}
+mark{background:linear-gradient(transparent 55%,var(--hl) 55%);color:inherit;padding:0 2px}
+.sheet{max-width:980px;margin:0 auto;background:var(--paper);box-shadow:0 1px 0 #fff inset,0 20px 60px #0b163022;position:relative}
+.sheet::before{content:"";position:absolute;left:64px;top:0;bottom:0;width:1px;background:#E7B7B2}
+@media(max-width:760px){.sheet::before{display:none}}
+.inner{max-width:680px;margin:0 auto;padding:0 28px}
+.tab{background:var(--navy);color:#fff;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:space-between;padding:10px 28px}
+.tab b{color:#F4C7C0;font-weight:600}
+.masthead{display:flex;justify-content:space-between;align-items:flex-end;padding:30px 28px 18px 96px;border-bottom:3px double var(--ink)}
+@media(max-width:760px){.masthead{padding-left:28px}}
+.firm{font-family:'Libre Baskerville',serif;font-size:1.6rem;letter-spacing:.04em}
+.firm span{color:var(--ox)}
+.fileno{font-size:.72rem;color:var(--ink-3);text-align:right;line-height:1.5}
+.hero{padding:56px 0 40px;position:relative}
+.re{font-size:.78rem;letter-spacing:.14em;color:var(--ox);text-align:center;margin-bottom:18px}
+.hero .sub{font-size:1.14rem;color:var(--ink-2);text-align:center;max-width:52ch;margin:24px auto 0}
+.stamp{position:absolute;right:40px;top:40px;transform:rotate(-12deg);border:3px solid var(--ox);color:var(--ox);padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-align:center;line-height:1.3;opacity:.85;border-radius:4px}
+@media(max-width:900px){.stamp{position:static;display:table;margin:26px auto 0;transform:rotate(-4deg)}}
+.part{padding:46px 0;border-top:1px solid var(--rule)}
+.sect{font-size:.76rem;letter-spacing:.2em;color:var(--ink-3);text-align:center;margin-bottom:12px}
+.sect b{color:var(--ox)}
+.pull{text-align:center;padding:40px 28px;border-top:1px solid var(--rule)}
+.pull p{font-family:'Libre Baskerville',serif;font-style:italic;font-size:clamp(1.3rem,2.8vw,1.75rem);line-height:1.5;max-width:30ch;margin:0 auto}
+/* calendar strip */
+.strip{position:relative;z-index:1;background:var(--paper);display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:34px 28px 10px;border:1px solid var(--ink)}
+.day{padding:18px 18px 8px;border-right:1px solid var(--ink)}
+.day:last-child{border-right:none}
+.day .d{font-size:.74rem;letter-spacing:.14em;color:#fff;background:var(--navy);display:inline-block;padding:3px 8px;margin-bottom:12px}
+.day h3{font-size:1.15rem}
+.day p{font-size:.98rem;color:var(--ink-2)}
+.day:last-child .d{background:var(--ox)}
+@media(max-width:760px){.strip{grid-template-columns:1fr}.day{border-right:none;border-bottom:1px solid var(--ink)}.day:last-child{border-bottom:none}}
+/* 14 day tracker */
+.fourteen{display:grid;grid-template-columns:repeat(14,1fr);gap:4px;max-width:640px;margin:26px auto 8px;padding:0 28px}
+.fourteen span{aspect-ratio:1;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-family:'IBM Plex Mono',monospace}
+.fourteen span.x{background:var(--ink);color:#fff}
+.fourteen span:last-child{background:var(--ox);border-color:var(--ox);color:#fff}
+.fcap{text-align:center;font-size:.8rem;color:var(--ink-3)}
+/* numbered clauses */
+.clauses{counter-reset:c;list-style:none;margin:20px 0 10px}
+.clauses li{counter-increment:c;position:relative;padding:12px 0 12px 54px;border-bottom:1px dashed var(--rule)}
+.clauses li::before{content:"(" counter(c,lower-alpha) ")";position:absolute;left:0;top:12px;font-family:'IBM Plex Mono',monospace;color:var(--ox);font-weight:600}
+/* fee schedule */
+.fees{width:calc(100% - 56px);margin:24px 28px 10px;border-collapse:collapse;font-size:1rem}
+.fees caption{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.16em;color:var(--ink-3);text-align:left;padding-bottom:8px}
+.fees td{padding:12px 6px;border-bottom:1px solid var(--rule)}
+.fees td:last-child{text-align:right;font-family:'IBM Plex Mono',monospace;font-weight:500;white-space:nowrap}
+.fees tr.total td{border-top:2px solid var(--ink);border-bottom:3px double var(--ink);font-weight:600}
+.fees tr.total td:last-child{color:var(--ox);font-size:1.2rem}
+/* intake form */
+.intake{position:relative;z-index:1;margin:10px 28px 0;border:2px solid var(--ink);padding:26px 26px 22px;background:#fff}
+.intake .hd{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.14em;color:var(--ink-3);border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.intake label{display:block;font-size:.78rem;font-family:'IBM Plex Mono',monospace;letter-spacing:.06em;color:var(--ink-2);margin-bottom:4px}
+.intake input,.intake select,.intake textarea{width:100%;border:none;border-bottom:1.5px solid var(--ink);background:transparent;padding:8px 2px;font:inherit;font-size:1rem}
+.intake textarea{border:1.5px solid var(--ink);min-height:84px;padding:8px}
+.full{grid-column:1/-1}
+.yn{display:flex;gap:24px;font-size:1rem;padding-top:6px}
+.yn label{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Sans',sans-serif;font-size:1rem;letter-spacing:0;color:var(--ink);margin:0}
+.intake input[type=radio]{width:auto;accent-color:var(--ox)}
+.btn{display:inline-block;background:var(--ox);color:#fff;border:none;font:inherit;font-weight:600;padding:15px 28px;cursor:pointer;text-decoration:none;letter-spacing:.02em;margin-top:18px}
+.btn:hover{background:#6F1F19}
+.fine{font-size:.8rem;color:var(--ink-3);margin-top:10px}
+/* faq as cross-examination */
+.qa{margin-top:10px}
+.qa div{padding:18px 0;border-bottom:1px solid var(--rule)}
+.qa .q{font-family:'IBM Plex Mono',monospace;font-size:.95rem;font-weight:600;color:var(--navy);margin-bottom:8px}
+.qa .q::before{content:"Q.  ";color:var(--ox)}
+.qa .a p:first-child::before{content:"A.  ";font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--ox)}
+.closing{padding:56px 0 60px;border-top:3px double var(--ink);text-align:center}
+.closing p{text-align:center}
+footer{max-width:980px;margin:0 auto;padding:28px;font-size:.82rem;color:var(--ink-3)}
+footer ol{margin:6px 0 0 18px}
+footer p{margin-bottom:10px}
+/* body copy at 18px everywhere */
+.day p,.fees,.qa .a p,.clauses li{font-size:1.125rem}
 </style>
 </head>
 <body>
+<div class="sheet">
+  <div class="tab mono"><span>Free case review</span><span><b>No fee unless we win</b> · Licensed in Florida</span></div>
+  <div class="masthead"><span class="firm">Hale <span>&amp;</span> Roark</span><span class="fileno mono">ROAD ACCIDENT CLAIMS<br>CASE FILE HR-1</span></div>
 
-<div class="topbar">Free case review. <b>No fee unless we win.</b> Licensed in Florida.</div>
+  <header class="hero">
+    <div class="stamp">NO FEE<br>UNLESS WE WIN</div>
+    <div class="inner">
+      <div class="re mono">RE: THE CALL YOU GOT AFTER THE CRASH</div>
+      <h1>Hurt in a car accident, and the other driver's insurance company called you within two days? <em>That call was not a courtesy. It was the first move in settling your claim for the smallest number you will accept.</em></h1>
+      <p class="sub">There is a reason an adjuster reaches out early, sounds sympathetic, and asks you to give a recorded statement while you are still sore and still shaken.</p>
+    </div>
+  </header>
 
-<header>
-  <div class="wrap">
-    <div class="brand">Hale <span>&amp;</span> Roark</div>
-    <div class="kicker">Road accident claims, Florida</div>
-    <h1>Hurt in a car accident, and the other driver's insurance company called you within two days? <em>That call was not a courtesy. It was the first move in settling your claim for the smallest number you will accept.</em></h1>
-    <p class="sub">There is a reason an adjuster reaches out early, sounds sympathetic, and asks you to give a recorded statement while you are still sore and still shaken.</p>
-
-    <svg class="hero-art" viewBox="0 0 700 210" role="img" aria-label="Two timelines side by side, the insurer's offer arriving long before the medical picture is complete">
-      <defs>
-        <style>
-          .axis{stroke:#C9CFD6;stroke-width:1.6}
-          .lbl{font:600 11px Inter,sans-serif;fill:#3E464F}
-          .sm{font:400 10px Inter,sans-serif;fill:#6B7480}
-          .cap{font:600 9.5px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
-        </style>
-      </defs>
-
-      <text class="cap" x="16" y="20" fill="#8E2F1E">THEIR TIMELINE</text>
-      <line class="axis" x1="16" y1="58" x2="684" y2="58"/>
-      <circle cx="70" cy="58" r="7" fill="#8E2F1E"/>
-      <circle cx="190" cy="58" r="7" fill="#8E2F1E"/>
-      <text class="lbl" x="52" y="44">Day 2</text><text class="sm" x="30" y="80">Friendly call,</text><text class="sm" x="30" y="94">recorded statement</text>
-      <text class="lbl" x="166" y="44">Week 2</text><text class="sm" x="152" y="80">Offer arrives</text>
-      <path d="M198 58 L672 58" stroke="#E3E7EB" stroke-width="1.6" stroke-dasharray="5 5"/>
-      <text class="sm" x="560" y="48" fill="#A8AEB6">nothing further needed</text>
-
-      <text class="cap" x="16" y="138" fill="#16304D">YOUR TIMELINE</text>
-      <line class="axis" x1="16" y1="176" x2="684" y2="176"/>
-      <circle cx="70" cy="176" r="7" fill="#16304D"/>
-      <circle cx="300" cy="176" r="7" fill="#16304D"/>
-      <circle cx="470" cy="176" r="7" fill="#16304D"/>
-      <circle cx="628" cy="176" r="7" fill="#A8792C"/>
-      <text class="lbl" x="52" y="162">Day 2</text><text class="sm" x="34" y="198">Still in shock</text>
-      <text class="lbl" x="276" y="162">Week 6</text><text class="sm" x="256" y="198">Pain persists</text>
-      <text class="lbl" x="444" y="162">Week 10</text><text class="sm" x="424" y="198">MRI, physio</text>
-      <text class="lbl" x="596" y="162">Month 6</text><text class="sm" x="566" y="198">True cost known</text>
-
-      <path d="M190 68 L190 118 L628 118 L628 166" fill="none" stroke="#A8792C" stroke-width="1.6" stroke-dasharray="4 4"/>
-      <text class="sm" x="330" y="112" fill="#8A6318">the gap they are betting on</text>
-    </svg>
-  </div>
-</header>
-
-<div class="rule"></div>
-
-<section>
-  <div class="wrap">
-    <p>Nobody plans for the week after a crash.</p>
-    <p>You are dealing with a car you cannot drive, a job that expects you back, and a body that hurts in places it did not hurt on Monday.</p>
-<p>Somewhere in the middle of that, a polite person from the insurance company rings and says they want to get this sorted quickly for you.</p>
-    <p>That call is not a courtesy.</p>
-<p>It is the first step in a process designed to close your claim for the smallest number you will accept, before anyone knows what your injury is actually going to cost.</p>
-    <p>I am not saying the adjuster is a bad person.</p>
-<p>Most of them are perfectly decent.</p>
-<p>But they are paid by a company whose profit depends on the gap between what a claim is worth and what it settles for, and they are very good at their job.</p>
-  </div>
-</section>
-
-<div class="pull">
-  <div class="wrap">
-    <p>Their offer arrives before your diagnosis does. <em>That is the whole strategy.</em></p>
-  </div>
-</div>
-
-<section class="band">
-  <div class="wrap">
-    <h2>Why early offers are almost always low</h2>
-    <p>A soft tissue injury does not announce itself on day three.</p>
-<p>Neither does a disc problem, a concussion, or the shoulder that seems fine until you try to lift something six weeks later.</p>
-    <p>Insurers know the timeline better than you do.</p>
-<p>So the offer arrives while your medical picture is still incomplete, and once you sign, it is finished.</p>
-<p>You cannot reopen a claim because the injury turned out to be worse than anyone realised.</p>
-
-    <div class="timeline">
-      <div class="tl">
-        <div class="when">Day 1 to 3</div>
-        <h4>The friendly call</h4>
-        <p>An adjuster asks how you are and requests a recorded statement.</p>
-<p>Anything you say about feeling alright, or about the accident being partly your fault, goes on the record permanently.</p>
-      </div>
-      <div class="tl">
-        <div class="when">Week 1 to 2</div>
-        <h4>The quick offer</h4>
-        <p>A settlement appears, usually enough to cover the car and a couple of medical bills.</p>
-<p>It arrives while you are worried about money, which is exactly when it is hardest to refuse.</p>
-      </div>
-      <div class="tl">
-        <div class="when">Week 6 onwards</div>
-        <h4>The injury shows itself</h4>
-        <p>The pain that seemed manageable turns into physiotherapy, or an MRI, or time off work.</p>
-<p>By then the release you signed has closed the claim for good.</p>
-      </div>
+  <div class="part">
+    <div class="inner">
+      <p>Nobody plans for the week after a crash.</p>
+      <p>You are dealing with a car you cannot drive, a job that expects you back, and a body that hurts in places it did not hurt on Monday.</p>
+      <p>Somewhere in the middle of all that, a polite person from the insurance company calls and says they want to get this sorted quickly for you.</p>
+      <p>That call is not a courtesy.</p>
+      <p>It is the first step in a process designed to close your claim for the smallest number you will accept, before anyone knows what your injury is going to cost.</p>
+      <p>The adjuster on the line is usually a perfectly decent person.</p>
+      <p>But they are paid by a company whose profit depends on the gap between what a claim is worth and what it settles for, and they are very good at their job.</p>
+      <p>What happens over the next few weeks follows a pattern, and once you see it, you cannot unsee it.</p>
     </div>
   </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <h2>What a review actually involves</h2>
-    <p>This is a conversation, not a commitment.</p>
-<p>It takes about twenty minutes and it happens on the phone.</p>
-    <ul class="checklist">
-      <li>We look at the police report, the photographs and whatever the other driver's insurer has already put in writing</li>
-      <li>We work out which costs are already visible and which ones typically appear later in an injury like yours</li>
-      <li>We tell you what we think the claim is genuinely worth, including the parts the current offer ignores</li>
-      <li>We tell you plainly if you do not need a lawyer, which happens more often than you would expect</li>
-    </ul>
+  <div class="pull"><p>Their offer arrives before your diagnosis does. That is the whole strategy.</p></div>
 
-    <div class="who">
-      <h3>When you probably do not need us</h3>
+  <div class="part">
+    <div class="inner">
+      <div class="sect mono"><b>§ 1</b> &nbsp;THE PATTERN</div>
+      <h2>Why the first offer is almost always the lowest one</h2>
+      <p>A soft tissue injury does not announce itself on day three.</p>
+      <p>Neither does a disc problem, a concussion, or the shoulder that seems fine until you try to lift something six weeks later.</p>
+      <p>Insurers know that timeline far better than you do.</p>
+      <p>So the offer arrives while your medical picture is still incomplete, and once you sign, the claim is finished.</p>
+      <p>You cannot reopen it because the injury turned out to be worse than anyone realized.</p>
+    </div>
+    <div class="strip">
+      <div class="day"><span class="d mono">DAY 1 TO 3</span><h3>The friendly call</h3><p>An adjuster asks how you are and requests a recorded statement.</p><p>Anything you say about feeling alright, or about the accident being partly your fault, goes on the record permanently.</p></div>
+      <div class="day"><span class="d mono">WEEK 1 TO 2</span><h3>The quick offer</h3><p>A settlement appears, usually enough to cover the car and a couple of medical bills.</p><p>It arrives while you are worried about money, which is exactly when it is hardest to refuse.</p></div>
+      <div class="day"><span class="d mono">WEEK 6 ONWARD</span><h3>The injury shows itself</h3><p>The pain that seemed manageable turns into physical therapy, an MRI or time off work.</p><p>By then, the release you signed has closed the claim for good.</p></div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div class="inner">
+      <div class="sect mono"><b>§ 2</b> &nbsp;THE DEADLINE MOST PEOPLE MISS</div>
+      <h2>A 14-day clock starts the moment you crash</h2>
+      <p>There is a rule in Florida's no-fault insurance law that catches a lot of people out.</p>
+      <p>To use your personal injury protection benefits, you generally need to get initial medical treatment within 14 days of the accident.</p>
+      <p>Plenty of people wait to see whether the stiffness settles down on its own.</p>
+      <p>By the time they decide it has not, the window has closed.</p>
+    </div>
+    <div class="fourteen" aria-hidden="true"><span class="x">1</span><span class="x">2</span><span class="x">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span></div>
+    <p class="fcap mono">Day 1 is the crash. Day 14 is the last day for initial treatment under PIP rules.</p>
+    <div class="inner" style="margin-top:26px">
+      <p>The longer deadline changed recently too.</p>
+      <p>Since the 2023 civil justice reforms, most negligence claims must be filed within two years of the crash, down from four.</p>
+      <p>Two years sounds like plenty of time until you remember how long the injury takes to show itself.</p>
+      <p>And the evidence is getting worse the whole time the clock runs.</p>
+      <p>Dashcam footage is overwritten, witnesses move away, and the link between the crash and your symptoms gets harder to prove the longer you wait to be examined.</p>
+    </div>
+  </div>
+
+  <div class="part">
+    <div class="inner">
+      <div class="sect mono"><b>§ 3</b> &nbsp;THE REVIEW</div>
+      <h2>What happens on a twenty-minute call with us</h2>
+      <p>The review is a conversation, and nothing about it commits you to anything.</p>
+      <p>It takes about twenty minutes, and it happens on the phone.</p>
+      <ol class="clauses">
+        <li>We look at the police report, the photographs and whatever the other driver's insurer has already put in writing.</li>
+        <li>We work out which costs are already visible and which ones typically appear later in an injury like yours.</li>
+        <li>We tell you what we think the claim is really worth, including the parts the current offer ignores.</li>
+        <li>We tell you plainly if you do not need a lawyer, which happens more often than you would expect.</li>
+      </ol>
+      <h3 style="margin-top:34px">When you probably do not need us</h3>
       <p>If nobody was hurt, the other insurer has accepted fault, and the offer covers the repair, take the money and get on with your week.</p>
-<p>We will tell you that on the call and it will not cost you anything.</p>
-      <p style="margin-top:12px"><strong>Where it matters is when someone is injured</strong>, when fault is being argued about, or when the number you have been offered arrived suspiciously fast.</p>
-<p>Those are the cases where the difference between handling it yourself and having someone handle it is measured in years of medical costs.</p>
+      <p>We will tell you that on the call, and it will not cost you anything.</p>
+      <p><mark>Where it matters is when someone is injured</mark>, when fault is being argued about, or when the number you have been offered arrived suspiciously fast.</p>
+      <p>In those cases, the difference between handling it yourself and having someone handle it can be measured in years of medical costs.</p>
     </div>
   </div>
-</section>
 
-<section class="band">
-  <div class="wrap">
-    <h2>What this costs you</h2>
-    <p>Nothing, and that is not a marketing line.</p>
-<p>It is how injury work is structured in Florida.</p>
-
-    <div class="stack">
-      <div class="srow"><span>Case review and valuation</span><span>No charge</span></div>
-      <div class="srow"><span>Collecting records, reports and evidence</span><span>We cover it</span></div>
-      <div class="srow"><span>Negotiating with the insurer on your behalf</span><span>We cover it</span></div>
-      <div class="srow"><span>Filing and litigating if it comes to that</span><span>We cover it</span></div>
-      <div class="stotal"><span>Your cost if we do not win</span><span>Zero</span></div>
+  <div class="part">
+    <div class="inner">
+      <div class="sect mono"><b>§ 4</b> &nbsp;FEES</div>
+      <h2>What the review costs you</h2>
+      <p>It costs you nothing, and we do not mean that as a marketing line.</p>
+      <p>Injury work is usually structured this way.</p>
     </div>
-
-    <p style="margin-top:18px">We are paid a percentage of what we recover, and only if we recover something.</p>
-<p>If the claim fails, you owe us nothing and you are not billed for the costs we fronted.</p>
-<p>That arrangement only works if we are honest with ourselves about which cases are worth taking, which is why the review is genuinely a review rather than a sales call.</p>
-
-    <div class="cost">
-      <h3>The clock is the part people miss</h3>
-      <p>Florida gives you a limited window to file.</p>
-<p>Evidence gets worse the whole time it is running.</p>
-<p>Dashcam footage is overwritten, witnesses move, and the link between the crash and your symptoms gets harder to prove the longer you wait to be examined.</p>
+    <table class="fees">
+      <caption>SCHEDULE OF FEES</caption>
+      <tr><td>Case review and valuation</td><td>No charge</td></tr>
+      <tr><td>Collecting records, reports and evidence</td><td>We cover it</td></tr>
+      <tr><td>Negotiating with the insurer on your behalf</td><td>We cover it</td></tr>
+      <tr><td>Filing and litigating if it comes to that</td><td>We cover it</td></tr>
+      <tr class="total"><td>Your cost if we do not win</td><td>$0</td></tr>
+    </table>
+    <div class="inner" style="margin-top:24px">
+      <p>We are paid a percentage of what we recover, and only if we recover something.</p>
+      <p>If the claim fails, you owe us nothing, and you are not billed for the costs we fronted.</p>
+      <p>That arrangement only works if we are honest with ourselves about which cases are worth taking, so the review is a real review rather than a sales call.</p>
       <p>The cost of a phone call today is twenty minutes.</p>
-<p style="margin-bottom:0">The cost of the call you did not make is whatever your injury turns out to need, paid by you.</p>
+      <p>The cost of the call you did not make is whatever your injury turns out to need, paid by you.</p>
     </div>
   </div>
-</section>
 
-<div class="offer">
-  <div class="wide">
-    <div class="offerbox">
-      <div class="lab">Free case review</div>
+  <div class="part" id="review">
+    <div class="inner">
+      <div class="sect mono"><b>§ 5</b> &nbsp;REQUEST</div>
       <h2>Twenty minutes, and you will know where you stand.</h2>
       <p>Tell us what happened.</p>
-<p>We will tell you what the claim looks like from our side, what the insurer is likely doing, and whether you need a lawyer at all.</p>
-      <a href="#" class="cta">Request my free case review</a>
-      <p class="tiny">No obligation. No fee unless we win. Calls returned the same working day.</p>
+      <p>We will tell you what the claim looks like from our side, what the insurer is likely doing, and whether you need a lawyer at all.</p>
+    </div>
+    <form class="intake" onsubmit="return false">
+      <div class="hd"><span>CASE REVIEW REQUEST</span><span>FORM HR-1</span></div>
+      <div class="grid2">
+        <div><label for="n">Your name</label><input id="n" type="text"></div>
+        <div><label for="p">Best phone number</label><input id="p" type="tel"></div>
+        <div><label for="d">Date of the crash</label><input id="d" type="text" placeholder="MM / DD / YYYY"></div>
+        <div><label for="c">County</label><input id="c" type="text"></div>
+        <div class="full"><label>Have you given a recorded statement?</label><div class="yn"><label><input type="radio" name="rs"> Yes</label><label><input type="radio" name="rs"> No</label><label><input type="radio" name="rs"> Not sure</label></div></div>
+        <div class="full"><label for="w">What happened, in a sentence or two</label><textarea id="w"></textarea></div>
+      </div>
+      <button class="btn">Request my free case review</button>
+      <p class="fine">No obligation. No fee unless we win. Calls returned the same working day. Portfolio sample, so this form does not submit.</p>
+    </form>
+  </div>
+
+  <div class="part">
+    <div class="inner">
+      <div class="sect mono"><b>§ 6</b> &nbsp;QUESTIONS</div>
+      <h2>What people ask us before they call</h2>
+      <div class="qa">
+        <div><p class="q">I already gave a recorded statement. Is it too late?</p><div class="a"><p>It is not too late.</p><p>A statement makes some things harder, but it does not end a claim.</p><p>Tell us what you said, and we will work out what it changes.</p></div></div>
+        <div><p class="q">I think the accident was partly my fault.</p><div class="a"><p>The law still allows you to recover when fault is shared, as long as you are not found more than half responsible.</p><p>Your share is often smaller than you assume, because people routinely take on blame that the evidence does not support.</p><p>That makes what you say in the first few days even more important.</p></div></div>
+        <div><p class="q">Will this end up in court?</p><div class="a"><p>Most cases settle.</p><p>Insurers tend to move when a firm is clearly prepared to file, which is the practical reason having a lawyer changes the number.</p></div></div>
+        <div><p class="q">How long does it take?</p><div class="a"><p>Straightforward claims often resolve in a few months.</p><p>Serious injuries take longer, because settling before your medical picture is complete is how people get shortchanged.</p></div></div>
+      </div>
     </div>
   </div>
-</div>
 
-<section class="faq">
-  <div class="wrap">
-    <h2>What people ask before they call</h2>
-    <div class="q">
-      <h4>I already gave a recorded statement. Is it too late?</h4>
-      <p>No.</p>
-<p>A statement makes some things harder, but it does not end a claim.</p>
-<p>Tell us what you said and we will work out what it changes.</p>
+  <div class="closing">
+    <div class="inner">
+      <h2>Find out what your claim is worth before you agree to what it is not.</h2>
+      <p>It takes twenty minutes on the phone.</p>
+      <p>There is no cost, and nobody will pressure you to hire anyone.</p>
+      <a href="#review" class="btn">Request my free case review</a>
     </div>
-    <div class="q">
-      <h4>I think the accident was partly my fault.</h4>
-      <p>Florida law allows for shared fault, and your share is often smaller than you assume.</p>
-<p>People routinely take on blame that the evidence does not support.</p>
-    </div>
-    <div class="q">
-      <h4>Will this end up in court?</h4>
-      <p>Most cases settle.</p>
-<p>Insurers move when a firm is clearly prepared to file, which is the practical reason having a lawyer changes the number.</p>
-    </div>
-    <div class="q">
-      <h4>How long does it take?</h4>
-      <p>Straightforward claims often resolve in a few months.</p>
-<p>Serious injuries take longer, because settling before your medical picture is complete is how people get short-changed.</p>
-    </div>
-  </div>
-</section>
-
-<div class="final">
-  <div class="wrap">
-    <h2>Find out what your claim is worth before you agree to what it is not.</h2>
-    <p style="max-width:50ch;margin:0 auto 6px">Twenty minutes on the phone.</p>
-<p style="max-width:50ch;margin:0 auto 6px">No cost, and no pressure to hire anybody.</p>
-    <a href="#" class="cta">Request my free case review</a>
   </div>
 </div>
 
 <footer>
-  <div class="wrap">
-    <div class="spec">
-      <b>Portfolio sample.</b> Hale &amp; Roark is a concept firm created by Godswill Ifeanyichukwu to demonstrate lead generation copy for legal services. It is not a real law firm and this is not an offer of legal representation. <a href="index.html">Back to the sample library</a>
-    </div>
-    <p>Nothing on this page is legal advice. Laws and filing deadlines vary by state and by case.</p>
-    <p>Copy, design and build by Godswill Ifeanyichukwu.</p>
-  </div>
+  <p><b>Portfolio sample.</b> Hale &amp; Roark is a concept firm created by Godswill Ifeanyichukwu to demonstrate lead generation copy for legal services. It is not a real law firm, and nothing here is an offer of legal representation. See the <a href="emails/google-ads.html#hale-roark">Google search ads</a> that lead here.</p>
+  <p>Nothing on this page is legal advice. Laws and filing deadlines vary by state and by case.</p>
+  <p>Sources:</p>
+  <ol>
+    <li><a href="https://www.flsenate.gov/Session/Bill/2023/837" target="_blank" rel="noopener">Florida Senate, CS/CS/HB 837 (2023), Civil Remedies</a> (shorter negligence limitations period, comparative fault changes)</li>
+    <li><a href="https://www.flsenate.gov/Laws/Statutes/2025/95.11" target="_blank" rel="noopener">Florida Statutes 95.11</a> (limitations periods)</li>
+    <li><a href="https://www.flsenate.gov/Laws/Statutes/2025/768.81" target="_blank" rel="noopener">Florida Statutes 768.81</a> (comparative fault)</li>
+    <li><a href="https://www.flsenate.gov/Laws/Statutes/2025/627.736" target="_blank" rel="noopener">Florida Statutes 627.736</a> (personal injury protection, 14-day initial treatment rule)</li>
+  </ol>
+  <p style="margin-top:12px">Copy, design and build by Godswill Ifeanyichukwu. <a href="index.html">Back to the sample library</a></p>
 </footer>
-
 </body>
 </html>

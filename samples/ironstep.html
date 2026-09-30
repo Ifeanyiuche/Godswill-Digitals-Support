@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ironstep Stack 50, get strong at home in 20 minutes a night</title>
+<meta name="description" content="Still paying for a gym you have not seen since spring? The problem is the parking lot, not you. Fifteen pairs of dumbbells in one, next to the couch.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Ironstep: sporty and a bit ridiculous. Charcoal and lime, a scoreboard, a memorial plaque, a stacked time bar and a gym receipt. */
+:root{--char:#1C1F22;--char-2:#2A2E32;--lime:#C6E84F;--lime-2:#AFD23A;--off:#F3F4EF;--ink:#1C1F22;--ink-2:#4E5358;--ink-3:#8A8F94;--red:#E0533D;--line:#DADCD4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--off);color:var(--ink);font-family:'Barlow',system-ui,sans-serif;font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--char)}
+p{margin:0 0 1em}
+h1,h2,h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-align:center;text-transform:uppercase;letter-spacing:.01em;line-height:1.02}
+h1{font-size:clamp(2.6rem,6.6vw,4.6rem);max-width:17ch;margin:0 auto;color:#fff}
+h1 em{font-style:normal;color:var(--lime)}
+h2{font-size:clamp(2.1rem,4.8vw,3.2rem);max-width:19ch;margin:0 auto 24px}
+h3{font-size:1.5rem;margin-bottom:8px}
+.col{max-width:680px;margin:0 auto;padding:0 24px}
+.wide{max-width:1060px;margin:0 auto;padding:0 24px}
+.stripe{background:repeating-linear-gradient(-45deg,var(--lime) 0 14px,var(--char) 14px 28px);height:12px}
+.kick{font-weight:800;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lime-2);text-align:center;margin-bottom:12px}
+.dark{background:var(--char);color:#D6D9DC}
+.dark h2{color:#fff}
+.dark .kick{color:var(--lime)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
+.logo{font-family:'Anton',sans-serif;font-size:1.6rem;letter-spacing:.12em;color:#fff}
+.logo span{color:var(--lime)}
+.nav .pill{background:var(--lime);color:var(--char);font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:4px}
+.hero{padding:30px 0 80px;text-align:center}
+.hero .sub{font-size:1.2rem;color:#C5C9CD;max-width:48ch;margin:26px auto 0;text-align:center}
+.plaque{margin:44px auto 0;width:330px;max-width:90%}
+section{padding:80px 0}
+.lead .big{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.9rem;line-height:1.1;color:var(--char)}
+/* time bar */
+.timebar{max-width:900px;margin:34px auto 10px;padding:0 24px}
+.tb{display:flex;height:64px;border:3px solid var(--char);border-radius:6px;overflow:hidden}
+.tb div{display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;text-align:center;line-height:1.1;padding:0 4px;border-right:2px solid var(--char)}
+.tb div:last-child{border-right:none}
+.tb .w{background:var(--lime)}
+.tb .x{background:#fff;color:var(--ink-2)}
+.tb .x2{background:#E9EBE4;color:var(--ink-2)}
+.tlabels{display:flex;justify-content:space-between;font-weight:700;font-size:.85rem;color:var(--ink-3);margin-top:8px}
+/* scoreboard */
+.board{max-width:980px;margin:40px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.score{background:#0F1113;border:3px solid #3A3F44;border-radius:10px;padding:22px 18px 18px;text-align:center}
+.score .led{font-family:'Anton',sans-serif;font-size:3.6rem;line-height:1;color:var(--lime);text-shadow:0 0 18px #C6E84F55;letter-spacing:.04em}
+.score p{font-size:.98rem;color:#C5C9CD;margin:10px 0 6px}
+.score small{display:block;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:#7D8388}
+@media(max-width:820px){.board{grid-template-columns:1fr}}
+/* product */
+.prod{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1000px;margin:30px auto 0;padding:0 24px}
+.prod svg{width:100%;height:auto}
+.spec{width:100%;border-collapse:collapse;font-size:1rem;margin-top:10px}
+.spec td{padding:10px 4px;border-bottom:2px solid var(--line)}
+.spec td:last-child{text-align:right;font-weight:800}
+@media(max-width:820px){.prod{grid-template-columns:1fr}}
+/* moves */
+.moves{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:34px auto 0;padding:0 24px}
+.move{background:#fff;border-radius:8px;border-bottom:8px solid var(--lime);padding:24px 22px 12px;box-shadow:0 6px 20px #1C1F2212}
+.move .n{font-family:'Anton',sans-serif;font-size:3rem;line-height:1;color:var(--lime-2);text-align:center}
+.move p{font-size:1rem;color:var(--ink-2)}
+@media(max-width:820px){.moves{grid-template-columns:1fr}}
+/* versus */
+.vs{display:grid;grid-template-columns:1fr 1fr;max-width:900px;margin:34px auto 0;border:3px solid var(--char);border-radius:8px;overflow:hidden}
+.vs div{padding:22px 24px 12px}
+.vs .g{background:#fff}
+.vs .h{background:var(--lime)}
+.vs h3{font-size:1.6rem}
+.vs ul{list-style:none}
+.vs li{padding:8px 0;border-bottom:1.5px solid #1C1F2222;font-size:1rem}
+.vs li:last-child{border-bottom:none}
+@media(max-width:700px){.vs{grid-template-columns:1fr}}
+/* receipt */
+.receipt{max-width:420px;margin:34px auto 0;background:#fff;padding:26px 26px 30px;font-family:'Barlow',sans-serif;box-shadow:0 10px 30px #1C1F2218;position:relative}
+.receipt::after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:12px;background:linear-gradient(-45deg,transparent 8px,#fff 0),linear-gradient(45deg,transparent 8px,#fff 0);background-size:16px 12px}
+.receipt .h{text-align:center;font-family:'Anton',sans-serif;font-size:1.4rem;letter-spacing:.08em;border-bottom:2px dashed var(--line);padding-bottom:10px;margin-bottom:10px}
+.receipt .r{display:flex;justify-content:space-between;padding:6px 0;font-size:1rem}
+.receipt .r.t{border-top:2px dashed var(--line);margin-top:8px;padding-top:12px;font-weight:800;font-size:1.15rem}
+.receipt .r s{color:var(--ink-3)}
+.receipt .r .free{color:var(--lime-2);font-weight:800}
+.perw{font-family:'Anton',sans-serif;text-align:center;font-size:clamp(2.6rem,6vw,3.8rem);line-height:1;margin-top:40px}
+.perw span{background:var(--lime);padding:0 .15em}
+/* offer */
+.offer{background:var(--lime);padding:80px 0}
+.offer h2{color:var(--char)}
+.badge{width:150px;height:150px;margin:0 auto 18px;display:block}
+.buy{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:20px}
+.buy .pr{font-family:'Anton',sans-serif;font-size:3.4rem;line-height:1}
+.buy .pr small{display:block;font-family:'Barlow',sans-serif;font-size:.9rem;font-weight:700}
+.btn{display:inline-block;background:var(--char);color:var(--lime);font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:16px 34px;border-radius:6px}
+.btn:hover{background:#000}
+.fine{font-size:.86rem;text-align:center;margin-top:14px;color:#3A4A10}
+/* faq */
+.faq{max-width:760px;margin:30px auto 0;padding:0 24px}
+.faq div{border-left:6px solid var(--lime);background:#fff;padding:18px 22px 6px;margin-bottom:14px;border-radius:0 8px 8px 0}
+.faq h3{font-size:1.3rem;text-align:center}
+.faq p{font-size:1rem;color:var(--ink-2)}
+.close{text-align:center;padding:90px 0}
+.close p{text-align:center}
+footer{padding:30px 0 50px;font-size:.84rem;color:var(--ink-3)}
+footer p{margin-bottom:10px}
+@media(max-width:600px){.nav .pill{display:none}}
+/* body copy at 18px everywhere */
+.move p,.vs li,.faq p,.score p{font-size:1.125rem}
+</style>
+</head>
+<body>
+
+<div class="dark">
+  <div class="wide nav"><span class="logo">IRON<span>STEP</span></span><span class="pill">Free floor stand this week</span></div>
+  <header class="hero">
+    <div class="wide">
+      <div class="kick">For parents with 25 minutes after bedtime</div>
+      <h1>If your gym key tag has seen more of your wallet than the gym this year, <em>you do not have a motivation problem. You have a parking lot problem.</em></h1>
+      <p class="sub">The workout was never the hard part. Everything wrapped around it was, and there is a way to delete all of it.</p>
+      <svg class="plaque" viewBox="0 0 330 200" role="img" aria-label="A memorial plaque for an unused gym key tag">
+        <rect x="6" y="6" width="318" height="188" rx="14" fill="#2A2E32" stroke="#C6E84F" stroke-width="3"/>
+        <text x="165" y="42" text-anchor="middle" font-family="Anton, sans-serif" font-size="16" letter-spacing="3" fill="#C6E84F">IN LOVING MEMORY</text>
+        <rect x="140" y="58" width="50" height="64" rx="10" fill="#C6E84F"/><circle cx="165" cy="72" r="7" fill="#2A2E32"/>
+        <text x="165" y="108" text-anchor="middle" font-family="Anton, sans-serif" font-size="13" fill="#1C1F22">GYM</text>
+        <text x="165" y="150" text-anchor="middle" font-family="Barlow, sans-serif" font-size="14" fill="#D6D9DC">Gym key tag · Scanned four times, all in January</text>
+        <text x="165" y="172" text-anchor="middle" font-family="Barlow, sans-serif" font-style="italic" font-size="13" fill="#8A8F94">Survived by a monthly direct debit</text>
+      </svg>
+    </div>
+  </header>
+</div>
+<div class="stripe"></div>
+
+<section class="lead">
+  <div class="col">
+    <p class="big">Let us be fair to you for a second.</p>
+    <p>You did not stop going to the gym because you are lazy.</p>
+    <p>You stopped because a 40-minute workout had slowly turned into an hour and a half.</p>
+    <p>There was the drive there and the hunt for a parking space.</p>
+    <p>There was the changing room, and the wait for the one bench that a man named Greg has been "just finishing a set" on since 2019.</p>
+    <p>Then there was the drive home, by which point the kids needed a bath and somebody needed dinner.</p>
+    <p>Of course it lost.</p>
+    <p>Anything that takes ninety minutes loses to a family eventually.</p>
+  </div>
+  <div class="timebar">
+    <div class="tb">
+      <div class="x" style="flex:15">Drive there</div>
+      <div class="x2" style="flex:5">Park</div>
+      <div class="x" style="flex:10">Change</div>
+      <div class="x2" style="flex:10">Wait for Greg</div>
+      <div class="w" style="flex:40">The actual workout</div>
+      <div class="x" style="flex:15">Drive home</div>
+    </div>
+    <div class="tlabels"><span>0 minutes</span><span>About 95 minutes</span></div>
+  </div>
+  <div class="col" style="margin-top:30px">
+    <p>Only the lime part of that bar builds any muscle.</p>
+    <p>Everything else is overhead, and overhead is what kills the habit.</p>
+    <p>So here is a thought that might sound too simple.</p>
+    <p>What if the weights lived six feet from your couch, and the workout started the moment the kids fell asleep?</p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="col">
+    <div class="kick">The not-funny bit</div>
+    <h2>Why this matters more with every birthday</h2>
+    <p>We like a joke, but we are going to be serious for a minute.</p>
+    <p>Strength is one of those things you do not notice losing until something you used to do easily gets hard.</p>
+    <p>The US physical activity guidelines recommend muscle-strengthening exercise at least two days a week.</p>
+    <p>According to the CDC, most American adults do not get there.</p>
+    <p>And one of the biggest studies ever done on strength suggests the stakes are higher than a sore back.</p>
+  </div>
+  <div class="board">
+    <div class="score"><div class="led">31%</div><p>of American adults meet the guideline for muscle-strengthening exercise.</p><small>CDC, National Center for Health Statistics</small></div>
+    <div class="score"><div class="led">16%</div><p>higher risk of death from any cause for every 5 kg drop in grip strength.</p><small>The Lancet, PURE study</small></div>
+    <div class="score"><div class="led">140k</div><p>adults followed across 17 countries to find that link.</p><small>The Lancet, PURE study</small></div>
+  </div>
+  <div class="col" style="margin-top:40px">
+    <p>Grip strength is not magic.</p>
+    <p>Researchers treat it as a simple marker of how strong your body is overall.</p>
+    <p>The good news is that rows, presses and carries build exactly that kind of everyday strength.</p>
+    <p>The better news is that you can do all three in your living room, in twenty minutes, in socks.</p>
+  </div>
+</section>
+<div class="stripe"></div>
+
+<section>
+  <div class="col">
+    <div class="kick">Meet the Stack 50</div>
+    <h2>Fifteen pairs of dumbbells, one dial and a very small footprint</h2>
+    <p>Fifteen separate pairs of dumbbells would take up a whole wall of your house, and possibly your marriage.</p>
+    <p>The Stack 50 packs all fifteen settings, from 5 lb to 50 lb, into a space about the size of two shoeboxes.</p>
+    <p>You turn the dial, lift the handle, and the plates you did not select stay in the tray.</p>
+  </div>
+  <div class="prod">
+    <svg viewBox="0 0 440 300" role="img" aria-label="Stack 50 adjustable dumbbell with a dial showing weight settings">
+      <rect x="20" y="210" width="400" height="30" rx="8" fill="#DADCD4"/>
+      <g fill="#1C1F22"><rect x="60" y="90" width="22" height="120" rx="5"/><rect x="86" y="80" width="22" height="130" rx="5"/><rect x="112" y="70" width="22" height="140" rx="5"/><rect x="306" y="90" width="22" height="120" rx="5"/><rect x="280" y="80" width="22" height="130" rx="5"/><rect x="254" y="70" width="22" height="140" rx="5"/></g>
+      <rect x="134" y="128" width="120" height="26" rx="10" fill="#C6E84F"/>
+      <circle cx="194" cy="141" r="10" fill="#1C1F22"/>
+      <circle cx="372" cy="90" r="46" fill="#fff" stroke="#1C1F22" stroke-width="4"/>
+      <path d="M372 90 L372 54" stroke="#E0533D" stroke-width="5" stroke-linecap="round"/>
+      <text x="372" y="118" text-anchor="middle" font-family="Anton, sans-serif" font-size="18" fill="#1C1F22">35 LB</text>
+      <text x="372" y="160" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12" font-weight="700" fill="#4E5358">TURN TO CHANGE</text>
+    </svg>
+    <div>
+      <table class="spec">
+        <tr><td>Weight range</td><td>5 to 50 lb per hand</td></tr>
+        <tr><td>Settings</td><td>15</td></tr>
+        <tr><td>Footprint of the pair</td><td>About 16 x 16 in</td></tr>
+        <tr><td>With the floor stand</td><td>Waist height, same footprint</td></tr>
+        <tr><td>Space you need to train</td><td>About 6 x 6 ft</td></tr>
+      </table>
+      <p style="margin-top:18px">Most people keep them in a corner of the living room or at the end of the bed.</p>
+      <p>The laundry chair is also popular, and we have made our peace with that.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="col">
+    <div class="kick">What you actually do</div>
+    <h2>Three moves, twenty minutes, three nights a week</h2>
+    <p>Every Stack 50 comes with a free 12-week plan, and it starts with three moves that work your whole body.</p>
+    <p>None of them needs a bench, a mirror or Greg.</p>
+  </div>
+  <div class="moves">
+    <div class="move"><div class="n">1</div><h3>Goblet squats</h3><p>Hold one weight at your chest and sit back as if there is a chair behind you.</p><p>If there is a chair behind you, even better, because now you know how low to go.</p></div>
+    <div class="move"><div class="n">2</div><h3>One-arm rows</h3><p>Rest one hand on a sturdy chair and pull the weight up to your hip.</p><p>Your posture has been sending you polite requests for this move for years.</p></div>
+    <div class="move"><div class="n">3</div><h3>Floor press</h3><p>Lie on your back with a weight in each hand and press them toward the ceiling.</p><p>It is the chest press for people whose bench is the living room rug.</p></div>
+  </div>
+  <div class="col" style="margin-top:34px">
+    <p>When the last two reps of a set stop feeling hard, you turn the dial up one setting.</p>
+    <p>That one rule is the whole reason adjustable dumbbells exist, and it is how you keep getting stronger for years instead of weeks.</p>
+  </div>
+  <div class="vs">
+    <div class="g"><h3>The gym</h3><ul><li>It takes about 95 minutes door to door.</li><li>Greg is on the bench.</li><li>You pay whether you go or not.</li><li>It closes when you are finally free.</li></ul></div>
+    <div class="h"><h3>Your living room</h3><ul><li>It takes about 20 minutes, start to finish.</li><li>The bench is the rug.</li><li>You pay once.</li><li>It is open at 8:47 at night.</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="kick">The money part</div>
+    <h2>What it costs per workout, which is the only number that matters</h2>
+    <p>A gym membership charges you every month, whether you go or not.</p>
+    <p>If yours costs $50 a month, you will have paid $600 by next spring for a key tag and a guilty feeling.</p>
+    <p>The Stack 50 is $329, once.</p>
+  </div>
+  <div class="receipt">
+    <div class="h">IRONSTEP</div>
+    <div class="r"><span>Stack 50 Adjustable Dumbbells (pair)</span><span>$329.00</span></div>
+    <div class="r"><span>Floor stand</span><span><s>$79.00</s> <span class="free">FREE</span></span></div>
+    <div class="r"><span>12-week training plan</span><span class="free">FREE</span></div>
+    <div class="r"><span>30-night home trial</span><span class="free">INCLUDED</span></div>
+    <div class="r t"><span>Total</span><span>$329.00</span></div>
+    <div class="r"><span>Or 4 interest-free payments of</span><span>$82.25</span></div>
+  </div>
+  <div class="perw">About <span>$2</span> a workout</div>
+  <div class="col" style="margin-top:22px">
+    <p>Train three nights a week for a year, and the Stack 50 works out at about $2.11 a workout.</p>
+    <p>Keep going for three years, and it drops to about 70 cents.</p>
+    <p>For comparison, fifteen separate pairs of dumbbells would fill a wall, and they would still not come with a stand.</p>
+  </div>
+</section>
+
+<section class="offer" id="buy">
+  <div class="col" style="text-align:center">
+    <svg class="badge" viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="70" fill="#1C1F22"/><circle cx="75" cy="75" r="60" fill="none" stroke="#C6E84F" stroke-width="2" stroke-dasharray="4 5"/><text x="75" y="68" text-anchor="middle" font-family="Anton, sans-serif" font-size="30" fill="#C6E84F">FREE</text><text x="75" y="94" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="800" font-size="13" letter-spacing="2" fill="#fff">FLOOR STAND</text></svg>
+    <h2>Get the weights, and the stand is on us this week</h2>
+  </div>
+  <div class="col">
+    <p>Order the Stack 50 this week, and the $79 floor stand comes free.</p>
+    <p>The stand keeps the weights at waist height, so you are not bending to the floor between sets.</p>
+    <p>Try them for 30 nights and follow the free plan three times a week.</p>
+    <p>If you are not using them by the end of the month, we will collect them and refund you in full, shipping included.</p>
+    <div class="buy"><div class="pr">$329<small>or 4 x $82.25</small></div><a href="#" class="btn">Get the Stack 50</a></div>
+    <p class="fine">Free floor stand with orders this week. 30-night home trial.</p>
+  </div>
+</section>
+
+<section>
+  <div class="col"><div class="kick">Before you order</div><h2>Questions people ask us</h2></div>
+  <div class="faq">
+    <div><h3>I live in an apartment. Will the neighbors hate me?</h3><p>Not if you set the weights down on the stand instead of dropping them.</p><p>Nothing in the plan involves throwing anything, and the floor press happens lying down.</p></div>
+    <div><h3>I have not lifted anything heavier than a toddler in years.</h3><p>A toddler is a respectable starting weight.</p><p>Start lighter than your pride suggests, because your joints need a week or two to catch up with your enthusiasm.</p></div>
+    <div><h3>What if they turn into a very expensive doorstop?</h3><p>That is what the 30-night trial is for.</p><p>If you are not using them by the end of the month, we collect them and refund you, shipping included.</p></div>
+    <div><h3>Do I need a bench?</h3><p>You do not.</p><p>The free plan is built around the floor and a sturdy chair, and a bench is an optional extra for later.</p></div>
+  </div>
+</section>
+
+<div class="close dark">
+  <div class="col">
+    <h2>The best gym is the one you walk past every day.</h2>
+    <p>Twenty minutes, three nights a week, six feet from the couch.</p>
+    <p>The stand is free this week, and the trial gives you 30 nights to prove it to yourself.</p>
+    <a href="#buy" class="btn" style="background:var(--lime);color:var(--char);margin-top:10px">Get the Stack 50</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wide">
+    <p><b>Portfolio sample.</b> Ironstep is a concept brand created by Godswill Ifeanyichukwu to demonstrate humorous, research-grounded direct response copy. Product details, prices and offers are illustrative, and nothing on this page is for sale. See the <a href="emails/ironstep-lifecycle.html">email campaign</a>, the <a href="emails/ironstep-facebook-ads.html">Facebook campaign</a> and the <a href="emails/google-ads.html#ironstep">Google search ads</a> that lead here.</p>
+    <p>Sources: <a href="https://www.cdc.gov/nchs/products/databriefs/db443.htm" target="_blank" rel="noopener">CDC NCHS Data Brief 443</a> on muscle-strengthening activity; <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(14)62000-6/abstract" target="_blank" rel="noopener">Leong et al., The Lancet, 2015 (PURE study)</a> on grip strength; <a href="https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines" target="_blank" rel="noopener">Physical Activity Guidelines for Americans</a>. Check with your doctor before starting a new exercise program.</p>
+    <p>Copy, design and build by Godswill Ifeanyichukwu. <a href="index.html">Back to the sample library</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -9,295 +9,379 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="sample.css">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#FBF8F2; --bg-2:#F2ECE1; --line:#E4DBCB;
-  --ink:#1D1C18; --ink-2:#48443B; --ink-3:#76705F;
-  --brand:#2F4A3F; --brand-2:#1F332B; --accent:#C9853A; --accent-soft:#FAF0E1;
-  --warn:#94402A; --warn-soft:#FBEFEA; --warn-line:#EDD2C8;
-}
-header{padding:48px 0 30px}
-h1{max-width:21ch;margin-left:auto;margin-right:auto}
-.hero-art{margin:30px auto 0;max-width:640px}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
-.fact{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:18px}
-.fact b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.7rem;color:var(--brand);line-height:1.05}
-.fact span{display:block;font-size:.88rem;color:var(--ink-2);margin-top:6px}
-.fact i{display:block;font-style:normal;font-size:.74rem;color:var(--ink-3);margin-top:8px}
-@media(max-width:760px){.facts{grid-template-columns:1fr}}
-.obj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:14px}
-.obj h4{font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:600;margin-bottom:6px}
-.obj h4 span{color:var(--warn)}
-.obj p{font-size:.94rem;color:var(--ink-2);margin:0}
-.obj p + p{margin-top:8px}
-.kids{background:var(--accent-soft);border:1px solid var(--line);border-radius:15px;padding:24px 26px;margin-top:22px}
-.kids p{font-size:.95rem;color:var(--ink-2)}
-.sources{font-size:.8rem;color:var(--ink-3)}
-.sources ol{margin:8px 0 0 18px}
-.sources li{margin-bottom:5px}
-.sources a{color:var(--brand)}
-.sizes{width:100%;border-collapse:collapse;margin-top:18px;font-size:.95rem}
-.sizes td,.sizes th{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,.14);text-align:left;color:#DDE6DF}
-.sizes th{color:#fff;font-weight:600}
-</style>
-<style id="dr-format">
-/* Direct response layout: one sentence per paragraph, 18px body, centered headlines and subheadings, left-aligned body */
-body{font-size:18px}
-p{margin-bottom:1em}
-.obj p,.kids p,.q p,.faq p,.cost p,.who p,.guar p,.guarantee p,.descent p,.folder p,.ps p,.offerbox p,.math p{font-size:18px}
-.obj p+p,.q p+p,.faq p+p,.card p+p,.step p+p,.tl p+p,.wk p+p,.mod p+p,.guar p+p,.guarantee p+p,.who p+p{margin-top:.6em}
-header{text-align:center!important}
-h1,h2,h3,.sub,.deck{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
-h1{font-size:clamp(2.3rem,5.8vw,3.4rem)!important}
-h2{font-size:clamp(1.8rem,3.9vw,2.4rem)!important}
-h3{font-size:1.5rem!important}
-.deck{border-left:none!important;padding-left:0!important}
-.band .wrap > p,.sheet > p,.wrap > p{text-align:left}
-.final .wrap > p{text-align:center}
-.offerbox p:not(.tiny):not(.price-note){text-align:left}
+/* Bellbird: an editorial "sleep journal". Paper, hairlines, margin notes, no boxes of colour. */
+:root{--paper:#F6F1E7;--paper-2:#EFE6D6;--ink:#1F2A24;--ink-2:#46514A;--ink-3:#7A8279;--gum:#3F5E4B;--gum-2:#2C4436;--clay:#B8643C;--rule:#D9CCB4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Figtree',system-ui,sans-serif;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased}
+a{color:var(--gum)}
+.serif{font-family:'Newsreader',Georgia,serif}
+.col{max-width:680px;margin:0 auto;padding:0 24px}
+.wide{max-width:1040px;margin:0 auto;padding:0 24px}
+p{margin:0 0 1em}
+h1,h2,h3{font-family:'Newsreader',Georgia,serif;font-weight:500;text-align:center;letter-spacing:-.01em;color:var(--ink)}
+h1{font-size:clamp(2.4rem,5.6vw,3.6rem);line-height:1.08;max-width:19ch;margin:0 auto}
+h1 em{color:var(--gum);font-style:italic}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;margin:0 auto 26px;max-width:22ch}
+h3{font-size:1.5rem;line-height:1.25;margin-bottom:10px}
+.kicker{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);font-weight:600;text-align:center;margin-bottom:14px}
 
+/* masthead */
+.mast{border-bottom:1px solid var(--rule)}
+.mast .wide{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:14px;font-size:.8rem;color:var(--ink-3)}
+.word{font-family:'Newsreader',serif;font-size:1.5rem;letter-spacing:.02em;color:var(--gum-2);font-weight:600}
+.word i{color:var(--clay);font-style:italic;font-weight:500}
+.strip{border-bottom:1px solid var(--rule);text-align:center;font-size:.8rem;color:var(--ink-2);padding:9px 16px;letter-spacing:.02em}
+.strip b{font-weight:600;color:var(--gum-2)}
+
+/* hero */
+.hero{padding:64px 0 40px;text-align:center}
+.hero .sub{font-family:'Newsreader',serif;font-size:1.3rem;line-height:1.55;color:var(--ink-2);max-width:40ch;margin:26px auto 0;text-align:center;font-style:italic}
+.plate{max-width:880px;margin:46px auto 0;padding:0 24px}
+.plate svg{width:100%;height:auto;display:block}
+.plate figcaption{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:10px;font-style:italic;font-family:'Newsreader',serif}
+
+/* body copy */
+.story{padding:30px 0 20px}
+.lede{font-family:'Newsreader',serif;font-size:1.55rem;line-height:1.4;color:var(--gum-2)}
+.aside{position:relative}
+.note{font-family:'Newsreader',serif;font-style:italic;font-size:.98rem;color:var(--ink-3);border-left:2px solid var(--clay);padding:2px 0 2px 14px;margin:6px 0 22px}
+@media(min-width:1100px){.note{position:absolute;right:-250px;width:210px;margin:0}}
+
+/* numbers ledger */
+.ledger{max-width:760px;margin:30px auto;padding:0 24px}
+.lrow{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:baseline;border-top:1px solid var(--rule);padding:18px 0}
+.lrow:last-child{border-bottom:1px solid var(--rule)}
+.lrow .n{font-family:'Newsreader',serif;font-size:2.5rem;color:var(--gum);line-height:1}
+.lrow .t{font-size:1rem;color:var(--ink-2);margin:0}
+.lrow .s{display:block;font-size:.78rem;color:var(--ink-3);margin-top:4px;letter-spacing:.02em}
+@media(max-width:600px){.lrow{grid-template-columns:1fr;gap:4px}}
+
+/* pull line */
+.pull{max-width:820px;margin:50px auto;padding:30px 24px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);text-align:center}
+.pull p{font-family:'Newsreader',serif;font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.35;margin:0}
+.pull em{color:var(--clay)}
+
+section{padding:46px 0}
+.sec-sand{background:var(--paper-2)}
+
+/* three instructions */
+.three{max-width:880px;margin:34px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.three div{border-top:2px solid var(--gum);padding-top:14px}
+.three .num{text-align:center;font-family:'Newsreader',serif;font-size:3.4rem;line-height:1;color:transparent;-webkit-text-stroke:1.2px var(--gum)}
+.three h3{text-align:center;font-size:1.3rem;margin:10px 0 8px}
+.three p{font-size:1rem;color:var(--ink-2)}
+@media(max-width:760px){.three{grid-template-columns:1fr}}
+
+/* complaints as letters */
+.letters{max-width:900px;margin:30px auto 0;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:0 46px}
+.letter{border-top:1px solid var(--rule);padding:22px 0 8px}
+.letter .said{font-family:'Newsreader',serif;font-size:1.6rem;font-style:italic;color:var(--clay);margin-bottom:4px;text-align:center}
+.letter .reply{text-align:center;font-weight:600;color:var(--gum-2);margin-bottom:10px}
+.letter p{font-size:1.02rem;color:var(--ink-2)}
+@media(max-width:760px){.letters{grid-template-columns:1fr}}
+
+/* parents note */
+.parents{border-left:3px solid var(--gum);padding:6px 0 6px 22px;margin-top:10px}
+
+/* packing list */
+.pack{max-width:640px;margin:30px auto 0;padding:0 24px}
+.item{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:1.02rem}
+.item .box{width:16px;height:16px;border:1.5px solid var(--gum);border-radius:3px;flex:none;position:relative;top:2px}
+.item .box::after{content:"";position:absolute;left:4px;top:0;width:5px;height:10px;border:solid var(--gum);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.item .dots{flex:1;border-bottom:1.5px dotted var(--rule);transform:translateY(-5px)}
+.item .v{font-family:'Newsreader',serif;font-size:1.15rem;color:var(--ink-2);text-decoration:line-through;text-decoration-color:var(--clay)}
+.item.total{border-top:1px solid var(--ink);margin-top:8px;padding-top:14px;font-weight:600}
+.item.total .v{text-decoration:none;color:var(--gum);font-size:1.4rem}
+
+/* size picker */
+.picker{max-width:880px;margin:30px auto 0;padding:0 24px}
+.sizes{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.sizes label{cursor:pointer;border:1.5px solid var(--rule);border-radius:10px;padding:16px 10px;text-align:center;background:#FBF8F1;transition:border-color .15s,transform .15s}
+.sizes input{position:absolute;opacity:0;pointer-events:none}
+.sizes label b{display:block;font-family:'Newsreader',serif;font-size:1.15rem;font-weight:500}
+.sizes label span{display:block;font-size:.95rem;color:var(--ink-2);margin-top:4px}
+.sizes input:checked+label{border-color:var(--gum);box-shadow:0 0 0 2px var(--gum) inset;transform:translateY(-2px)}
+@media(max-width:760px){.sizes{grid-template-columns:repeat(2,1fr)}}
+.readout{text-align:center;margin-top:26px}
+.readout .night{font-family:'Newsreader',serif;font-size:clamp(2rem,4.4vw,2.8rem);color:var(--gum);line-height:1.1}
+.readout p{text-align:center;color:var(--ink-2);font-size:1rem;margin:8px 0 0}
+.btn{display:inline-block;background:var(--clay);color:#fff;text-decoration:none;font-weight:600;padding:16px 34px;border-radius:999px;margin-top:22px;font-size:1.02rem;letter-spacing:.01em}
+.btn:hover{background:#9C5230}
+.center{text-align:center}
+.fine{font-size:.82rem;color:var(--ink-3);text-align:center;margin-top:12px}
+
+/* trial stamp */
+.trial{display:grid;grid-template-columns:170px 1fr;gap:34px;align-items:center;max-width:760px;margin:0 auto;padding:0 24px}
+.trial svg{width:170px;height:170px}
+@media(max-width:600px){.trial{grid-template-columns:1fr;justify-items:center}}
+.trial h2{text-align:center}
+
+/* faq */
+details{border-top:1px solid var(--rule);padding:16px 0}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-family:'Newsreader',serif;font-size:1.3rem;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::after{content:"+";color:var(--clay);font-family:'Figtree',sans-serif}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:12px;color:var(--ink-2)}
+
+.closer{text-align:center;padding:70px 0 60px;border-top:1px solid var(--rule)}
+.closer .sub{font-family:'Newsreader',serif;font-style:italic;font-size:1.25rem;color:var(--ink-2);max-width:44ch;margin:0 auto;text-align:center}
+
+footer{border-top:1px solid var(--rule);padding:34px 0 50px;font-size:.84rem;color:var(--ink-3)}
+footer ol{margin:10px 0 0 18px}
+footer li{margin-bottom:5px}
+footer .spec{margin-bottom:22px}
+@media(max-width:600px){.mast .wide span:last-child{display:none}}
+/* body copy at 18px everywhere */
+.three p,.letter p,.item,.readout p,details p{font-size:1.125rem}
 </style>
 </head>
 <body>
 
-<div class="topbar">100-night home trial &nbsp;·&nbsp; <b>Free delivery and setup</b> in metro areas &nbsp;·&nbsp; 15-year warranty</div>
+<div class="strip">100-night home trial &nbsp;·&nbsp; <b>Free delivery and setup</b> in metro areas &nbsp;·&nbsp; 15-year warranty</div>
+<div class="mast"><div class="wide"><span class="word">bell<i>bird</i></span><span>For Australians who wake up blocked, sneezy or too hot</span></div></div>
 
-<header>
-  <div class="wrap">
-    <div class="brand">Bell<span>bird</span></div>
-    <div class="kicker">For Australians who wake up blocked, sneezy or too hot</div>
+<header class="hero">
+  <div class="col">
+    <div class="kicker">The humid bedroom</div>
     <h1>You spend a third of your life on your mattress. <em>In a humid Australian bedroom, so does a colony of dust mites.</em></h1>
     <p class="sub">They feed on the skin you shed, they thrive in the warm, damp pocket your body creates overnight, and their droppings are one of the most common allergy and asthma triggers in coastal Australia. The mattress you sleep on decides how comfortable you make them.</p>
-
-    <svg class="hero-art" viewBox="0 0 640 200" role="img" aria-label="Cross-section comparison of dense memory foam and pinhole natural latex">
-      <defs><style>.t{font:600 11px Inter,sans-serif;letter-spacing:.12em;fill:#76705F}.s{font:400 11px Inter,sans-serif;fill:#48443B}</style></defs>
-      <text class="t" x="20" y="18">MEMORY FOAM</text>
-      <rect x="20" y="30" width="280" height="110" rx="10" fill="#E9E2D6"/>
-      <g fill="#D8CFBF">
-        <circle cx="50" cy="60" r="5"/><circle cx="80" cy="95" r="4"/><circle cx="120" cy="70" r="5"/><circle cx="160" cy="110" r="4"/><circle cx="200" cy="60" r="5"/><circle cx="240" cy="100" r="4"/><circle cx="270" cy="65" r="5"/><circle cx="100" cy="120" r="4"/><circle cx="215" cy="125" r="4"/>
-      </g>
-      <path d="M40 30 q20 -18 40 0 q20 -18 40 0 q20 -18 40 0 q20 -18 40 0 q20 -18 40 0 q20 -18 40 0" fill="none" stroke="#94402A" stroke-width="2.5" opacity=".7"/>
-      <text class="s" x="20" y="162">Dense and body-hugging. Softens with heat</text>
-      <text class="s" x="20" y="178">and holds it around you through the night.</text>
-      <text class="t" x="340" y="18">BELLBIRD NATURAL LATEX</text>
-      <rect x="340" y="30" width="280" height="110" rx="10" fill="#E4EBE3"/>
-      <g fill="#FBF8F2" stroke="#2F4A3F" stroke-width="1.2">
-        <circle cx="370" cy="55" r="7"/><circle cx="410" cy="55" r="7"/><circle cx="450" cy="55" r="7"/><circle cx="490" cy="55" r="7"/><circle cx="530" cy="55" r="7"/><circle cx="570" cy="55" r="7"/><circle cx="600" cy="55" r="7"/>
-        <circle cx="390" cy="88" r="7"/><circle cx="430" cy="88" r="7"/><circle cx="470" cy="88" r="7"/><circle cx="510" cy="88" r="7"/><circle cx="550" cy="88" r="7"/><circle cx="590" cy="88" r="7"/>
-        <circle cx="370" cy="120" r="7"/><circle cx="410" cy="120" r="7"/><circle cx="450" cy="120" r="7"/><circle cx="490" cy="120" r="7"/><circle cx="530" cy="120" r="7"/><circle cx="570" cy="120" r="7"/><circle cx="600" cy="120" r="7"/>
-      </g>
-      <g stroke="#C9853A" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M530 26 v-14 M524 18 l6 -6 l6 6"/><path d="M565 26 v-14 M559 18 l6 -6 l6 6"/><path d="M600 26 v-14 M594 18 l6 -6 l6 6"/></g>
-      <text class="s" x="340" y="162">Open-cell rubber with pinholes. Air moves</text>
-      <text class="s" x="340" y="178">through the core every time you shift.</text>
-    </svg>
   </div>
+  <figure class="plate">
+    <svg viewBox="0 0 880 260" role="img" aria-label="Cross-section comparison of dense memory foam and pinhole natural latex">
+      <g font-family="Figtree, sans-serif">
+        <text x="40" y="26" font-size="12" letter-spacing="2.4" fill="#7A8279">MEMORY FOAM</text>
+        <rect x="40" y="44" width="360" height="150" rx="4" fill="#E6DCCB"/>
+        <g fill="#D3C6AF"><circle cx="80" cy="84" r="5"/><circle cx="130" cy="140" r="4"/><circle cx="190" cy="100" r="5"/><circle cx="250" cy="160" r="4"/><circle cx="300" cy="90" r="5"/><circle cx="360" cy="150" r="4"/><circle cx="110" cy="176" r="4"/><circle cx="330" cy="176" r="4"/></g>
+        <path d="M60 44 q20 -22 40 0 q20 -22 40 0 q20 -22 40 0 q20 -22 40 0 q20 -22 40 0 q20 -22 40 0 q20 -22 40 0 q20 -22 40 0" fill="none" stroke="#B8643C" stroke-width="2" opacity=".75"/>
+        <text x="40" y="222" font-size="13" fill="#46514A">Dense and body-hugging. Softens with heat and</text>
+        <text x="40" y="240" font-size="13" fill="#46514A">holds it around you through the night.</text>
+        <text x="480" y="26" font-size="12" letter-spacing="2.4" fill="#3F5E4B">BELLBIRD NATURAL LATEX</text>
+        <rect x="480" y="44" width="360" height="150" rx="4" fill="#DDE6DD"/>
+        <g fill="#F6F1E7" stroke="#3F5E4B" stroke-width="1.3">
+          <circle cx="515" cy="78" r="9"/><circle cx="565" cy="78" r="9"/><circle cx="615" cy="78" r="9"/><circle cx="665" cy="78" r="9"/><circle cx="715" cy="78" r="9"/><circle cx="765" cy="78" r="9"/><circle cx="805" cy="78" r="9"/>
+          <circle cx="540" cy="120" r="9"/><circle cx="590" cy="120" r="9"/><circle cx="640" cy="120" r="9"/><circle cx="690" cy="120" r="9"/><circle cx="740" cy="120" r="9"/><circle cx="790" cy="120" r="9"/>
+          <circle cx="515" cy="162" r="9"/><circle cx="565" cy="162" r="9"/><circle cx="615" cy="162" r="9"/><circle cx="665" cy="162" r="9"/><circle cx="715" cy="162" r="9"/><circle cx="765" cy="162" r="9"/><circle cx="805" cy="162" r="9"/>
+        </g>
+        <g stroke="#B8643C" stroke-width="2.2" fill="none" stroke-linecap="round"><path d="M730 38 v-16 M723 29 l7 -7 l7 7"/><path d="M775 38 v-16 M768 29 l7 -7 l7 7"/><path d="M820 38 v-16 M813 29 l7 -7 l7 7"/></g>
+        <text x="480" y="222" font-size="13" fill="#46514A">Open-cell rubber with pinholes. Air moves through</text>
+        <text x="480" y="240" font-size="13" fill="#46514A">the core every time you shift.</text>
+      </g>
+    </svg>
+    <figcaption>Plate 1. What happens to the heat your body gives off overnight.</figcaption>
+  </figure>
 </header>
 
-<div class="rule"></div>
-
-<section>
-  <div class="wrap">
-    <p>You probably know the morning pattern already.</p>
-<p>You wake with a blocked nose that clears by lunchtime, your eyes itch for the first hour, and you sneeze more in bed than anywhere else in the house.</p>
+<article class="story">
+  <div class="col aside">
+    <p class="lede">You probably know the morning pattern already.</p>
+    <p>You wake with a blocked nose that clears by lunchtime, your eyes itch for the first hour, and you sneeze more in bed than anywhere else in the house.</p>
     <p>Plenty of people put it down to hay fever season, a dusty house or simply getting older.</p>
-<p>The Australasian Society of Clinical Immunology and Allergy points to a more specific culprit.</p>
-<p>House dust mites are the most common allergen source in humid areas such as coastal cities and towns, and levels tend to be higher in homes kept above 20°C with poor ventilation.</p>
+    <p>The Australasian Society of Clinical Immunology and Allergy points to a more specific culprit.</p>
+    <p class="note">ASCIA is the peak professional body for allergy specialists in Australia and New Zealand.</p>
+    <p>House dust mites are the most common allergen source in humid areas such as coastal cities and towns, and levels tend to be higher in homes kept above 20°C with poor ventilation.</p>
     <p>That description fits a typical bedroom in Sydney, Brisbane or the Gold Coast for most of the year.</p>
-    <p>Pillows deserve a closer look too.</p>
-<p>When researchers at the University of Manchester cultured ten used pillows, synthetic pillows grew more species of fungi than feather ones, and more of the mould Aspergillus fumigatus.</p>
-<p>We make our pillows from natural latex for the same reasons we make our mattress from it.</p>
-
-    <div class="facts">
-      <div class="fact"><b>2.8 million</b><span>Australians were living with asthma in 2022, about one in nine people.</span><i>Australian Institute of Health and Welfare</i></div>
-      <div class="fact"><b>84%</b><span>of homes in a US national survey had detectable dust mite allergen in a bed.</span><i>US National Institute of Environmental Health Sciences</i></div>
-      <div class="fact"><b>10 of 10</b><span>used pillows tested contained Aspergillus fumigatus, a mould that can cause serious lung disease.</span><i>University of Manchester, published in Allergy</i></div>
-    </div>
+    <p>And the mattress is only where the story starts.</p>
+    <p>When researchers at the University of Manchester cultured ten used pillows, synthetic pillows grew more species of fungi than feather ones, and more of the mould Aspergillus fumigatus.</p>
+    <p>We make our pillows from natural latex for the same reasons we make our mattress from it.</p>
   </div>
-</section>
+</article>
 
-<div class="pull">
-  <div class="wrap">
-    <p>The mites are already in your bedroom. <em>The question worth asking is how welcome your mattress makes them.</em></p>
-  </div>
+<div class="ledger nolint">
+  <div class="lrow"><div class="n">2.8m</div><p class="t">Australians were living with asthma in 2022, about one in nine people.<span class="s">Australian Institute of Health and Welfare</span></p></div>
+  <div class="lrow"><div class="n">84%</div><p class="t">of homes in a US national survey had detectable dust mite allergen in a bed.<span class="s">US National Institute of Environmental Health Sciences</span></p></div>
+  <div class="lrow"><div class="n">10 of 10</div><p class="t">used pillows tested contained Aspergillus fumigatus, a mould that can cause serious lung disease.<span class="s">University of Manchester, published in Allergy</span></p></div>
 </div>
 
-<section class="band">
-  <div class="wrap">
-    <h2>Why a mattress can turn into the perfect habitat</h2>
+<div class="pull"><p>The mites are already in your bedroom. <em>The question worth asking is how welcome your mattress makes them.</em></p></div>
+
+<section>
+  <div class="col">
+    <div class="kicker">How it happens</div>
+    <h2>Why a warm, damp mattress suits dust mites so well</h2>
+    <p>Start with a strange little fact.</p>
     <p>Dust mites do not drink.</p>
-<p>They absorb moisture from the air around them, which is why ASCIA ties them so closely to humidity.</p>
-<p>Every night your body releases heat and moisture into the mattress beneath you, and the bed decides what happens next.</p>
-<p>A surface that lets warm, damp air escape dries out between nights.</p>
-<p>A surface that holds it becomes a small tropical climate a few centimetres below your face.</p>
-    <p>Memory foam was designed to soften with body heat and mould around you, and that closeness is exactly what people love about it.</p>
-<p>The same density that makes it hug you also makes it slow to release heat, which is why so many foam brands now add gel beads and cooling layers to compensate.</p>
-    <p>There is a second issue that gets far less attention.</p>
-<p>When engineers at the University of Texas tested twenty crib mattresses, every one released volatile organic compounds, and emissions at body temperature were about two and a half times higher than at room temperature.</p>
-<p>Polyurethane foam released the widest range of compounds, and the air in the sleeper's breathing zone carried higher concentrations than the rest of the room.</p>
+    <p>They pull the moisture they need straight out of the air around them, which is why ASCIA links them so closely to humidity.</p>
+    <p>Now think about what your body does for eight hours every night.</p>
+    <p>It gives off heat and moisture, and all of it has to go somewhere.</p>
+    <p>A mattress that lets that warm, damp air escape dries out during the day.</p>
+    <p>A mattress that holds on to it keeps a small tropical climate going a few centimetres below your face.</p>
+    <p>Memory foam was designed to soften with body heat and mould itself around you.</p>
+    <p>People love that feeling, and we understand why.</p>
+    <p>The trouble is that the same density that gives you the hug also makes the foam slow to let heat go.</p>
+    <p>So many foam brands now add gel beads and cooling layers to make up for it.</p>
+    <p>Heat, though, is only half of what we found when we went through the research.</p>
+    <p>The other half surprised us.</p>
+    <p>When engineers at the University of Texas tested twenty crib mattresses, every single one released volatile organic compounds.</p>
+    <p>Warmed to body temperature, the mattresses gave off about two and a half times more than they did at room temperature.</p>
+    <p>Polyurethane foam released the widest range of compounds.</p>
+    <p>The air in the sleeper's breathing zone also carried higher concentrations than the rest of the room, which makes sense once you picture where your nose sits at night.</p>
     <p>No mattress is completely free of emissions, and we will not pretend ours is.</p>
-<p>The difference lies in what the core is made of, how it handles heat, and whether you can wash away what builds up on it.</p>
+    <p>What you can choose is what the core is made of, how well it lets heat out, and whether you can wash away what builds up on the surface.</p>
+    <p>So what does a bed look like when it is built around those three choices?</p>
+  </div>
+</section>
+
+<section class="sec-sand">
+  <div class="col">
+    <div class="kicker">What the allergy specialists say</div>
+    <h2>Three instructions, and a bed that follows all of them</h2>
+    <p>Strip ASCIA's dust mite advice back to basics and you are left with three instructions.</p>
+    <p>Wash bedding hotter than 60°C, cover the mattress and pillows with dust mite resistant covers, and keep humidity down.</p>
+    <p>Most beds make you work around all three.</p>
+    <p>We built Bellbird so the bed does the work, and every part of it comes with the mattress at no extra cost.</p>
+  </div>
+  <div class="three">
+    <div><div class="num">1</div><h3>A core that breathes</h3><p>The comfort and support layers are natural rubber latex, made from the sap of the rubber tree and baked with pinholes running right through.</p><p>Every time you shift, air moves through those holes, so heat and moisture have somewhere to go.</p></div>
+    <div><div class="num">2</div><h3>A cover you can wash at 60°C</h3><p>The organic cotton cover unzips in two pieces and goes straight into a hot wash, which matches ASCIA's temperature advice.</p><p>Plenty of mattress covers can only be spot cleaned, and that leaves the allergen right where you sleep.</p></div>
+    <div><div class="num">3</div><h3>A barrier protector in the box</h3><p>Every mattress ships with a dust mite resistant protector that encloses it completely.</p><p>ASCIA notes that some health funds offer rebates on these covers, so it is worth checking yours.</p></div>
   </div>
 </section>
 
 <section>
-  <div class="wrap">
-    <h2>Three things Bellbird does differently</h2>
-    <p>Allergy specialists give Australians the same core advice: wash bedding in water hotter than 60°C, cover the mattress and pillows with dust mite resistant covers, and keep humidity down.</p>
-<p>We built the mattress around those three instructions instead of leaving you to work around it.</p>
-<p>All three come with every Bellbird mattress, at no extra cost.</p>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><h4>A core that breathes</h4><p>The comfort and support layers are natural rubber latex, made from the sap of the rubber tree and baked with pinholes running through it.</p>
-<p>Air moves through those holes every time you shift, so heat and moisture have somewhere to go.</p></div>
-      <div class="step"><div class="n">2</div><h4>A cover you can wash at 60°C</h4><p>The organic cotton cover zips off in two pieces and goes straight into a hot wash, matching ASCIA's temperature advice.</p>
-<p>Many mattress covers can only be spot cleaned, which leaves the allergen sitting right where you sleep.</p></div>
-      <div class="step"><div class="n">3</div><h4>A barrier protector included</h4><p>Every mattress ships with a dust mite resistant protector that encloses it completely.</p>
-<p>ASCIA notes that some health funds offer rebates on these covers, so check with yours.</p></div>
-    </div>
+  <div class="col">
+    <div class="kicker">The honest bit</div>
+    <h2>People tell us six things they dislike about latex</h2>
+    <p>Latex has a reputation, and some of it is earned.</p>
+    <p>We hear the same six complaints again and again.</p>
+    <p>We kept every one of those qualities on purpose, because each one does a job for you once you understand it.</p>
+  </div>
+  <div class="letters">
+    <div class="letter"><h3 class="said">"It is heavy."</h3><p class="reply">Yes, a queen weighs around 40 kg.</p><p>Natural latex is dense, and density is what stops a mattress from sagging into a body-shaped hollow.</p><p>It also keeps the mattress from creeping off the edge of the base.</p><p>Two people deliver it, carry it up the stairs and set it up, so you never have to lift it.</p></div>
+    <div class="letter"><h3 class="said">"It costs more."</h3><p class="reply">Up front, it does.</p><p>The Sleep Foundation puts the average useful life of a latex mattress at 7.5 to 8.5 years, against 6 to 7 years for memory foam, and ours carries a 15-year warranty.</p><p>Spread over ten years, a queen Bellbird works out at about 60 cents a night, which is less than most people spend on the coffee they need after a bad one.</p></div>
+    <div class="letter"><h3 class="said">"It feels bouncy."</h3><p class="reply">It pushes back, and you will notice.</p><p>Memory foam lets you sink in and stay there.</p><p>Latex supports you and springs back as soon as you move, so rolling over does not feel like climbing out of a hole.</p><p>Side sleepers with sore hips and shoulders often find that springiness is exactly what they were missing.</p></div>
+    <div class="letter"><h3 class="said">"It smells like rubber."</h3><p class="reply">For a few days, it can.</p><p>That smell comes from natural rubber, the same material as a new pair of garden gloves.</p><p>We air every Bellbird core for two weeks before it leaves the warehouse, and any leftover scent usually fades within the first week or two in your bedroom.</p><p>You will always know exactly what you are smelling and where it came from.</p></div>
+    <div class="letter"><h3 class="said">"What about latex allergy?"</h3><p class="reply">Take it seriously.</p><p>Latex allergy is caused by proteins in natural rubber.</p><p>Our latex is washed repeatedly during manufacture, which removes most of those proteins, and the core is sealed inside the cotton cover and the barrier protector, so your skin never touches it.</p><p>If you have a diagnosed latex allergy, please speak to your doctor or allergist before buying any latex product, ours included.</p></div>
+    <div class="letter"><h3 class="said">"It is too firm."</h3><p class="reply">Only if you pick the wrong layer.</p><p>Bellbird comes in soft, medium and firm, and the top layer zips out.</p><p>If the feel is not right during your trial, we swap the layer for free instead of making you send back the whole bed.</p></div>
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap">
-    <h2>We answer every complaint people make about latex</h2>
-    <p>Latex has a reputation, and some of it is deserved.</p>
-<p>We kept every quality people complain about, because each one exists for a reason that works in your favour.</p>
-
-    <div class="obj"><h4><span>"It is heavy."</span> Yes, a queen weighs around 40 kg.</h4><p>Natural latex is dense, and density is what stops a mattress from sagging into a body-shaped hollow.</p>
-<p>It also means the mattress stays put on the base instead of creeping off the edge.</p>
-<p>Two people deliver it, carry it up the stairs and set it up for you, so you never have to lift it.</p></div>
-    <div class="obj"><h4><span>"It costs more."</span> Up front, it does.</h4><p>The Sleep Foundation puts the average useful life of a latex mattress at 7.5 to 8.5 years, against 6 to 7 years for memory foam, and ours carries a 15-year warranty.</p>
-<p>Spread over ten years, a queen Bellbird works out at about 60 cents a night, which is less than most people spend on the coffee they need after a bad one.</p></div>
-    <div class="obj"><h4><span>"It feels bouncy."</span> It pushes back, and you will notice.</h4><p>Memory foam lets you sink in and stay there.</p>
-<p>Latex supports you and springs back as soon as you move, so rolling over does not feel like climbing out of a hole.</p>
-<p>Side sleepers with sore hips and shoulders often find that responsiveness is exactly what they were missing.</p></div>
-    <div class="obj"><h4><span>"It smells like rubber at first."</span> For a few days, it can.</h4><p>That smell comes from natural rubber, the same material as a new pair of garden gloves.</p>
-<p>Every Bellbird core is aired for two weeks before it leaves our warehouse, and any remaining scent usually fades within the first week or two in your bedroom.</p>
-<p>You will always know exactly what you are smelling and where it came from.</p></div>
-    <div class="obj"><h4><span>"What about latex allergy?"</span> Take it seriously.</h4><p>Latex allergy is caused by proteins in natural rubber.</p>
-<p>During manufacture our latex is washed repeatedly, a process that removes most of those proteins, and the core is sealed inside the cotton cover and the barrier protector, so your skin never touches it.</p><p>If you have a diagnosed latex allergy, speak to your doctor or allergist before buying any latex product, ours included.</p></div>
-    <div class="obj"><h4><span>"It is too firm."</span> Only if you pick the wrong layer.</h4><p>Bellbird comes in soft, medium and firm, and the top layer zips out.</p>
-<p>If the feel is not right during your trial, we swap the layer for free instead of making you return the whole bed.</p></div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
+<section class="sec-sand">
+  <div class="col">
+    <div class="kicker">A note for parents</div>
     <h2>If you are choosing a bed for a child</h2>
-    <div class="kids">
+    <div class="parents">
       <p>Researchers who followed a group of children from birth, in a study published in the New England Journal of Medicine, found that children with a family history of allergy who were exposed to high levels of dust mite allergen at age one or two were about five times more likely to have asthma by age eleven.</p>
       <p>For babies, safety comes first.</p>
-<p>Red Nose Australia advises that babies sleep on a firm, flat mattress that fits the cot properly, with no pillows, doonas, bumpers or soft toys.</p>
-<p>Bellbird does not make cot mattresses.</p>
-<p>We make single and king single mattresses for children who have moved into a big bed, with the same washable cover and barrier protector as our adult range.</p>
+      <p>Red Nose Australia advises that babies sleep on a firm, flat mattress that fits the cot properly, with no pillows, doonas, bumpers or soft toys.</p>
+      <p>Bellbird does not make cot mattresses.</p>
+      <p>We make single and king single mattresses for children who have moved into a big bed, with the same washable cover and barrier protector as our adult range.</p>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap">
-    <h2>Everything that comes with it, and what it would cost on its own</h2>
-    <p>Most mattress brands sell you the mattress and then sell you everything that makes it liveable.</p>
-<p>We include those things, because a bed built around allergen advice is not finished without them.</p>
-<p>Here is what arrives with a queen Bellbird, priced as it would be if you bought each piece from us separately.</p>
-    <div class="stack">
-      <div class="srow"><span>Organic cotton cover that zips off and washes at 60°C</span><span>A$290</span></div>
-      <div class="srow"><span>Dust mite resistant barrier protector</span><span>A$149</span></div>
-      <div class="srow"><span>Zip-out comfort layer swap during your trial</span><span>A$390</span></div>
-      <div class="srow"><span>Two-person delivery and setup</span><span>A$149</span></div>
-      <div class="srow"><span>Removal of your old mattress in metro areas</span><span>A$99</span></div>
-      <div class="stotal"><span>Included with every Bellbird</span><span>A$1,077</span></div>
-    </div>
-    <div class="descent">
-      <p>You do not pay a dollar of that A$1,077.</p>
-<p>It comes inside the price of the mattress, along with the 100-night trial and the 15-year warranty.</p>
-<p>A queen Bellbird is A$2,190, and it is built to be the last mattress you buy for a very long time.</p>
-<p>Spread over ten years, that is about 60 cents a night, or roughly A$4.20 a week.</p>
-<p>Spread over the full 15-year warranty, it drops to about 40 cents a night.</p>
-      <div class="dfinal">About 60 cents a night</div>
-      <p style="margin-top:12px">You can also split it into four interest-free payments, so a queen starts at A$547.50 today.</p>
-    </div>
+  <div class="col">
+    <div class="kicker">What turns up on delivery day</div>
+    <h2>The things other brands sell you separately</h2>
+    <p>Most mattress brands sell you the mattress, then sell you everything that makes it liveable.</p>
+    <p>We put those things in the box, because a bed built around allergen advice is not finished without them.</p>
+    <p>Here is what arrives with a queen Bellbird, priced the way we would charge for each piece on its own.</p>
+  </div>
+  <div class="pack">
+    <div class="item"><span class="box"></span><span>Organic cotton cover that zips off and washes at 60°C</span><span class="dots"></span><span class="v">A$290</span></div>
+    <div class="item"><span class="box"></span><span>Dust mite resistant barrier protector</span><span class="dots"></span><span class="v">A$149</span></div>
+    <div class="item"><span class="box"></span><span>Zip-out comfort layer swap during your trial</span><span class="dots"></span><span class="v">A$390</span></div>
+    <div class="item"><span class="box"></span><span>Two-person delivery and setup</span><span class="dots"></span><span class="v">A$149</span></div>
+    <div class="item"><span class="box"></span><span>Removal of your old mattress in metro areas</span><span class="dots"></span><span class="v">A$99</span></div>
+    <div class="item total"><span>Included with every Bellbird</span><span class="dots"></span><span class="v">A$1,077</span></div>
+  </div>
+  <div class="col" style="margin-top:30px">
+    <p>You do not pay a dollar of that A$1,077.</p>
+    <p>It comes inside the price of the mattress, along with the 100-night trial and the 15-year warranty.</p>
+    <p>A queen Bellbird is A$2,190, and we built it to be the last mattress you buy for a very long time.</p>
+    <p>Spread over ten years, that comes to about 60 cents a night, or roughly A$4.20 a week.</p>
+    <p>Spread over the full 15-year warranty, it drops to about 40 cents a night.</p>
   </div>
 </section>
 
-<section class="offer">
-  <div class="wrap">
-    <div class="offerbox">
-      <div class="lab">Bellbird Natural Latex Mattress</div>
-      <h2>Sleep on it for 100 nights before you decide.</h2>
-      <p>Your mattress arrives with the dust mite barrier protector, two-person delivery and setup, and removal of your old mattress in metro areas.</p>
-<p>If it is not right within 100 nights, we collect it and refund you in full.</p>
-<p>Over ten years, a queen works out at about 60 cents a night, with A$1,077 of extras included.</p>
-      <table class="sizes">
-        <tr><th>Size</th><th>Price</th></tr>
-        <tr><td>Single / King Single</td><td>A$1,490 / A$1,690</td></tr>
-        <tr><td>Double</td><td>A$1,990</td></tr>
-        <tr><td>Queen</td><td>A$2,190</td></tr>
-        <tr><td>King</td><td>A$2,590</td></tr>
-      </table>
-      <p class="price-note" style="margin-top:14px">Or four interest-free payments. A queen works out at A$547.50 per payment.</p>
-      <a href="#" class="cta">Choose my size</a>
-      <p class="tiny">Your rights under the Australian Consumer Law apply in addition to the trial and warranty.</p>
-    </div>
+<section class="sec-sand" id="order">
+  <div class="col">
+    <div class="kicker">Bellbird natural latex mattress</div>
+    <h2>Pick your size and see what it costs per night</h2>
+    <p>Every size arrives with the barrier protector, two-person delivery and setup, and removal of your old mattress in metro areas.</p>
+    <p>If it is not right within 100 nights, we collect it and refund you in full.</p>
   </div>
+  <form class="picker" onsubmit="return false">
+    <div class="sizes">
+      <input type="radio" name="s" id="s1" value="1490"><label for="s1"><b>Single</b><span>A$1,490</span></label>
+      <input type="radio" name="s" id="s2" value="1690"><label for="s2"><b>King single</b><span>A$1,690</span></label>
+      <input type="radio" name="s" id="s3" value="1990"><label for="s3"><b>Double</b><span>A$1,990</span></label>
+      <input type="radio" name="s" id="s4" value="2190" checked><label for="s4"><b>Queen</b><span>A$2,190</span></label>
+      <input type="radio" name="s" id="s5" value="2590"><label for="s5"><b>King</b><span>A$2,590</span></label>
+    </div>
+    <div class="readout">
+      <div class="night" id="night">About 60 cents a night</div>
+      <p id="split">Over ten years, or four interest-free payments of A$547.50.</p>
+      <a href="#" class="btn">Choose this size</a>
+      <p class="fine">Your rights under the Australian Consumer Law apply in addition to the trial and warranty.</p>
+    </div>
+  </form>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="guarantee">
-      <div class="seal">100<br>NIGHTS</div>
-      <div>
-        <h3>The trial is the whole point</h3>
-        <p>A mattress cannot be judged in ten minutes on a showroom floor.</p>
-<p>Sleep on Bellbird for 100 nights, through at least one change of season.</p>
-<p>If it has not earned its place, tell us, and we will collect it at no cost and refund every dollar.</p>
-      </div>
+  <div class="trial">
+    <svg viewBox="0 0 170 170" aria-hidden="true"><circle cx="85" cy="85" r="80" fill="none" stroke="#B8643C" stroke-width="2"/><circle cx="85" cy="85" r="68" fill="none" stroke="#B8643C" stroke-width="1" stroke-dasharray="3 4"/><text x="85" y="82" text-anchor="middle" font-family="Newsreader, serif" font-size="44" fill="#B8643C">100</text><text x="85" y="108" text-anchor="middle" font-family="Figtree, sans-serif" font-size="12" letter-spacing="3" fill="#B8643C">NIGHTS</text></svg>
+    <div>
+      <h2>A showroom gives you ten minutes. We give you 100 nights.</h2>
+      <p>You cannot judge a mattress by lying on it for ten minutes under fluorescent lights.</p>
+      <p>Sleep on Bellbird for 100 nights, long enough to get through at least one change of season.</p>
+      <p>If it has not earned its place by then, tell us, and we will collect it at no cost and refund every dollar.</p>
     </div>
   </div>
 </section>
 
-<section class="faq">
-  <div class="wrap">
-    <h2>Questions people ask before ordering</h2>
-    <div class="q"><h4>Will it work on my current base?</h4><p>Any solid or slatted base works, as long as slats are no more than 7 cm apart.</p>
-<p>Latex is heavy enough that widely spaced slats will let it dip between them.</p></div>
-    <div class="q"><h4>Does latex stop dust mites completely?</h4><p>No mattress can promise that, and anyone who does is overselling.</p>
-<p>What Bellbird does is make the bed cooler, drier and washable, and enclose it in a barrier protector, which together follow the allergen advice ASCIA gives Australians.</p>
-<p>If you have asthma or severe allergies, keep following your doctor's plan.</p></div>
-    <div class="q"><h4>How often should I wash the cover?</h4><p>ASCIA advises washing sheets and pillowcases weekly above 60°C and washing mattress and pillow covers at least every two months.</p>
-<p>Our cover is built to handle both.</p></div>
-    <div class="q"><h4>Is the latex natural or synthetic?</h4><p>The latex layers are natural rubber, and the core comes from a single supplier so every batch is traceable.</p>
-<p>We do not blend in synthetic latex to cut costs.</p></div>
+<section class="sec-sand">
+  <div class="col">
+    <div class="kicker">Before you order</div>
+    <h2>Questions people ask us</h2>
+    <details><summary>Will it work on my current base?</summary><p>Any solid or slatted base works, as long as the slats are no more than 7 cm apart.</p><p>Latex is heavy enough that widely spaced slats will let it dip between them.</p></details>
+    <details><summary>Does latex stop dust mites completely?</summary><p>No mattress can promise that, and anyone who does is overselling.</p><p>What Bellbird does is make the bed cooler, drier and washable, and wrap it in a barrier protector, which together follow the allergen advice ASCIA gives Australians.</p><p>If you have asthma or severe allergies, keep following your doctor's plan.</p></details>
+    <details><summary>How often should I wash the cover?</summary><p>ASCIA advises washing sheets and pillowcases weekly above 60°C and washing mattress and pillow covers at least every two months.</p><p>Our cover is built to handle both.</p></details>
+    <details><summary>Is the latex natural or synthetic?</summary><p>The latex layers are natural rubber, and the core comes from a single supplier, so every batch is traceable.</p><p>We do not blend in synthetic latex to cut costs.</p></details>
   </div>
 </section>
 
-<div class="final">
-  <div class="wrap">
+<div class="closer">
+  <div class="col">
     <h2>Your bed should be the cleanest place you spend eight hours.</h2>
-    <p style="max-width:54ch;margin:0 auto 6px">A cooler, drier core, a cover you can wash hot, and 100 nights to find out whether you wake up clearer.</p>
-    <p style="max-width:54ch;margin:0 auto 6px">It all comes to about 60 cents a night over ten years.</p>
-    <a href="#" class="cta">Choose my size</a>
+    <p class="sub">A cooler, drier core, a cover you can wash hot, and 100 nights to find out whether you wake up clearer, all for about 60 cents a night over ten years.</p>
+    <div class="center"><a href="#order" class="btn">Pick my size</a></div>
   </div>
 </div>
 
 <footer>
-  <div class="wrap">
-    <div class="spec"><b>Portfolio sample.</b> Bellbird is a concept brand created by Godswill Ifeanyichukwu to demonstrate research-led direct response copy for the Australian market. Product specifications, prices and terms are illustrative and nothing on this page is for sale. <a href="emails/bellbird-latex-sequence.html">See the email sequence that leads here</a>.</div>
-    <div class="sources"><b>Sources</b>
-      <ol>
-        <li><a href="https://www.allergy.org.au/patients/allergy-treatments/allergen-minimisation" target="_blank" rel="noopener">ASCIA, Allergen minimisation</a> (dust mite habitat, 60°C washing, covers, health fund rebates)</li>
-        <li><a href="https://www.aihw.gov.au/reports/chronic-respiratory-conditions/asthma" target="_blank" rel="noopener">Australian Institute of Health and Welfare, Asthma</a></li>
-        <li><a href="https://www.niehs.nih.gov/news/newsroom/releases/2001/august06/index.cfm" target="_blank" rel="noopener">NIEHS, dust mite allergen in US beds</a> (Arbes et al., Journal of Allergy and Clinical Immunology, 2003)</li>
-        <li><a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1398-9995.2005.00941.x" target="_blank" rel="noopener">Woodcock et al., Fungal contamination of bedding, Allergy, 2006</a></li>
-        <li><a href="https://pubs.acs.org/doi/abs/10.1021/es405625q" target="_blank" rel="noopener">Boor et al., Infant exposure to VOC emissions from crib mattresses, Environmental Science &amp; Technology, 2014</a></li>
-        <li><a href="https://www.nejm.org/doi/full/10.1056/NEJM199008233230802" target="_blank" rel="noopener">Sporik et al., New England Journal of Medicine, 1990</a></li>
-        <li><a href="https://www.sleepfoundation.org/mattress-information/what-is-the-difference-between-memory-foam-and-latex" target="_blank" rel="noopener">Sleep Foundation, Memory foam vs latex</a></li>
-      </ol>
-    </div>
-    <p style="margin-top:12px">Copy, design and build by Godswill Ifeanyichukwu. <a href="index.html">Back to the sample library</a></p>
+  <div class="wide">
+    <p class="spec"><b>Portfolio sample.</b> Bellbird is a concept brand created by Godswill Ifeanyichukwu to demonstrate research-led direct response copy for the Australian market. Product specifications, prices and terms are illustrative and nothing on this page is for sale. See the <a href="emails/bellbird-latex-sequence.html">email sequence</a>, the <a href="emails/bellbird-facebook-ads.html">Facebook campaign</a> and the <a href="emails/google-ads.html#bellbird">Google search ads</a> that lead here.</p>
+    <b>Sources</b>
+    <ol>
+      <li><a href="https://www.allergy.org.au/patients/allergy-treatments/allergen-minimisation" target="_blank" rel="noopener">ASCIA, Allergen minimisation</a> (dust mite habitat, 60°C washing, covers, health fund rebates)</li>
+      <li><a href="https://www.aihw.gov.au/reports/chronic-respiratory-conditions/asthma" target="_blank" rel="noopener">Australian Institute of Health and Welfare, Asthma</a></li>
+      <li><a href="https://www.niehs.nih.gov/news/newsroom/releases/2001/august06/index.cfm" target="_blank" rel="noopener">NIEHS, dust mite allergen in US beds</a> (Arbes et al., Journal of Allergy and Clinical Immunology, 2003)</li>
+      <li><a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1398-9995.2005.00941.x" target="_blank" rel="noopener">Woodcock et al., Fungal contamination of bedding, Allergy, 2006</a></li>
+      <li><a href="https://pubs.acs.org/doi/abs/10.1021/es405625q" target="_blank" rel="noopener">Boor et al., Infant exposure to VOC emissions from crib mattresses, Environmental Science &amp; Technology, 2014</a></li>
+      <li><a href="https://www.nejm.org/doi/full/10.1056/NEJM199008233230802" target="_blank" rel="noopener">Sporik et al., New England Journal of Medicine, 1990</a></li>
+      <li><a href="https://www.sleepfoundation.org/mattress-information/what-is-the-difference-between-memory-foam-and-latex" target="_blank" rel="noopener">Sleep Foundation, Memory foam vs latex</a></li>
+    </ol>
+    <p style="margin-top:18px">Copy, design and build by Godswill Ifeanyichukwu. <a href="index.html">Back to the sample library</a></p>
   </div>
 </footer>
 
+<script>
+(function(){
+  var out=document.getElementById('night'), split=document.getElementById('split');
+  function upd(){
+    var v=+document.querySelector('input[name=s]:checked').value;
+    var c=Math.round(v/3650*100);
+    out.textContent='About '+c+' cents a night';
+    split.textContent='Over ten years, or four interest-free payments of A$'+(v/4).toLocaleString('en-AU',{minimumFractionDigits:2})+'.';
+  }
+  document.querySelectorAll('input[name=s]').forEach(function(r){r.addEventListener('change',upd)});
+  upd();
+})();
+</script>
 </body>
 </html>

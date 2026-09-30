@@ -75,14 +75,28 @@ window.SAMPLES = [
     "title": "The Quiet Lead",
     "industry": "Pet",
     "type": "Low ticket sales page",
-    "blurb": "Loose lead training for dogs that pull. The page reframes a behaviour problem as a learning problem, which takes the fight out of it for the owner and makes the method obvious.",
+    "blurb": "Loose lead training for dogs that pull. The page reframes a behavior problem as a learning problem, which takes the fight out of it for the owner and makes the method obvious.",
     "demonstrates": [
       "Mechanism explained in a single paragraph a tired reader can follow",
       "Side by side comparison of what fails against what works",
       "Price set against the in person alternative it replaces",
-      "Honest limits stated, including when to see a behaviourist instead"
+      "Honest limits stated, including when to see a behaviorist instead"
     ],
     "url": "pet.html",
+    "status": "live"
+  },
+  {
+    "title": "Ironstep",
+    "industry": "Home fitness",
+    "type": "Product page, humorous",
+    "blurb": "Adjustable dumbbells sold to parents who still pay for a gym they stopped visiting in spring. The page blames the parking lot instead of the reader, then lets two published studies do the serious work between the jokes.",
+    "demonstrates": [
+      "Humor aimed at the situation and never at the reader's body",
+      "A stacked time bar that shows where a 90-minute gym trip actually goes",
+      "Research on strength and mortality, stated as associations rather than promises",
+      "Price reframed as cost per workout against a membership nobody uses"
+    ],
+    "url": "ironstep.html",
     "status": "live"
   },
   {
