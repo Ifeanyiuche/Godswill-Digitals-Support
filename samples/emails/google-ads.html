@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Search ads | Godswill Digital Support</title><meta name="description" content="Responsive search ads for seven brands, each pointing at a real sales page.">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>:root{--paper:#FBFAF7;--paper-2:#F3F0E9;--ink:#14161A;--ink-2:#3A3F47;--ink-3:#6B7280;--line:#E0DACD;--line-2:#CFC7B6;--rust:#B0472A;--rust-soft:#FBEDE7;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.mono{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.15em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+nav a{text-decoration:none}
+.brand{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.02rem;letter-spacing:-.02em}
+.brand i{font-style:normal;color:var(--rust)}
+.nl{display:flex;gap:22px;align-items:center;font-size:.88rem;color:var(--ink-2);font-weight:500}
+.nl a:hover{color:var(--rust)}
+.btn{background:var(--ink);color:var(--paper)!important;padding:10px 18px;border-radius:9px;font-weight:600}
+@media(max-width:820px){.nl a:not(.btn){display:none}}
+.kick{color:var(--rust);margin-bottom:12px}
+.fh,.ih1{padding:52px 0 26px}
+.fh h1,.fh h2,.ih1 h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(1.9rem,3.8vw,2.7rem);line-height:1.1;letter-spacing:-.03em;max-width:26ch}
+.goal{color:var(--ink-2);max-width:68ch;margin-top:14px;font-size:1.04rem}
+.meta{display:grid;grid-template-columns:1.4fr 1fr .8fr;gap:14px;margin-top:26px}
+.meta>div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 17px;font-size:.9rem;color:var(--ink-2)}
+.meta .mono{display:block;color:var(--rust);margin-bottom:6px}
+.meta a{color:var(--rust);font-weight:600;text-decoration:none}
+@media(max-width:860px){.meta{grid-template-columns:1fr}}
+.two{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin:8px 0 34px}
+@media(max-width:900px){.two{grid-template-columns:1fr}}
+.lbl{color:var(--ink-3);margin-bottom:12px}
+.map,.demo{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 20px 14px}
+.mapgrp{color:var(--rust);margin:12px 0 6px}
+.mapgrp:first-of-type{margin-top:0}
+.maprow{display:grid;grid-template-columns:26px 1fr 1.3fr;gap:10px;padding:8px 0;border-top:1px solid var(--paper-2);text-decoration:none;font-size:.86rem;align-items:baseline}
+.maprow:hover .ms{color:var(--rust)}
+.mn{font-family:'Fraunces',serif;color:var(--rust);font-weight:600}
+.mw{color:var(--ink-3)}
+.ms{font-weight:600}
+@media(max-width:600px){.maprow{grid-template-columns:24px 1fr}.mw{grid-column:2}.ms{grid-column:2}}
+.demo ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.demo li{padding-left:18px;position:relative;font-size:.9rem;color:var(--ink-2)}
+.demo li:before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--rust)}
+.emails{display:flex;flex-direction:column;gap:26px;padding-bottom:40px}
+.em{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:start;border-top:1px solid var(--line);padding-top:26px}
+@media(max-width:860px){.em{grid-template-columns:1fr;gap:12px}}
+.side{position:sticky;top:84px}
+@media(max-width:860px){.side{position:static}}
+.enum{color:var(--rust);font-size:.72rem}
+.flowtag{display:inline-block;margin-top:8px;font-size:.74rem;font-weight:600;background:var(--rust-soft);color:var(--rust);border-radius:99px;padding:3px 10px}
+.when{font-weight:600;margin-top:8px;font-size:.93rem;line-height:1.4}
+.job{margin-top:12px;font-size:.87rem;color:var(--ink-2)}
+.job .mono{display:block;color:var(--ink-3);margin-bottom:4px}
+.mail{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 14px 30px -26px rgba(20,22,26,.4)}
+.inbox{display:flex;gap:13px;padding:16px 20px;border-bottom:1px solid var(--line);background:#FDFCFA}
+.av{flex:none;width:38px;height:38px;border-radius:50%;color:#fff;display:grid;place-items:center;font-weight:700;font-size:.92rem}
+.ih{min-width:0}
+.from{font-size:.84rem;color:var(--ink-2)}
+.from span{color:var(--ink-3)}
+.subj{font-weight:700;font-size:1rem;margin-top:2px}
+.prev{color:var(--ink-3);font-size:.86rem}
+.p-body{padding:26px 28px 28px;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.6;color:#222;max-width:680px}
+.p-body p{margin-bottom:1em}
+.p-body p:last-child{margin-bottom:0}
+.p-body ul,.p-body ol{margin:0 0 1em 24px}
+.p-body li{margin-bottom:.7em}
+.p-body li p{margin-bottom:.55em}
+.p-body li p:last-child{margin-bottom:0}
+.p-body .ml{color:#1a5fd0;text-decoration:underline;font-weight:600}
+.p-body .ps{color:#444}
+/* designed emails */
+.d-wrap{padding:26px 16px}
+.d-mail{max-width:600px;margin:0 auto;border-radius:6px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.d-top{display:flex;justify-content:space-between;align-items:center;padding:20px 28px}
+.d-word{font-size:1.15rem;letter-spacing:.24em;font-weight:700}
+.d-shop{font-size:.72rem;letter-spacing:.08em;opacity:.6;text-transform:uppercase}
+.d-hero{padding:28px 28px 30px;text-align:center}
+.d-art{height:130px;max-width:280px;margin:0 auto 14px}
+.d-kick{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.d-hero h3{font-size:1.7rem;line-height:1.18;font-weight:600;max-width:20ch;margin:0 auto}
+.d-p{padding:0 32px;margin:1em 0 0;font-size:18px;line-height:1.6}
+.d-btnwrap{text-align:center;padding:24px 28px 6px}
+.d-btn{display:inline-block;padding:14px 30px;border-radius:4px;font-weight:700;font-size:.92rem;text-decoration:none;letter-spacing:.02em}
+.d-code{margin:22px 32px 0;border:2px dashed;border-radius:6px;padding:16px;text-align:center}
+.d-code-v{font-size:1.35rem;font-weight:700;letter-spacing:.06em}
+.d-code-c{font-size:.84rem;opacity:.75;margin-top:3px}
+.d-steps{padding:6px 32px 0}
+.d-step{display:flex;gap:14px;margin-top:16px;font-size:18px;line-height:1.5}
+.d-n{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.8rem;margin-top:1px}
+.d-faqs{padding:4px 32px 0}
+.d-faq{margin-top:20px;font-size:18px}
+.d-faq b{font-size:1.02rem}
+.d-faq p{margin-top:.45em;line-height:1.6}
+.d-quote{margin:24px 32px 0;border-left:3px solid;padding:4px 0 4px 18px}
+.d-quote .stars{font-size:.9rem;letter-spacing:2px}
+.d-quote p{font-size:1.05rem;line-height:1.5;margin:6px 0}
+.d-quote cite{font-style:normal;font-size:.8rem;opacity:.65}
+.d-prods{display:flex;gap:14px;justify-content:center;padding:22px 32px 0;flex-wrap:wrap}
+.d-prod{flex:1;min-width:160px;max-width:240px;text-align:center;font-size:.9rem}
+.d-prod-art{height:120px;border-radius:6px;padding:12px;margin-bottom:10px}
+.d-prod b{display:block}
+.d-prod span{opacity:.7;font-size:.84rem}
+.d-cart{margin:22px 32px 0;border-top:1px solid rgba(0,0,0,.1)}
+.d-crow{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(0,0,0,.08)}
+.d-cart-art{width:64px;height:56px;border-radius:6px;padding:6px;flex:none}
+.d-cname{flex:1;font-size:.9rem}
+.d-cname span{display:block;font-size:.78rem;opacity:.6}
+.d-cprice{font-weight:700;font-size:.9rem}
+.d-ctot{display:flex;justify-content:space-between;padding:12px 0 0;font-size:.92rem}
+.d-table{margin:20px 32px 0;border-collapse:collapse;width:calc(100% - 64px);font-size:.9rem}
+.d-table th,.d-table td{padding:9px 10px;border-bottom:1px solid rgba(0,0,0,.08);text-align:left}
+.d-table tr:first-child th,.d-table tr:first-child td{font-weight:700}
+.d-note{padding:0 32px;margin-top:16px;font-size:.84rem;opacity:.7;text-align:center}
+.d-foot{margin-top:34px;border-top:1px solid;padding:22px 28px 26px;text-align:center;font-size:.74rem;line-height:1.7;opacity:.75}
+.d-foot a{color:inherit}
+.d-tag{font-size:.95rem;margin-bottom:6px;opacity:1}
+@media(max-width:520px){.d-p,.d-steps,.d-faqs{padding-left:20px;padding-right:20px}.d-code,.d-quote,.d-cart{margin-left:20px;margin-right:20px}.d-hero h3{font-size:1.4rem}.d-wrap{padding:14px 8px}}
+.pager{display:flex;justify-content:space-between;gap:12px;padding:26px 0;border-top:1px solid var(--line);font-weight:600;font-size:.92rem}
+.pager a{text-decoration:none;color:var(--rust)}
+.credit{color:var(--ink-3);font-size:.82rem;padding:0 0 46px}
+/* index */
+.stats{display:flex;gap:34px;margin-top:24px;flex-wrap:wrap}
+.stats b{font-family:'Fraunces',serif;font-size:1.9rem;display:block;line-height:1}
+.stats span{font-size:.82rem;color:var(--ink-3)}
+.grp{margin:26px 0 8px}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.fgrid{grid-template-columns:1fr}}
+.fcard{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s}
+.fcard:hover{border-color:var(--rust);transform:translateY(-2px);box-shadow:0 12px 26px -20px rgba(20,22,26,.35)}
+.fcard .k{color:var(--rust)}
+.fcard h3{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;letter-spacing:-.02em;margin-top:6px}
+.fcard .ft{font-weight:600;font-size:.9rem;color:var(--ink-2)}
+.fcard p{font-size:.85rem;color:var(--ink-3);margin-top:10px;line-height:1.5}
+.fcard .fm{color:var(--ink-3);margin-top:14px}
+.lentag{display:inline-block;margin:8px 0 0 6px;font-size:.6rem;padding:3px 8px;border-radius:99px;border:1px solid var(--line);color:var(--ink-3)}
+.len-long{background:#EEF3EE;border-color:#CFE0D1;color:#2F5A3A}
+.len-medium{background:#F6F1E6;border-color:#E6DAC2;color:#7A5A1E}
+.len-short{background:#F3F0F7;border-color:#DDD6EA;color:#5A4B7A}
+.sources{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:0 0 40px}
+.sources ol{margin:4px 0 10px 20px;font-size:.86rem;color:var(--ink-2)}
+.sources li{margin-bottom:6px}
+.sources a{color:var(--rust)}
+.sources p{font-size:.8rem;color:var(--ink-3)}
+ul.plain{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:.9rem;color:var(--ink-2)}
+ul.plain li{padding-left:18px;position:relative}
+ul.plain li:before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:2px;background:var(--rust)}
+.fb{max-width:500px;background:#fff;border:1px solid #DADDE1;border-radius:10px;overflow:hidden;font-family:Helvetica,Arial,sans-serif;color:#050505;box-shadow:0 10px 26px -22px rgba(0,0,0,.4)}
+.fb-head{display:flex;gap:10px;align-items:center;padding:12px 14px 8px}
+.fb-av{width:40px;height:40px;border-radius:50%;color:#fff;display:grid;place-items:center;font-weight:700}
+.fb-head b{display:block;font-size:.92rem}
+.fb-head span{font-size:.78rem;color:#65676B}
+.fb-text{padding:2px 16px 12px;font-size:18px;line-height:1.5}
+.fb-text p{margin-bottom:.8em}
+.fb-media{aspect-ratio:1/1;background:#eee;overflow:hidden}
+.fb-link{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#F0F2F5;padding:10px 14px}
+.fb-dom{font-size:.72rem;color:#65676B;letter-spacing:.02em}
+.fb-hl{font-weight:700;font-size:.95rem;line-height:1.25;margin-top:2px}
+.fb-desc{font-size:.82rem;color:#65676B;margin-top:2px}
+.fb-cta{flex:none;background:#E4E6EB;border-radius:6px;padding:8px 14px;font-weight:700;font-size:.85rem}
+.fb-car{display:flex;gap:10px;overflow-x:auto;padding:0 14px 12px}
+.fb-card{flex:0 0 230px;border:1px solid #DADDE1;border-radius:8px;overflow:hidden}
+.fb-card-img{height:210px;padding:18px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.fb-card-img b{font-family:Georgia,serif;font-size:1.25rem}
+.fb-card-img span{font-size:.88rem;color:#333;line-height:1.4}
+.fb-card-cap{padding:9px 12px;font-weight:700;font-size:.85rem;background:#F0F2F5}
+.fb-video{aspect-ratio:4/5;position:relative;display:grid;place-items:center}
+.fb-play{width:70px;height:70px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;font-size:1.6rem;color:#111;padding-left:5px}
+.fb-vcap{position:absolute;left:14px;right:14px;bottom:16px;color:#fff;font-size:.85rem;background:rgba(0,0,0,.5);padding:8px 10px;border-radius:6px}
+.scriptbox{max-width:500px;margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.scriptbox table{width:100%;border-collapse:collapse;font-size:.86rem}
+.scriptbox td{padding:8px 6px;border-top:1px solid var(--paper-2);vertical-align:top;color:var(--ink-2)}
+.scriptbox td.tc{white-space:nowrap;font-weight:600;color:var(--rust);width:78px}
+/* google search ads */
+.gjump{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.gjump a{font-size:.82rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;text-decoration:none;color:var(--ink-2)}
+.gcamp{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 26px 20px;margin:0 0 34px}
+.gh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.gh h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.8rem;letter-spacing:-.02em}
+.glink{font-size:.88rem;color:var(--rust);text-decoration:none;font-weight:600}
+.gangle{font-size:1rem;color:var(--ink-2);max-width:80ch}
+.gangle span{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+.gprev{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 24px}
+@media(max-width:900px){.gprev{grid-template-columns:1fr}}
+.serp{font-family:Arial,Helvetica,sans-serif;border:1px solid #DADCE0;border-radius:10px;padding:16px 18px;background:#fff}
+.sp-top{display:flex;gap:10px;align-items:center}
+.sp-fav{width:26px;height:26px;border-radius:50%;background:#F1F3F4;border:1px solid #DADCE0;display:grid;place-items:center;font-size:.8rem;font-weight:700;color:#202124}
+.sp-name{font-size:.86rem;color:#202124}
+.sp-url{font-size:.76rem;color:#4D5156}
+.sp-h{color:#1A0DAB;font-size:1.2rem;line-height:1.3;margin:8px 0 4px}
+.sp-d{color:#4D5156;font-size:.9rem;line-height:1.5}
+.sp-links{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px}
+.sp-links span{color:#1A0DAB;font-size:.88rem}
+.gtables{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:10px}
+@media(max-width:900px){.gtables{grid-template-columns:1fr}}
+.gt{width:100%;border-collapse:collapse;font-size:.9rem}
+.gt td{padding:7px 6px;border-bottom:1px solid var(--paper-2);vertical-align:top}
+.gt td.n{width:26px;color:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:.75rem}
+.gt td.c{width:60px;text-align:right;color:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:.72rem;white-space:nowrap}
+.gcall{display:flex;flex-wrap:wrap;gap:8px}
+.gcall span{font-size:.82rem;background:var(--paper-2);border-radius:6px;padding:5px 10px}
+.gcall.neg span{background:#FBECEA;color:#8E2A22}
+.gkw{list-style:none;font-size:.9rem}
+.gkw li{padding:6px 0;border-bottom:1px solid var(--paper-2)}
+.gkw .mt{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--ink-3);margin-left:6px;text-transform:uppercase}
+.gnotes{font-size:.9rem;color:var(--ink-2);margin-left:18px}
+.gnotes li{margin-bottom:8px}
+</style></head><body><nav><div class="wrap"><a href="../../index.html" class="brand">Godswill Digital Support<i>.</i></a>
+<div class="nl"><a href="../index.html">Funnel samples</a><a href="index.html">All email and ad samples</a><a href="../../index.html#contact" class="btn">Start a project</a></div></div></nav>
+<main class="wrap"><header class="fh">
+ <div class="kick mono">Google Search ads &nbsp;·&nbsp; Responsive search ads for 7 brands</div>
+ <h1>Search ads that open a question the landing page answers</h1>
+ <p class="goal">Each campaign below points at a real sales page on this site. The ads never repeat the page's wording. They name the searcher's situation, open one loop, and send the click to the page that closes it. Every headline is checked against Google's 30-character limit and every description against 90.</p>
+ <div class="gjump"><a href="#bellbird">Bellbird</a><a href="#nocturne">Nocturne</a><a href="#payoff-order">The Payoff Order</a><a href="#ship-one-thing">Ship One Thing</a><a href="#quiet-lead">The Quiet Lead</a><a href="#hale-roark">Hale &amp; Roark</a><a href="#ironstep">Ironstep</a></div>
+</header>
+<section class="gcamp" id="bellbird">
+ <div class="gh"><div><div class="kick mono">Australia &nbsp;·&nbsp; Search, natural latex mattress, coastal metro areas</div><h2>Bellbird</h2></div><a class="glink" href="../latex-mattress.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>Searchers are already comparing mattresses. The ads open a question they have never asked, whether their mattress can be washed at all, and the page answers it with the cover, the latex core and ASCIA's advice.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">B</span><div><div class="sp-name">Bellbird</div><div class="sp-url">Sponsored · bellbirdsleep.com.au › latex › humid-rooms</div></div></div>
+<div class="sp-h">Is your mattress washable? | Check your mattress label | Built for humid Aussie rooms</div><div class="sp-d">Most mattress covers are spot clean only. Ours unzips and goes in a 60°C wash. See why. Natural latex with pinholes that let heat and moisture escape, made for coastal homes.</div>
+<div class="sp-links"><span>How it is built</span><span>Pick your size</span><span>The 100-night trial</span><span>Questions answered</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">B</span><div><div class="sp-name">Bellbird</div><div class="sp-url">Sponsored · bellbirdsleep.com.au › latex › humid-rooms</div></div></div>
+<div class="sp-h">Check your mattress label | Made from natural latex | Try it for 100 nights</div><div class="sp-d">Sleep on it for 100 nights. If it is not right, we collect it and refund every dollar. Delivery, setup, a barrier protector and old mattress removal are included in metro areas.</div>
+<div class="sp-links"><span>How it is built</span><span>Pick your size</span><span>The 100-night trial</span><span>Questions answered</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>Is your mattress washable?</td><td class='c'>26/30</td></tr><tr><td class='n'>2</td><td>Check your mattress label</td><td class='c'>25/30</td></tr><tr><td class='n'>3</td><td>Built for humid Aussie rooms</td><td class='c'>28/30</td></tr><tr><td class='n'>4</td><td>A cover you can wash at 60°C</td><td class='c'>28/30</td></tr><tr><td class='n'>5</td><td>Made from natural latex</td><td class='c'>23/30</td></tr><tr><td class='n'>6</td><td>Try it for 100 nights</td><td class='c'>21/30</td></tr><tr><td class='n'>7</td><td>We carry it up the stairs</td><td class='c'>25/30</td></tr><tr><td class='n'>8</td><td>We take the old one away</td><td class='c'>24/30</td></tr><tr><td class='n'>9</td><td>A queen is A$2,190 delivered</td><td class='c'>28/30</td></tr><tr><td class='n'>10</td><td>Split it into 4 payments</td><td class='c'>24/30</td></tr><tr><td class='n'>11</td><td>Latex lets the heat out</td><td class='c'>23/30</td></tr><tr><td class='n'>12</td><td>See what coastal air does</td><td class='c'>25/30</td></tr><tr><td class='n'>13</td><td>Built around ASCIA advice</td><td class='c'>25/30</td></tr><tr><td class='n'>14</td><td>Sleep cooler on the coast</td><td class='c'>25/30</td></tr><tr><td class='n'>15</td><td>A protector comes in the box</td><td class='c'>28/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Most mattress covers are spot clean only. Ours unzips and goes in a 60°C wash. See why.</td><td class='c'>87/90</td></tr><tr><td class='n'>2</td><td>Natural latex with pinholes that let heat and moisture escape, made for coastal homes.</td><td class='c'>86/90</td></tr><tr><td class='n'>3</td><td>Delivery, setup, a barrier protector and old mattress removal are included in metro areas.</td><td class='c'>90/90</td></tr><tr><td class='n'>4</td><td>Sleep on it for 100 nights. If it is not right, we collect it and refund every dollar.</td><td class='c'>86/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>How it is built</b></td><td>Latex core and a washable cover.<br>See the cross-section.</td></tr><tr><td><b>Pick your size</b></td><td>Single to king, priced per night.<br>Four interest-free payments.</td></tr><tr><td><b>The 100-night trial</b></td><td>Sleep through a change of season.<br>We collect it if it is not right.</td></tr><tr><td><b>Questions answered</b></td><td>Bed bases, latex allergy and more.<br>Straight answers before you buy.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>Free metro delivery</span><span>Old mattress removal</span><span>15-year warranty</span><span>Interest-free payments</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>natural latex mattress <span class='mt'>phrase</span></li><li>latex mattress australia <span class='mt'>phrase</span></li><li>washable mattress cover <span class='mt'>phrase</span></li><li>hypoallergenic mattress <span class='mt'>phrase</span></li><li>mattress for humid climate <span class='mt'>phrase</span></li><li>cool mattress for hot sleepers <span class='mt'>broad</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>cheap</span><span>second hand</span><span>cot</span><span>repair</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>No ad claims to treat or prevent allergies or asthma, in line with Google's healthcare policy and the Australian Consumer Law.</li><li>Headlines pinned: position 1 rotates between the two label questions so every impression opens with the curiosity hook.</li></ul></div>
+ </div>
+</section><section class="gcamp" id="nocturne">
+ <div class="gh"><div><div class="kick mono">United States &nbsp;·&nbsp; Search, 3am waking and sleep after 40</div><h2>Nocturne</h2></div><a class="glink" href="../supplement.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>People searching why they wake at 3am want an explanation before a product. The ads promise that explanation and name the research, and the page delivers it before it ever mentions the bottle.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">N</span><div><div class="sp-name">Nocturne</div><div class="sp-url">Sponsored · nocturne-sleep.com › deep-sleep › after-40</div></div></div>
+<div class="sp-h">Why you wake up at 3am | Deep sleep fades after 35 | Weight and sleep are linked</div><div class="sp-d">Deep sleep shrinks with age, and it changes how your body handles weight. See the study. Magnesium, glycine, KSM-66 and low-dose melatonin, each at a dose printed on the label.</div>
+<div class="sp-links"><span>The research</span><span>Inside the formula</span><span>Starter bottle</span><span>90-night refund</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">N</span><div><div class="sp-name">Nocturne</div><div class="sp-url">Sponsored · nocturne-sleep.com › deep-sleep › after-40</div></div></div>
+<div class="sp-h">Deep sleep fades after 35 | Pay only $6.95 postage | One formula replaces 8 bottles</div><div class="sp-d">Chicago researchers tracked 149 men. What they found starts earlier than you think. Your first 30 nights cost only $6.95 postage. No subscription, and a 90-night refund.</div>
+<div class="sp-links"><span>The research</span><span>Inside the formula</span><span>Starter bottle</span><span>90-night refund</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>Why you wake up at 3am</td><td class='c'>22/30</td></tr><tr><td class='n'>2</td><td>Deep sleep fades after 35</td><td class='c'>25/30</td></tr><tr><td class='n'>3</td><td>Weight and sleep are linked</td><td class='c'>27/30</td></tr><tr><td class='n'>4</td><td>See the Chicago sleep study</td><td class='c'>27/30</td></tr><tr><td class='n'>5</td><td>Pay only $6.95 postage</td><td class='c'>22/30</td></tr><tr><td class='n'>6</td><td>One formula replaces 8 bottles</td><td class='c'>30/30</td></tr><tr><td class='n'>7</td><td>Melatonin kept at 0.5 mg</td><td class='c'>24/30</td></tr><tr><td class='n'>8</td><td>There is no subscription</td><td class='c'>24/30</td></tr><tr><td class='n'>9</td><td>Try it for ninety nights</td><td class='c'>24/30</td></tr><tr><td class='n'>10</td><td>Made in the United States</td><td class='c'>25/30</td></tr><tr><td class='n'>11</td><td>Every dose is on the label</td><td class='c'>26/30</td></tr><tr><td class='n'>12</td><td>Stop blaming your willpower</td><td class='c'>27/30</td></tr><tr><td class='n'>13</td><td>Fix the night, not the diet</td><td class='c'>27/30</td></tr><tr><td class='n'>14</td><td>Eat less and still gain?</td><td class='c'>24/30</td></tr><tr><td class='n'>15</td><td>Read what the research found</td><td class='c'>28/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Deep sleep shrinks with age, and it changes how your body handles weight. See the study.</td><td class='c'>88/90</td></tr><tr><td class='n'>2</td><td>Magnesium, glycine, KSM-66 and low-dose melatonin, each at a dose printed on the label.</td><td class='c'>87/90</td></tr><tr><td class='n'>3</td><td>Your first 30 nights cost only $6.95 postage. No subscription, and a 90-night refund.</td><td class='c'>85/90</td></tr><tr><td class='n'>4</td><td>Chicago researchers tracked 149 men. What they found starts earlier than you think.</td><td class='c'>83/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>The research</b></td><td>What changes in sleep after 35.<br>Published in JAMA.</td></tr><tr><td><b>Inside the formula</b></td><td>Eight ingredients and their doses.<br>A full supplement facts label.</td></tr><tr><td><b>Starter bottle</b></td><td>Thirty nights for $6.95 postage.<br>No subscription attached.</td></tr><tr><td><b>90-night refund</b></td><td>Keep notes for two weeks.<br>Refund if nothing changes.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>No subscription</span><span>Third-party tested</span><span>No proprietary blend</span><span>90-night refund</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>why do i wake up at 3am <span class='mt'>phrase</span></li><li>waking up at 3am every night <span class='mt'>phrase</span></li><li>deep sleep supplement <span class='mt'>phrase</span></li><li>sleep and weight gain after 40 <span class='mt'>phrase</span></li><li>magnesium glycinate for sleep <span class='mt'>phrase</span></li><li>low dose melatonin <span class='mt'>phrase</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>baby</span><span>pregnancy</span><span>prescription</span><span>kids</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>Google allows dietary supplement ads in the US, but no headline claims to cure insomnia or cause weight loss, in line with its healthcare and misleading claims policies.</li><li>Keywords that suggest pregnancy or children are excluded, because the product is for adults.</li></ul></div>
+ </div>
+</section><section class="gcamp" id="payoff-order">
+ <div class="gh"><div><div class="kick mono">United States &nbsp;·&nbsp; Search, paying off several credit cards</div><h2>The Payoff Order</h2></div><a class="glink" href="../finance.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>Searchers feel stuck even though they pay on time. The ads name that exact feeling and point to a box on their own statement, and the page explains the shrinking minimum behind it.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">T</span><div><div class="sp-name">The Payoff Order</div><div class="sp-url">Sponsored · thepayofforder.com › debt › payoff-plan</div></div></div>
+<div class="sp-h">Why your balance barely moves | Read your statement's box | Minimums keep you in debt</div><div class="sp-d">Your minimum shrinks as your balance falls, which is why debt drags on. See the fix. A calculator, a month-by-month schedule and rate-cut call scripts for $39, paid once.</div>
+<div class="sp-links"><span>The warning box</span><span>See the math</span><span>What you get</span><span>60-day guarantee</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">T</span><div><div class="sp-name">The Payoff Order</div><div class="sp-url">Sponsored · thepayofforder.com › debt › payoff-plan</div></div></div>
+<div class="sp-h">Read your statement's box | Pay the right card first | Avalanche or snowball?</div><div class="sp-d">Paying on time and still stuck? The order you pay in changes what your debt costs. No refinancing, no consolidation loan and no credit check. You keep the files anyway.</div>
+<div class="sp-links"><span>The warning box</span><span>See the math</span><span>What you get</span><span>60-day guarantee</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>Why your balance barely moves</td><td class='c'>29/30</td></tr><tr><td class='n'>2</td><td>Read your statement's box</td><td class='c'>25/30</td></tr><tr><td class='n'>3</td><td>Minimums keep you in debt</td><td class='c'>25/30</td></tr><tr><td class='n'>4</td><td>Find your debt-free date</td><td class='c'>24/30</td></tr><tr><td class='n'>5</td><td>Pay the right card first</td><td class='c'>24/30</td></tr><tr><td class='n'>6</td><td>Avalanche or snowball?</td><td class='c'>22/30</td></tr><tr><td class='n'>7</td><td>See both routes side by side</td><td class='c'>28/30</td></tr><tr><td class='n'>8</td><td>A plan for $39, paid once</td><td class='c'>25/30</td></tr><tr><td class='n'>9</td><td>No loan and no credit check</td><td class='c'>27/30</td></tr><tr><td class='n'>10</td><td>Works with the income you have</td><td class='c'>30/30</td></tr><tr><td class='n'>11</td><td>Call scripts for lower rates</td><td class='c'>28/30</td></tr><tr><td class='n'>12</td><td>Stop the shrinking minimum</td><td class='c'>26/30</td></tr><tr><td class='n'>13</td><td>Keep your payment steady</td><td class='c'>24/30</td></tr><tr><td class='n'>14</td><td>60-day money-back guarantee</td><td class='c'>27/30</td></tr><tr><td class='n'>15</td><td>Built on published research</td><td class='c'>27/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Your minimum shrinks as your balance falls, which is why debt drags on. See the fix.</td><td class='c'>84/90</td></tr><tr><td class='n'>2</td><td>A calculator, a month-by-month schedule and rate-cut call scripts for $39, paid once.</td><td class='c'>85/90</td></tr><tr><td class='n'>3</td><td>No refinancing, no consolidation loan and no credit check. You keep the files anyway.</td><td class='c'>85/90</td></tr><tr><td class='n'>4</td><td>Paying on time and still stuck? The order you pay in changes what your debt costs.</td><td class='c'>82/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>The warning box</b></td><td>What your statement is telling you.<br>Explained in plain English.</td></tr><tr><td><b>See the math</b></td><td>Minimums vs a steady payment.<br>A worked $24,000 example.</td></tr><tr><td><b>What you get</b></td><td>Calculator, schedule and scripts.<br>Four tools for $39.</td></tr><tr><td><b>60-day guarantee</b></td><td>Run your real numbers first.<br>Refund if it finds no faster route.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>No credit check</span><span>Instant download</span><span>One payment</span><span>No upsells</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>how to pay off credit card debt faster <span class='mt'>phrase</span></li><li>debt payoff calculator <span class='mt'>phrase</span></li><li>snowball vs avalanche <span class='mt'>phrase</span></li><li>minimum payment trap <span class='mt'>phrase</span></li><li>pay off multiple credit cards <span class='mt'>phrase</span></li><li>which credit card to pay off first <span class='mt'>phrase</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>loan</span><span>bankruptcy</span><span>consolidation loan</span><span>credit repair</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>The product is a self-directed guide rather than a debt relief service, so ads avoid any promise to reduce, settle or remove debt, in line with Google's financial services policy.</li><li>Negative keywords keep the budget away from loan and bankruptcy searches the product does not serve.</li></ul></div>
+ </div>
+</section><section class="gcamp" id="ship-one-thing">
+ <div class="gh"><div><div class="kick mono">United States &nbsp;·&nbsp; Search, first digital product</div><h2>Ship One Thing</h2></div><a class="glink" href="../digital-products.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>Searchers think they need more information. The ads reframe the problem as finishing, which matches the page headline without repeating its copy, and the page then shows the six deadlines.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">S</span><div><div class="sp-name">Ship One Thing</div><div class="sp-url">Sponsored · shiponething.co › first › product</div></div></div>
+<div class="sp-h">You have a finishing problem | Finish your first product | Six weeks to your first sale</div><div class="sp-d">Six weeks, one deliverable a week, and a finished product listed for sale at the end. Every template comes blank and filled in, so you can see what finished looks like.</div>
+<div class="sp-links"><span>The three traps</span><span>The six weeks</span><span>Pricing</span><span>Common questions</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">S</span><div><div class="sp-name">Ship One Thing</div><div class="sp-url">Sponsored · shiponething.co › first › product</div></div></div>
+<div class="sp-h">Finish your first product | Stop buying more courses | No audience needed to start</div><div class="sp-d">Built for people with a folder of half-finished courses. No calls and no upsells. You already know enough. What you need is a deadline and an order to work in. $47.</div>
+<div class="sp-links"><span>The three traps</span><span>The six weeks</span><span>Pricing</span><span>Common questions</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>You have a finishing problem</td><td class='c'>28/30</td></tr><tr><td class='n'>2</td><td>Finish your first product</td><td class='c'>25/30</td></tr><tr><td class='n'>3</td><td>Six weeks to your first sale</td><td class='c'>28/30</td></tr><tr><td class='n'>4</td><td>One deliverable a week</td><td class='c'>22/30</td></tr><tr><td class='n'>5</td><td>Stop buying more courses</td><td class='c'>24/30</td></tr><tr><td class='n'>6</td><td>No audience needed to start</td><td class='c'>27/30</td></tr><tr><td class='n'>7</td><td>A plan for $47, paid once</td><td class='c'>25/30</td></tr><tr><td class='n'>8</td><td>Templates filled in for you</td><td class='c'>27/30</td></tr><tr><td class='n'>9</td><td>Pick one idea this week</td><td class='c'>23/30</td></tr><tr><td class='n'>10</td><td>Why 3% finish online courses</td><td class='c'>28/30</td></tr><tr><td class='n'>11</td><td>Price it without guessing</td><td class='c'>25/30</td></tr><tr><td class='n'>12</td><td>Launch to the list you have</td><td class='c'>27/30</td></tr><tr><td class='n'>13</td><td>Sell it by week six</td><td class='c'>19/30</td></tr><tr><td class='n'>14</td><td>60-day refund guarantee</td><td class='c'>23/30</td></tr><tr><td class='n'>15</td><td>Ship it, then improve it</td><td class='c'>24/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Six weeks, one deliverable a week, and a finished product listed for sale at the end.</td><td class='c'>85/90</td></tr><tr><td class='n'>2</td><td>Every template comes blank and filled in, so you can see what finished looks like.</td><td class='c'>82/90</td></tr><tr><td class='n'>3</td><td>You already know enough. What you need is a deadline and an order to work in. $47.</td><td class='c'>82/90</td></tr><tr><td class='n'>4</td><td>Built for people with a folder of half-finished courses. No calls and no upsells.</td><td class='c'>81/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>The three traps</b></td><td>Where first products stall.<br>And the fix for each one.</td></tr><tr><td><b>The six weeks</b></td><td>One task and one deadline a week.<br>From idea to first sale.</td></tr><tr><td><b>Pricing</b></td><td>Why it costs $47, not $997.<br>Paid once.</td></tr><tr><td><b>Common questions</b></td><td>No audience? Full-time job?<br>Straight answers.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>No audience needed</span><span>Instant access</span><span>Work at your own pace</span><span>No upsells</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>how to create a digital product <span class='mt'>phrase</span></li><li>sell my first digital product <span class='mt'>phrase</span></li><li>digital product course <span class='mt'>phrase</span></li><li>finish my online course <span class='mt'>phrase</span></li><li>how to price a digital product <span class='mt'>phrase</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>free</span><span>degree</span><span>certificate</span><span>job</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>No income claims appear in any ad, in line with Google's misleading claims policy for business opportunities.</li><li>The 3% headline refers to the MIT and Harvard study cited in the email sequence, so it can be substantiated.</li></ul></div>
+ </div>
+</section><section class="gcamp" id="quiet-lead">
+ <div class="gh"><div><div class="kick mono">United States &nbsp;·&nbsp; Search, dog pulling on the leash</div><h2>The Quiet Lead</h2></div><a class="glink" href="../pet.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>Owners searching for help with pulling usually blame the dog or the harness. The ads take the blame off both and promise a reason, and the page explains the habit loop behind the pulling.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">T</span><div><div class="sp-name">The Quiet Lead</div><div class="sp-url">Sponsored · thequietlead.com › loose-lead › 14-days</div></div></div>
+<div class="sp-h">Why your dog pulls on walks | He is not being stubborn | Stop the pulling in 14 days</div><div class="sp-d">Pulling is a habit he learned by accident. Fourteen short sessions teach him a new one. Ten focused minutes a day, starting indoors. Videos show the timing step by step.</div>
+<div class="sp-links"><span>Why dogs pull</span><span>The 14-day plan</span><span>What it costs</span><span>Owner questions</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">T</span><div><div class="sp-name">The Quiet Lead</div><div class="sp-url">Sponsored · thequietlead.com › loose-lead › 14-days</div></div></div>
+<div class="sp-h">He is not being stubborn | Train without corrections | Day one starts in the hall</div><div class="sp-d">A troubleshooting guide covers lunging, other dogs and squirrels. 30-day refund. Private trainers charge $75 to $150 a session. The full course is $29, paid once.</div>
+<div class="sp-links"><span>Why dogs pull</span><span>The 14-day plan</span><span>What it costs</span><span>Owner questions</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>Why your dog pulls on walks</td><td class='c'>27/30</td></tr><tr><td class='n'>2</td><td>He is not being stubborn</td><td class='c'>24/30</td></tr><tr><td class='n'>3</td><td>Stop the pulling in 14 days</td><td class='c'>27/30</td></tr><tr><td class='n'>4</td><td>Ten minutes a day, at home</td><td class='c'>26/30</td></tr><tr><td class='n'>5</td><td>Train without corrections</td><td class='c'>25/30</td></tr><tr><td class='n'>6</td><td>Day one starts in the hall</td><td class='c'>26/30</td></tr><tr><td class='n'>7</td><td>Learn loose-lead walking</td><td class='c'>24/30</td></tr><tr><td class='n'>8</td><td>A course for $29, paid once</td><td class='c'>27/30</td></tr><tr><td class='n'>9</td><td>Less than one trainer visit</td><td class='c'>27/30</td></tr><tr><td class='n'>10</td><td>Works for big, strong dogs</td><td class='c'>26/30</td></tr><tr><td class='n'>11</td><td>Your shoulder will thank you</td><td class='c'>28/30</td></tr><tr><td class='n'>12</td><td>Watch the timing on video</td><td class='c'>25/30</td></tr><tr><td class='n'>13</td><td>Get the household on board</td><td class='c'>26/30</td></tr><tr><td class='n'>14</td><td>30-day refund guarantee</td><td class='c'>23/30</td></tr><tr><td class='n'>15</td><td>Walks can be fun again</td><td class='c'>22/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Pulling is a habit he learned by accident. Fourteen short sessions teach him a new one.</td><td class='c'>87/90</td></tr><tr><td class='n'>2</td><td>Ten focused minutes a day, starting indoors. Videos show the timing step by step.</td><td class='c'>81/90</td></tr><tr><td class='n'>3</td><td>Private trainers charge $75 to $150 a session. The full course is $29, paid once.</td><td class='c'>81/90</td></tr><tr><td class='n'>4</td><td>A troubleshooting guide covers lunging, other dogs and squirrels. 30-day refund.</td><td class='c'>80/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>Why dogs pull</b></td><td>The habit loop, explained.<br>It is not stubbornness.</td></tr><tr><td><b>The 14-day plan</b></td><td>Indoors, quiet street, real walks.<br>Ten minutes a day.</td></tr><tr><td><b>What it costs</b></td><td>Less than one private session.<br>$29, paid once.</td></tr><tr><td><b>Owner questions</b></td><td>Older dogs, big dogs, reactivity.<br>Straight answers.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>No prong collars</span><span>Instant access</span><span>Video walkthroughs</span><span>30-day refund</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>stop dog pulling on leash <span class='mt'>phrase</span></li><li>loose leash walking training <span class='mt'>phrase</span></li><li>dog pulls on lead <span class='mt'>phrase</span></li><li>leash training course <span class='mt'>phrase</span></li><li>how to stop my dog pulling <span class='mt'>phrase</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>prong collar</span><span>shock collar</span><span>puppy class near me</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>Negative keywords exclude aversive equipment searches, because the method does not use them.</li><li>The trainer price range comes from Thumbtack's published US pricing data.</li></ul></div>
+ </div>
+</section><section class="gcamp" id="hale-roark">
+ <div class="gh"><div><div class="kick mono">Florida, United States &nbsp;·&nbsp; Search, Florida car accident claims</div><h2>Hale &amp; Roark</h2></div><a class="glink" href="../legal.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>Many searchers have just had a call from an adjuster and want to know whether to give a statement. The ads speak to that moment and to Florida's deadlines, and the page explains the pattern behind the early offer.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">H</span><div><div class="sp-name">Hale &amp; Roark</div><div class="sp-url">Sponsored · haleroark.com › car-accident › free-review</div></div></div>
+<div class="sp-h">Hurt in a crash? | Did the insurer call you fast? | Read this before you talk</div><div class="sp-d">Before you give a recorded statement, find out what your claim may be worth. Free review. PIP rules generally require initial treatment within 14 days of the crash. Act early.</div>
+<div class="sp-links"><span>How early offers work</span><span>Deadlines that matter</span><span>Fees</span><span>Request a review</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">H</span><div><div class="sp-name">Hale &amp; Roark</div><div class="sp-url">Sponsored · haleroark.com › car-accident › free-review</div></div></div>
+<div class="sp-h">Did the insurer call you fast? | No fee unless we win | Know your claim's real value</div><div class="sp-d">Most negligence claims must now be filed within two years. Get your answers today. No fee unless we recover money for you, and we tell you plainly if you do not need us.</div>
+<div class="sp-links"><span>How early offers work</span><span>Deadlines that matter</span><span>Fees</span><span>Request a review</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>Hurt in a crash?</td><td class='c'>16/30</td></tr><tr><td class='n'>2</td><td>Did the insurer call you fast?</td><td class='c'>30/30</td></tr><tr><td class='n'>3</td><td>Read this before you talk</td><td class='c'>25/30</td></tr><tr><td class='n'>4</td><td>Get a free case review</td><td class='c'>22/30</td></tr><tr><td class='n'>5</td><td>No fee unless we win</td><td class='c'>20/30</td></tr><tr><td class='n'>6</td><td>Know your claim's real value</td><td class='c'>28/30</td></tr><tr><td class='n'>7</td><td>Mind the 14-day PIP rule</td><td class='c'>24/30</td></tr><tr><td class='n'>8</td><td>Most claims now have 2 years</td><td class='c'>28/30</td></tr><tr><td class='n'>9</td><td>Talk to us before you sign</td><td class='c'>26/30</td></tr><tr><td class='n'>10</td><td>First offers can be low</td><td class='c'>23/30</td></tr><tr><td class='n'>11</td><td>We tell you if you need us</td><td class='c'>26/30</td></tr><tr><td class='n'>12</td><td>Calls returned the same day</td><td class='c'>27/30</td></tr><tr><td class='n'>13</td><td>It takes twenty minutes</td><td class='c'>23/30</td></tr><tr><td class='n'>14</td><td>We cover the case costs</td><td class='c'>23/30</td></tr><tr><td class='n'>15</td><td>Licensed to practice in FL</td><td class='c'>26/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Before you give a recorded statement, find out what your claim may be worth. Free review.</td><td class='c'>89/90</td></tr><tr><td class='n'>2</td><td>PIP rules generally require initial treatment within 14 days of the crash. Act early.</td><td class='c'>85/90</td></tr><tr><td class='n'>3</td><td>No fee unless we recover money for you, and we tell you plainly if you do not need us.</td><td class='c'>86/90</td></tr><tr><td class='n'>4</td><td>Most negligence claims must now be filed within two years. Get your answers today.</td><td class='c'>82/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>How early offers work</b></td><td>The first weeks after a crash.<br>What the insurer is doing.</td></tr><tr><td><b>Deadlines that matter</b></td><td>The 14-day PIP rule and 2 years.<br>Why timing matters.</td></tr><tr><td><b>Fees</b></td><td>No fee unless we win.<br>We front the case costs.</td></tr><tr><td><b>Request a review</b></td><td>Twenty minutes on the phone.<br>Calls returned the same day.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>Free case review</span><span>No fee unless we win</span><span>Same-day callbacks</span><span>Licensed attorneys</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>car accident lawyer florida <span class='mt'>phrase</span></li><li>should i give a recorded statement <span class='mt'>phrase</span></li><li>insurance adjuster called me after accident <span class='mt'>phrase</span></li><li>florida car accident claim <span class='mt'>phrase</span></li><li>pip 14 day rule florida <span class='mt'>phrase</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>jobs</span><span>salary</span><span>school</span><span>free legal aid</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>Ads avoid guarantees of results and any 'expert' or 'specialist' wording, and contingency fee statements are paired with the cost explanation on the page, in line with Florida Bar advertising rules.</li><li>Legal service ads are allowed on Google Search, and claims about deadlines are sourced to Florida Statutes 95.11 and 627.736.</li></ul></div>
+ </div>
+</section><section class="gcamp" id="ironstep">
+ <div class="gh"><div><div class="kick mono">United States &nbsp;·&nbsp; Search, adjustable dumbbells and home strength</div><h2>Ironstep</h2></div><a class="glink" href="../ironstep.html" target="_blank" rel="noopener">See the landing page &rarr;</a></div>
+ <p class="gangle"><span class="mono">The angle</span>Searchers comparing adjustable dumbbells get the specs everywhere. The ads lead with the real reason people quit, the drive to the gym, and the page turns that into a buying decision with humor.</p>
+ <div class="gprev"><div class="serp"><div class="sp-top"><span class="sp-fav">I</span><div><div class="sp-name">Ironstep</div><div class="sp-url">Sponsored · ironstep.fit › stack-50 › home-gym</div></div></div>
+<div class="sp-h">Get strong in 20 minutes | 15 pairs of weights in one | Adjustable from 5 to 50 lb</div><div class="sp-d">Fifteen weight settings from 5 to 50 lb in one pair. Train in 20 minutes at home. This week the $79 floor stand is free. Try them for 30 nights with the free plan.</div>
+<div class="sp-links"><span>The Stack 50</span><span>Free 12-week plan</span><span>30-night trial</span><span>Free floor stand</span></div></div><div class="serp"><div class="sp-top"><span class="sp-fav">I</span><div><div class="sp-name">Ironstep</div><div class="sp-url">Sponsored · ironstep.fit › stack-50 › home-gym</div></div></div>
+<div class="sp-h">15 pairs of weights in one | Train after the kids sleep | Free floor stand this week</div><div class="sp-d">$329 or 4 payments of $82.25, and a full refund if you are not using them. The gym was never the hard part. The drive was. Put the weights next to the couch.</div>
+<div class="sp-links"><span>The Stack 50</span><span>Free 12-week plan</span><span>30-night trial</span><span>Free floor stand</span></div></div></div>
+ <div class="gtables">
+  <div><div class="mono lbl">15 headlines</div><table class="gt"><tr><td class='n'>1</td><td>Get strong in 20 minutes</td><td class='c'>24/30</td></tr><tr><td class='n'>2</td><td>15 pairs of weights in one</td><td class='c'>26/30</td></tr><tr><td class='n'>3</td><td>Adjustable from 5 to 50 lb</td><td class='c'>26/30</td></tr><tr><td class='n'>4</td><td>No drive and no parking lot</td><td class='c'>27/30</td></tr><tr><td class='n'>5</td><td>Train after the kids sleep</td><td class='c'>26/30</td></tr><tr><td class='n'>6</td><td>Free floor stand this week</td><td class='c'>26/30</td></tr><tr><td class='n'>7</td><td>Try it for 30 nights</td><td class='c'>20/30</td></tr><tr><td class='n'>8</td><td>Pay in 4 installments</td><td class='c'>21/30</td></tr><tr><td class='n'>9</td><td>A free 12-week plan included</td><td class='c'>28/30</td></tr><tr><td class='n'>10</td><td>Fits beside the couch</td><td class='c'>21/30</td></tr><tr><td class='n'>11</td><td>Turn the dial, lift, done</td><td class='c'>25/30</td></tr><tr><td class='n'>12</td><td>About $2 a workout</td><td class='c'>18/30</td></tr><tr><td class='n'>13</td><td>Built for 8:47pm workouts</td><td class='c'>25/30</td></tr><tr><td class='n'>14</td><td>Send them back if unused</td><td class='c'>24/30</td></tr><tr><td class='n'>15</td><td>Your gym is 6 feet away</td><td class='c'>23/30</td></tr></table></div>
+  <div><div class="mono lbl">4 descriptions</div><table class="gt"><tr><td class='n'>1</td><td>Fifteen weight settings from 5 to 50 lb in one pair. Train in 20 minutes at home.</td><td class='c'>81/90</td></tr><tr><td class='n'>2</td><td>This week the $79 floor stand is free. Try them for 30 nights with the free plan.</td><td class='c'>81/90</td></tr><tr><td class='n'>3</td><td>The gym was never the hard part. The drive was. Put the weights next to the couch.</td><td class='c'>82/90</td></tr><tr><td class='n'>4</td><td>$329 or 4 payments of $82.25, and a full refund if you are not using them.</td><td class='c'>74/90</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Sitelinks</div><table class="gt"><tr><td><b>The Stack 50</b></td><td>Fifteen settings, one dial.<br>5 to 50 lb per hand.</td></tr><tr><td><b>Free 12-week plan</b></td><td>Three moves, twenty minutes.<br>Built for after bedtime.</td></tr><tr><td><b>30-night trial</b></td><td>Use them or send them back.<br>Shipping included.</td></tr><tr><td><b>Free floor stand</b></td><td>Worth $79, free this week.<br>Keeps weights at hip level.</td></tr></table>
+   <div class="mono lbl" style="margin-top:18px">Callouts</div><div class="gcall"><span>Free 12-week plan</span><span>30-night trial</span><span>Pay in 4</span><span>Free floor stand</span></div></div>
+ </div>
+ <div class="gtables">
+  <div><div class="mono lbl">Keywords</div><ul class="gkw"><li>adjustable dumbbells <span class='mt'>phrase</span></li><li>best adjustable dumbbells <span class='mt'>phrase</span></li><li>home workout for busy parents <span class='mt'>phrase</span></li><li>20 minute strength workout at home <span class='mt'>phrase</span></li><li>dumbbells for small spaces <span class='mt'>phrase</span></li></ul><div class="mono lbl" style="margin-top:14px">Negative keywords</div><div class="gcall neg"><span>used</span><span>rental</span><span>gym near me</span><span>replacement parts</span></div></div>
+  <div><div class="mono lbl">Policy and strategy notes</div><ul class="gnotes"><li>No weight-loss or body-change claims, in line with Google's misleading claims policy.</li><li>Negative keywords keep spend away from local gym and used-equipment searches.</li></ul></div>
+ </div>
+</section>
+<div class="pager"><span></span><a href="index.html">All email and ad samples</a><span></span></div>
+<p class="credit">Concept campaigns. Strategy, keyword research and ad copy by Godswill Ifeanyichukwu.</p>
+</main></body></html>
